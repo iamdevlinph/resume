@@ -1,4 +1,4 @@
-##React Practice App
+## React Practice App
 
 ## Workflow
 1. `master` branch will be for deploying app to `gh-pages`
