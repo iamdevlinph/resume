@@ -6,19 +6,17 @@
 2. Feature branches must checkout from `dev` branch
 
 ## Deployment
-To deploy changes to current branch and update `gh-pages`
+To deploy changes to `gh-pages`
 
 1. Checkout `master` branch
 
 2. `git pull --rebase origin dev` to get latest changes
 
-3. Run `npm run build` (buil-local for local build only)
+3. Run `npm run build` (build-local for local build only) to create `gh-pages` ready app
 
-4. Add files
-
-5. Commit changes
-
-6. Run ``git push origin `git subtree split --prefix build gh-pages` --force`` to push to current branch and to update `gh-pages` branch
+4. Run `git deploy` to push changes to `gh-pages branch`. This alias has the following commands
+    - `git push origin --delete gh-pages` to delete `gh-pages` branch
+    - `git subtree push --prefix build origin gh-pages` push changes to `gh-pages` branch
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
