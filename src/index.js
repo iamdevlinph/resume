@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import './index.css';
+import './index.scss';
 
 import 'materialize-css/bin/jquery-2.1.1.min.js';
 // materialize
