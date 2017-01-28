@@ -8,13 +8,17 @@
 ## Deployment
 To deploy changes to current branch and update `gh-pages`
 
-1. Run `npm run build` (buil-local for local build only)
+1. Checkout `master` branch
 
-2. Add files
+2. `git pull --rebase origin dev` to get latest changes
 
-3. Commit changes
+3. Run `npm run build` (buil-local for local build only)
 
-4. Run ``git push origin `git subtree split --prefix build gh-pages` --force`` to push to current branch and to update `gh-pages` branch
+4. Add files
+
+5. Commit changes
+
+6. Run ``git push origin `git subtree split --prefix build gh-pages` --force`` to push to current branch and to update `gh-pages` branch
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
