@@ -12,9 +12,11 @@ To deploy changes to `gh-pages`
 
 2. `git pull --rebase origin dev` to get latest changes
 
-3. Run `npm run build` (build-local for local build only) to create `gh-pages` ready app
+3. `git push origin` to push changes from `dev` to `master`
 
-4. Run `git deploy` to push changes to `gh-pages branch`. This alias has the following commands
+4. Run `npm run build` (build-local for local build only) to create `gh-pages` ready app
+
+5. Run `git deploy` to push changes to `gh-pages branch`. This alias has the following commands
     - `git push origin --delete gh-pages` to delete `gh-pages` branch
     - `git subtree push --prefix build origin gh-pages` push changes to `gh-pages` branch
 

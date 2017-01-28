@@ -15,7 +15,7 @@ class Navbar extends Component {
                     </ul>
                     <nav>
                         <div className="nav-wrapper">
-                            <a href="#!" className="logo">Logo</a>
+                            <a href="#!" className="logo">iamDevlinPH</a>
                             <ul className="right">
                                 <li><a href="#">About</a></li>
                                 <li><a href="#">Skills</a></li>
