@@ -1,4 +1,11 @@
 ##React Practice App
+
+## Workflow
+1. `master` branch will be for deploying app to `gh-pages`
+
+2. Feature branches must checkout from `dev` branch
+
+## Deployment
 To deploy changes to current branch and update `gh-pages`
 
 1. Run `npm run build` (buil-local for local build only)
