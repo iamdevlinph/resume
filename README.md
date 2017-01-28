@@ -16,10 +16,6 @@ To deploy changes to `gh-pages`
 
 4. Run `npm run build` (build-local for local build only) to create `gh-pages` ready app
 
-5. Run `git deploy` to push changes to `gh-pages branch`. This alias has the following commands
-    - `git push origin --delete gh-pages` to delete `gh-pages` branch
-    - `git subtree push --prefix build origin gh-pages` push changes to `gh-pages` branch
-
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
