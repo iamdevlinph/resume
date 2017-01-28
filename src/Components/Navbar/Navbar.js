@@ -7,7 +7,7 @@ class Navbar extends Component {
         return (
             <div className="Navbar">
                 <div className="navbar-fixed">
-                    <ul id="dropdown1" className="dropdown-content">
+                    <ul id="dropdown1" className="dropdown-content dropdown--top-space">
                         <li><a href="#">one</a></li>
                         <li><a href="#">two</a></li>
                         <li className="divider"></li>
