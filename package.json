@@ -13,9 +13,10 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build && gh-pages -d build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "build": "react-scripts build && gh-pages -d build",
+    "build-local": "react-scripts build && pushstate-server build"
   },
   "homepage": "https://iamdevlinph.github.io/react-starter"
 }
