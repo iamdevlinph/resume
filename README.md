@@ -1,6 +1,9 @@
-## React Practice App
-
-
+##React Practice App
+To deploy changes to current branch and update `gh-pages`
+1. Run `npm run build` (buil-local for local build only)
+2. Add files
+3. Commit changes
+4. Run ``git push origin `git subtree split --prefix build gh-pages` --force`` to push to current branch and to update `gh-pages` branch
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
