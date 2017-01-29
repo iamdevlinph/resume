@@ -1,8 +1,8 @@
 {
   "main.css": "static/css/main.d23dcd78.css",
   "main.css.map": "static/css/main.d23dcd78.css.map",
-  "main.js": "static/js/main.a6a6eddb.js",
-  "main.js.map": "static/js/main.a6a6eddb.js.map",
+  "main.js": "static/js/main.165cd2ce.js",
+  "main.js.map": "static/js/main.165cd2ce.js.map",
   "static\\media\\Roboto-Bold.eot": "static/media/Roboto-Bold.ecdd509c.eot",
   "static\\media\\Roboto-Bold.ttf": "static/media/Roboto-Bold.e31fcf18.ttf",
   "static\\media\\Roboto-Bold.woff": "static/media/Roboto-Bold.dc81817d.woff",
@@ -22,5 +22,6 @@
   "static\\media\\Roboto-Thin.eot": "static/media/Roboto-Thin.dfe56a87.eot",
   "static\\media\\Roboto-Thin.ttf": "static/media/Roboto-Thin.94998475.ttf",
   "static\\media\\Roboto-Thin.woff": "static/media/Roboto-Thin.7500519d.woff",
-  "static\\media\\Roboto-Thin.woff2": "static/media/Roboto-Thin.954bbdeb.woff2"
+  "static\\media\\Roboto-Thin.woff2": "static/media/Roboto-Thin.954bbdeb.woff2",
+  "static\\media\\profile-picture.jpg": "static/media/profile-picture.8021c42c.jpg"
 }
