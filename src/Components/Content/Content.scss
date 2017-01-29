@@ -6,7 +6,17 @@
         padding-right: 10px;
     }
     .section {
-        border: 1px solid black;
-        padding-top: 70px;
+        padding-top: 40px;
+        &__box {
+            box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+        }
+        &__text {
+            color: #000;
+            font-size: 20px;
+            font-weight: 300;
+            line-height: 1.8;
+            text-align: center;
+            margin-top: 30px;
+        }
     }
 }
