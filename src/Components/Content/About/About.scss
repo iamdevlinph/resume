@@ -37,6 +37,38 @@
                 margin-bottom: 13px;
             }
         }
+        &__social {
+            background-color: #EE6E73;
+            padding: 15px 0;
+            .social {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                text-align: center;
+                li {
+                    display: inline-block;
+                    margin: 5px 15px;
+                    a {
+                        width: 45px;
+                        height: 45px;
+                        position: relative;
+                        display: inline-block;
+                        background-color: transparent;
+                        border-radius: 50%;
+                        line-height: 45;
+                        &:hover {
+                            background-color: #D15D5D;
+                        }
+                        .fa {
+                            color: #fff;
+                            font-size: 20px;
+                            line-height: 45px;
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
         .title {
             display: block;
             width: 120px;

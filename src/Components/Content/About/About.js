@@ -50,20 +50,19 @@ class About extends Component {
                         </div>
                         <div className="profile__social">
                             <ul className="social">
-                                <li><a href="https://www.twitter.com/" target="_blank"><i className="rsicon rsicon-twitter"></i></a></li>
-                                <li><a href="https://www.facebook.com/" target="_blank"><i className="rsicon rsicon-facebook"></i></a></li>
-                                <li><a href="https://dribbble.com/" target="_blank"><i className="rsicon rsicon-dribbble"></i></a></li>
-                                <li><a href="https://www.linkedin.com/" target="_blank"><i className="rsicon rsicon-linkedin"></i></a></li>
-                                <li><a href="https://instagram.com/" target="_blank"><i className="rsicon rsicon-instagram"></i></a></li>
-                                <li><a href="https://plus.google.com/" target="_blank"><i className="rsicon rsicon-google-plus"></i></a></li>
-                                <li><a href="http://xing.com" target="_blank"><i className="rsicon rsicon-xing"></i></a></li>
+                                {/*<li><a href="https://www.twitter.com/" target="_blank"><i className="fa fa-twitter"></i></a></li>*/}
+                                <li><a href="https://www.facebook.com/akodevlin" target="_blank"><i className="fa fa-facebook"></i></a></li>
+                                <li><a href="https://ph.linkedin.com/in/devlin-pajaron-53414a118" target="_blank"><i className="fa fa-linkedin"></i></a></li>
+                                <li><a href="https://github.com/iamdevlinph" target="_blank"><i className="fa fa-github"></i></a></li>
+                                {/*<li><a href="https://www.twitter.com/" target="_blank"><i className="fa fa-google-plus"></i></a></li>*/}
                             </ul>
                         </div>
                     </div>
 
                     <div className="section__text">
                         <p>
-                            Hello! I'm Devlin Pajaron. A fresh graduate that is off to learn new things.
+                            Hello! I'm Devlin Pajaron. A fresh graduate that is off to learn new things.<br />
+                            Currently on my way to become a JavaScript master.
                         </p>
                     </div>
                 </section>
