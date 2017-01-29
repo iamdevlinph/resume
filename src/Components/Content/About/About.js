@@ -7,7 +7,7 @@ class About extends Component {
         return (
             <div className="About">
                 <section id="about" className="section section-about">
-                    <div className="section-box">
+                    <div className="section__box">
                         <div className="profile">
                             <div className="row">
                                 <div className="col s5">
@@ -66,7 +66,7 @@ class About extends Component {
                         </div>
                     </div>
 
-                    <div className="section-txt-btn">
+                    <div className="section__text">
                         <p>Hello! I’m Robert Smith. Senior Web Developer specializing in front end development. Experienced
                                 with all stages of the development cycle for dynamic web projects. Well-versed in numerous programming
                                 languages including JavaScript, SQL, and C. Stng background in project management and customer relations.</p>
