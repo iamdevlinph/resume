@@ -2,4 +2,58 @@
     .section {
         padding-top: 70px !important;
     }
+    .profile {
+        padding: 57px 50px 15px 50px;
+        &__photo {
+            margin-right: 10%;
+            margin-bottom: 10px;
+        }
+        &__info {
+            color: #3d4451;
+            padding-bottom: 25px;
+            margin-bottom: 25px;
+            border-bottom: 1px solid #dedede;
+        }
+        &__title {
+            font-size: 36px;
+            line-height: 1.1;
+            font-weight: 700;
+            margin-bottom: 5px;
+            span {
+                font-weight: 300;
+            }
+        }
+        &__position {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 1.1;
+            margin-bottom: 0;
+        }
+        &__list {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            li {
+                margin-bottom: 13px;
+            }
+        }
+        .title {
+            display: block;
+            width: 120px;
+            float: left;
+            color: #333333;
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 20px;
+            text-transform: uppercase;
+        }
+        .cont {
+            display: block;
+            margin-left: 125px;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 20px;
+            color: #9da0a7;
+        }
+    }
 }
