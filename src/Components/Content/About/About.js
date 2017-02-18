@@ -19,7 +19,7 @@ class About extends Component {
                                             <div className="profile__preword"><span>Hello</span></div>
                                         </div> */}
                                         <h1 className="profile__title">
-                                            <span>Devlin</span> Pajaron</h1>
+                                            <span>Devlin</span> PAJARON</h1>
                                         <h2 className="profile__position">Full Stack Developer</h2>
                                     </div>
                                     <ul className="profile__list">
