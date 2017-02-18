@@ -6,10 +6,21 @@
         padding-right: 10px;
     }
     .section {
-        padding-top: 40px;
+        padding-top: 20px;
+        &__title {
+            color: #3d4451;
+            font-size: 30px;
+            line-height: 1.2;
+            font-weight: 600;
+            text-align: center;
+            padding-bottom: 15px;
+        }
         &__box {
             background: white;
             box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+        }
+        &__content {
+            padding: 30px 30px 30px 30px;
         }
         &__text {
             font-size: 20px;
@@ -18,7 +29,7 @@
             text-align: center;
             margin-top: 30px;
             p {
-                margin: 0 0 25px 0;
+                margin: 0 0 10px 0;
             }
         }
     }
