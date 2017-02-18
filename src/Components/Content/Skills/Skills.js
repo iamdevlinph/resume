@@ -15,7 +15,7 @@ class Skills extends Component {
                             <ul className="skill__list">
                                 <li>
                                     <div className="skill__logo">
-                                        <img src={require('./img/AngularJS.jpg')}/>
+                                        <img src={require('./img/AngularJS.jpg')} alt="Skill"/>
                                     </div>
                                     <div className="skill__name">
                                         <h4>AngularJS</h4>
@@ -23,7 +23,7 @@ class Skills extends Component {
                                 </li>
                                 <li>
                                     <div className="skill__logo">
-                                        <img src={require('./img/CI.jpg')}/>
+                                        <img src={require('./img/CI.jpg')} alt="Skill"/>
                                     </div>
                                     <div className="skill__name">
                                         <h4>CodeIgniter</h4>
@@ -31,7 +31,7 @@ class Skills extends Component {
                                 </li>
                                 <li>
                                     <div className="skill__logo">
-                                        <img src={require('./img/CSS.jpg')}/>
+                                        <img src={require('./img/CSS.jpg')} alt="Skill"/>
                                     </div>
                                     <div className="skill__name">
                                         <h4>CSS</h4>
@@ -39,7 +39,7 @@ class Skills extends Component {
                                 </li>
                                 <li>
                                     <div className="skill__logo">
-                                        <img src={require('./img/GIT.jpg')}/>
+                                        <img src={require('./img/GIT.jpg')} alt="Skill"/>
                                     </div>
                                     <div className="skill__name">
                                         <h4>GIT</h4>
@@ -47,7 +47,7 @@ class Skills extends Component {
                                 </li>
                                 <li>
                                     <div className="skill__logo">
-                                        <img src={require('./img/HTML.jpg')}/>
+                                        <img src={require('./img/HTML.jpg')} alt="Skill"/>
                                     </div>
                                     <div className="skill__name">
                                         <h4>HTML</h4>
@@ -55,7 +55,7 @@ class Skills extends Component {
                                 </li>
                                 <li>
                                     <div className="skill__logo">
-                                        <img src={require('./img/Java.jpg')}/>
+                                        <img src={require('./img/Java.jpg')} alt="Skill"/>
                                     </div>
                                     <div className="skill__name">
                                         <h4>Java</h4>
@@ -63,7 +63,7 @@ class Skills extends Component {
                                 </li>
                                 <li>
                                     <div className="skill__logo">
-                                        <img src={require('./img/jQuery.jpg')}/>
+                                        <img src={require('./img/jQuery.jpg')} alt="Skill"/>
                                     </div>
                                     <div className="skill__name">
                                         <h4>jQuery</h4>
@@ -71,7 +71,7 @@ class Skills extends Component {
                                 </li>
                                 <li>
                                     <div className="skill__logo">
-                                        <img src={require('./img/JS.jpg')}/>
+                                        <img src={require('./img/JS.jpg')} alt="Skill"/>
                                     </div>
                                     <div className="skill__name">
                                         <h4>JavaScript</h4>
@@ -79,7 +79,7 @@ class Skills extends Component {
                                 </li>
                                 <li>
                                     <div className="skill__logo">
-                                        <img src={require('./img/Laravel.jpg')}/>
+                                        <img src={require('./img/Laravel.jpg')} alt="Skill"/>
                                     </div>
                                     <div className="skill__name">
                                         <h4>Laravel</h4>
@@ -87,7 +87,7 @@ class Skills extends Component {
                                 </li>
                                 <li>
                                     <div className="skill__logo">
-                                        <img src={require('./img/MYSQL.jpg')}/>
+                                        <img src={require('./img/MYSQL.jpg')} alt="Skill"/>
                                     </div>
                                     <div className="skill__name">
                                         <h4>MySQL</h4>
@@ -95,7 +95,7 @@ class Skills extends Component {
                                 </li>
                                 <li>
                                     <div className="skill__logo">
-                                        <img src={require('./img/PHP.jpg')}/>
+                                        <img src={require('./img/PHP.jpg')} alt="Skill"/>
                                     </div>
                                     <div className="skill__name">
                                         <h4>PHP</h4>
@@ -103,7 +103,7 @@ class Skills extends Component {
                                 </li>
                                 <li>
                                     <div className="skill__logo">
-                                        <img src={require('./img/PS.jpg')}/>
+                                        <img src={require('./img/PS.jpg')} alt="Skill"/>
                                     </div>
                                     <div className="skill__name">
                                         <h4>Photoshop</h4>
@@ -111,7 +111,7 @@ class Skills extends Component {
                                 </li>
                                 <li>
                                     <div className="skill__logo">
-                                        <img src={require('./img/sass.jpg')}/>
+                                        <img src={require('./img/sass.jpg')} alt="Skill"/>
                                     </div>
                                     <div className="skill__name">
                                         <h4>SASS</h4>
@@ -119,7 +119,7 @@ class Skills extends Component {
                                 </li>
                                 <li>
                                     <div className="skill__logo">
-                                        <img src={require('./img/WP.jpg')}/>
+                                        <img src={require('./img/WP.jpg')} alt="Skill"/>
                                     </div>
                                     <div className="skill__name">
                                         <h4>WordPress</h4>
