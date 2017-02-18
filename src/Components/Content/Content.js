@@ -4,6 +4,7 @@ import './Content.scss';
 
 import About from './About/About';
 import Skills from './Skills/Skills';
+import Experience from './Experience/Experience';
 
 class Content extends Component {
     render() {
@@ -13,6 +14,7 @@ class Content extends Component {
                     <div className="container">
                         <About />
                         <Skills />
+                        <Experience />
                     </div>
                 </div>
             </div>
