@@ -1,12 +1,15 @@
 // Navbar specific styles
 .Navbar {
+    * {
+        font-size: inherit;
+    }
     .logo {
         padding-left: 2%;
     }
     .dropdown--top-space {
         top: 41px !important;
     }
-    nav, i {
+    .navbar-fixed, nav, i {
         height: 40px !important;
         line-height: 40px !important;
     }
