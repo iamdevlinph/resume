@@ -1,3 +1,5 @@
+@import 'Variables';
+
 .About {
     .section {
         padding-top: 50px !important;
@@ -57,7 +59,7 @@
             }
         }
         &__social {
-            background-color: #EE6E73;
+            background-color: $red-theme;
             .social {
                 margin: 0;
                 padding: 0;

@@ -172,6 +172,12 @@ module.exports = {
             },
         ]
     },
+    sassLoader: {
+        data: "@import 'Variables';",
+        includePaths: [
+            paths.appSrc,
+        ]
+    },
 
     // We use PostCSS for autoprefixing only.
     postcss: function () {
