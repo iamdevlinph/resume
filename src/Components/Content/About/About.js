@@ -8,7 +8,7 @@ class About extends Component {
             <div className="About">
                 <section id="about" className="section section-about">
                     <div className="section__box">
-                        <div className="profile">
+                        <div className="section__content profile">
                             <div className="row">
                                 <div className="col s5">
                                     <div className="profile__photo"><img src={require('./img/profile-picture.jpg')} alt="Profile"/></div>

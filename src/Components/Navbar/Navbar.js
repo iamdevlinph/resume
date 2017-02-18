@@ -17,8 +17,8 @@ class Navbar extends Component {
                         <div className="nav-wrapper">
                             <a href="#!" className="logo">iamDevlinPH</a>
                             <ul className="right">
-                                <li><a href="#">About</a></li>
-                                <li><a href="#">Skills</a></li>
+                                <li><a href="#about">About</a></li>
+                                <li><a href="#skills">Skills</a></li>
                                 <li><a href="#">Portfolio</a></li>
                                 <li><a href="#">Experience</a></li>
                                 <li><a href="#">Contact</a></li>
