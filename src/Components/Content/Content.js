@@ -3,9 +3,10 @@ import React, { Component } from 'react';
 import './Content.scss';
 
 import About from './About/About';
-import Skills from './Skills/Skills';
-import Portfolio from './Portfolio/Portfolio';
+import Contact from './Contact/Contact';
 import Experience from './Experience/Experience';
+import Portfolio from './Portfolio/Portfolio';
+import Skills from './Skills/Skills';
 
 class Content extends Component {
     render() {
@@ -16,6 +17,7 @@ class Content extends Component {
                     <Skills />
                     <Portfolio />
                     <Experience />
+                    <Contact />
                 </div>
             </div>
         );
