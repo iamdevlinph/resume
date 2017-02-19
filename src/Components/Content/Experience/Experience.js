@@ -3,8 +3,19 @@ import React, { Component } from 'react';
 import './Experience.scss';
 
 class Experience extends Component {
+    constructor() {
+        super();
+        this.state = { experienceData: [] };
+    }
+    componentDidMount() {
+        fetch(`https://private-0b7e9-iamdevlinph.apiary-mock.com/experience`).then(function (data) {
+            return data.json();
+        }).then( (data) => {
+            this.setState({ experienceData: data });
+        });
+    }
     render() {
-        var experienceList = require('./data/experience.json').map(function(experience, index) {
+        var experienceList = this.state.experienceData.map(function(experience, index) {
             return (
                 <li key={index} className={(index % 2 !== 0) ? "timeline-inverted":""}>
                     <div className="timeline-badge">
@@ -13,7 +24,7 @@ class Experience extends Component {
                     <div className="timeline-panel">
                         <div className="timeline-heading">
                             <div className="duration">{experience.duration}</div>
-                            <div className="company"><img src={require(experience.company_img)} alt="Company"/></div>
+                            <div className="company"><img src={experience.company_img_base64} alt="Company"/></div>
                             <div className="title">{experience.title}</div>
                         </div>
                         <div className="timeline-body">
