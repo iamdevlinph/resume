@@ -28,7 +28,7 @@ class Experience extends Component {
             );
         });
         return (
-            <div className="Experience">
+            <div className="experience">
                 <section id="experience" className="section">
                     <div className="section__title">
                         Experience
