@@ -5,7 +5,7 @@ import './About.scss';
 class About extends Component {
     render() {
         return (
-            <div className="About">
+            <div className="about">
                 <section id="about" className="section section-about">
                     <div className="section__box">
                         <div className="section__content profile">

@@ -5,7 +5,7 @@ import './Navbar.scss';
 class Navbar extends Component {
     render() {
         return (
-            <div className="Navbar">
+            <div className="navbar">
                 <div className="navbar-fixed">
                     <ul id="dropdown1" className="dropdown-content dropdown--top-space">
                         <li><a href="#">one</a></li>
@@ -19,7 +19,7 @@ class Navbar extends Component {
                             <ul className="right">
                                 <li><a href="#about">About</a></li>
                                 <li><a href="#skills">Skills</a></li>
-                                <li><a href="#">Portfolio</a></li>
+                                <li><a href="#portfolio">Portfolio</a></li>
                                 <li><a href="#experience">Experience</a></li>
                                 <li><a href="#">Contact</a></li>
                                 {/*<li><a className="dropdown-button" href="#!" data-activates="dropdown1">Dropdown<i className="material-icons right">arrow_drop_down</i></a></li>*/}
