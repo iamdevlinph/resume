@@ -8,7 +8,8 @@ class Portfolio extends Component {
             return (
                 <li key={index} className="tile">
                     <div className="portfolio__container">
-                        <img src={require(portfolio.img_path)} alt="Portfolio" />
+                        {/*<img src={require(portfolio.img_path)} alt="Portfolio" />*/}
+                        <img src={portfolio.img_base64} alt="Portfolio" />
                         <div className="overlay">
                             <div className="text">
                                 <a href={portfolio.url} target="_blank">
