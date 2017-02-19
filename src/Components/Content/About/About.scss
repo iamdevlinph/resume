@@ -78,6 +78,7 @@
                         line-height: 45;
                         &:hover {
                             background-color: #D15D5D;
+                            transition: background-color 300ms ease-in-out;
                         }
                         .fa {
                             color: #fff;
