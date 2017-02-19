@@ -22,7 +22,7 @@
         position: absolute;
         content:" ";
         width: 2px;
-        background: $red-theme;
+        background: $red-theme-light1;
         left: 50%;
         margin-left: -1.5px;
     }
@@ -116,20 +116,49 @@
         margin-top: 0;
         color: inherit;
     }
-    .timeline-heading h4 {
-        font-weight: 400;
-        padding: 0 15px;
-        color: #4679bd;
+    .timeline-heading {
+        text-align: center;
+        .duration {
+            font-weight: bold;
+            padding: 10px 15px 0px;
+            color: #4679bd;
+            font-size: 11px;
+        }
+        .title {
+            font-size: 11px;
+            font-weight: bold;
+        }
+        .company {
+            margin-top: 10px;
+            margin-bottom: 5px;
+            img {
+                height: 30px;
+            }
+        }
+    }
+    .timeline-body {
+        padding-bottom: 5px;
+        p {
+            font-size: 11px;
+        }
     }
     .timeline-body > p, .timeline-body > ul {
-        padding: 10px 15px;
+        padding: 0px 15px;
         margin-bottom: 0;
     }
     .timeline-footer {
         padding: 5px 15px;
         background-color:#f4f4f4;
     }
-    .timeline-footer p { margin-bottom: 0; }
+    .timeline-footer { 
+        p {
+            margin: 0; 
+            font-size: 10px;
+        }
+        .technologies {
+            font-weight: bold;
+        }
+    }
     .timeline-footer > a {
         cursor: pointer;
         text-decoration: none;
