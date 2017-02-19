@@ -1,5 +1,5 @@
 {
-  "name": "react-starter",
+  "name": "resume-react",
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
@@ -62,7 +62,7 @@
     "build": "node scripts/build.js && gh-pages -d build",
     "build-local": "node scripts/build.js && pushstate-server build"
   },
-  "homepage": "https://iamdevlinph.github.io/react-starter",
+  "homepage": "https://iamdevlinph.github.io/resume-react",
   "jest": {
     "collectCoverageFrom": [
       "src/**/*.{js,jsx}"
