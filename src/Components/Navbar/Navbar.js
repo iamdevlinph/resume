@@ -20,7 +20,7 @@ class Navbar extends Component {
                                 <li><a href="#about">About</a></li>
                                 <li><a href="#skills">Skills</a></li>
                                 <li><a href="#">Portfolio</a></li>
-                                <li><a href="#">Experience</a></li>
+                                <li><a href="#experience">Experience</a></li>
                                 <li><a href="#">Contact</a></li>
                                 {/*<li><a className="dropdown-button" href="#!" data-activates="dropdown1">Dropdown<i className="material-icons right">arrow_drop_down</i></a></li>*/}
                             </ul>

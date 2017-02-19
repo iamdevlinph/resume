@@ -1,72 +1,72 @@
 [
     {
-        "skill_name": "AngularJS",
-        "skill_path": "./img/AngularJS.jpg",
-        "skill_type": "Front-End"
+        "name": "AngularJS",
+        "img_path": "./img/AngularJS.jpg",
+        "type": "Front-End"
     },
     {
-        "skill_name": "CodeIgniter",
-        "skill_path": "./img/CodeIgniter.jpg",
-        "skill_type": "Back-End"
+        "name": "CodeIgniter",
+        "img_path": "./img/CodeIgniter.jpg",
+        "type": "Back-End"
     },
     {
-        "skill_name": "CSS",
-        "skill_path": "./img/CSS.jpg",
-        "skill_type": "Front-End"
+        "name": "CSS",
+        "img_path": "./img/CSS.jpg",
+        "type": "Front-End"
     },
     {
-        "skill_name": "GIT",
-        "skill_path": "./img/GIT.jpg",
-        "skill_type": "Tools"
+        "name": "GIT",
+        "img_path": "./img/GIT.jpg",
+        "type": "Tools"
     },
     {
-        "skill_name": "HTML",
-        "skill_path": "./img/HTML.jpg",
-        "skill_type": "Front-End"
+        "name": "HTML",
+        "img_path": "./img/HTML.jpg",
+        "type": "Front-End"
     },
     {
-        "skill_name": "Java",
-        "skill_path": "./img/Java.jpg",
-        "skill_type": "Back-End"
+        "name": "Java",
+        "img_path": "./img/Java.jpg",
+        "type": "Back-End"
     },
     {
-        "skill_name": "JavaScript",
-        "skill_path": "./img/JavaScript.jpg",
-        "skill_type": "Front-End"
+        "name": "JavaScript",
+        "img_path": "./img/JavaScript.jpg",
+        "type": "Front-End"
     },
     {
-        "skill_name": "jQuery",
-        "skill_path": "./img/jQuery.jpg",
-        "skill_type": "Front-End"
+        "name": "jQuery",
+        "img_path": "./img/jQuery.jpg",
+        "type": "Front-End"
     },
     {
-        "skill_name": "Laravel",
-        "skill_path": "./img/Laravel.jpg",
-        "skill_type": "Back-End"
+        "name": "Laravel",
+        "img_path": "./img/Laravel.jpg",
+        "type": "Back-End"
     },
     {
-        "skill_name": "MYSQL",
-        "skill_path": "./img/MYSQL.jpg",
-        "skill_type": "Data"
+        "name": "MYSQL",
+        "img_path": "./img/MYSQL.jpg",
+        "type": "Data"
     },
     {
-        "skill_name": "Photoshop",
-        "skill_path": "./img/Photoshop.jpg",
-        "skill_type": "Tools"
+        "name": "Photoshop",
+        "img_path": "./img/Photoshop.jpg",
+        "type": "Tools"
     },
     {
-        "skill_name": "PHP",
-        "skill_path": "./img/PHP.jpg",
-        "skill_type": "Back-End"
+        "name": "PHP",
+        "img_path": "./img/PHP.jpg",
+        "type": "Back-End"
     },
     {
-        "skill_name": "SASS",
-        "skill_path": "./img/SASS.jpg",
-        "skill_type": "Front-End"
+        "name": "SASS",
+        "img_path": "./img/SASS.jpg",
+        "type": "Front-End"
     },
     {
-        "skill_name": "WordPress",
-        "skill_path": "./img/WordPress.jpg",
-        "skill_type": "Back-End"
+        "name": "WordPress",
+        "img_path": "./img/WordPress.jpg",
+        "type": "Back-End"
     }
 ]

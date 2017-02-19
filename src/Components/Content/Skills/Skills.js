@@ -8,10 +8,10 @@ class Skills extends Component {
             return (
                 <li key={index}>
                     <div className="skill__logo">
-                        <img src={require(skill.skill_path)} alt="Skill"/>
+                        <img src={require(skill.img_path)} alt="Skill"/>
                     </div>
                     <div className="skill__name">
-                        <h4>{skill.skill_name}</h4>
+                        <h4>{skill.name}</h4>
                     </div>
                 </li>
             );
