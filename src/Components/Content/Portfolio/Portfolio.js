@@ -2,16 +2,19 @@ import React, { Component } from 'react';
 
 import './Portfolio.scss';
 
+import LoaderOverlay from '../../Widgets/LoaderOverlay/LoaderOverlay';
+
 class Portfolio extends Component {
     constructor() {
         super();
-        this.state = { portfolioData: [] };
+        this.state = { portfolioData: [], fetchingOngoing: true };
     }
     componentDidMount() {
         fetch(`https://private-0b7e9-iamdevlinph.apiary-mock.com/portfolio`).then(function (data) {
             return data.json();
-        }).then( (data) => {
+        }).then((data) => {
             this.setState({ portfolioData: data });
+            this.setState({ fetchingOngoing: false });
         });
     }
     render() {
@@ -40,9 +43,13 @@ class Portfolio extends Component {
                     </div>
                     <div className="section__box">
                         <div className="section__content">
-                            <ul className="portfolio__list">
-                                {portfolioList}
-                            </ul>
+                            {
+                                this.state.fetchingOngoing ?
+                                    (<LoaderOverlay />)
+                                    : <ul className="portfolio__list hidden">
+                                        {portfolioList}
+                                    </ul>
+                            }
                         </div>
                     </div>
                 </section>
