@@ -77,7 +77,7 @@
                         border-radius: 50%;
                         line-height: 45;
                         &:hover {
-                            background-color: #D15D5D;
+                            background-color: rgba(0, 0, 0, 0.1);;
                             transition: background-color 300ms ease-in-out;
                         }
                         .fa {

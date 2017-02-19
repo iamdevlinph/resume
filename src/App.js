@@ -4,6 +4,7 @@ import React, { Component } from 'react';
 
 import Navbar from './Components/Navbar/Navbar';
 import Content from './Components/Content/Content';
+import Footer from './Components/Footer/Footer';
 
 class App extends Component {
     render() {
@@ -12,6 +13,7 @@ class App extends Component {
                 <div className="wrapper">
                     <Navbar />
                     <Content />
+                    <Footer />
                 </div>
             </div>
         );

@@ -1,4 +1,5 @@
 @import 'Variables';
+
 .contact {
     .fa {
         font-size: 20px !important;
@@ -6,8 +7,14 @@
         display: block;
     }
     /* label color */
-    .input-field label {
-        color: $blue-darken-1 !important;
+    .input-field {
+        label {
+            color: $blue-darken-1 !important;
+            font-size: 12px;
+        }
+        input, textarea {
+            margin-bottom: 0px !important;
+        }
     }
     /* label focus color */
     .input-field {
@@ -37,5 +44,8 @@
     /* icon prefix focus color */
     .input-field .prefix.active {
         color: $blue-darken-1 !important;
+    }
+    &__send-button {
+        margin-top: 15px;
     }
 }

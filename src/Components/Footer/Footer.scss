@@ -1,0 +1,11 @@
+@import 'Variables';
+
+.footer  {
+    margin-top: 17px;
+    .copyright-text {
+        color: black;
+        &:hover {
+            color: white;
+        }
+    }
+}
