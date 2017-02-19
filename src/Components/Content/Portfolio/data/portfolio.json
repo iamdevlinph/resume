@@ -1,0 +1,17 @@
+[
+    {
+        "name": "freeCodeCamp - Tribute Page",
+        "img_path": "./img/freecodecamp-tribute-page.jpg",
+        "url": "https://codepen.io/iamdevlinph/full/womKKg/"
+    },
+    {
+        "name": "freeCodeCamp - Quote Generator",
+        "img_path": "./img/freecodecamp-quote-generator.jpg",
+        "url": "http://codepen.io/iamdevlinph/full/VPberx/"
+    },
+    {
+        "name": "Resume",
+        "img_path": "./img/resume.jpg",
+        "url": "https://iamdevlinph.github.io/react-starter/"
+    }
+]
