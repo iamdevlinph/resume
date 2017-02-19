@@ -3,8 +3,19 @@ import React, { Component } from 'react';
 import './Portfolio.scss';
 
 class Portfolio extends Component {
+    constructor() {
+        super();
+        this.state = { portfolioData: [] };
+    }
+    componentDidMount() {
+        fetch(`https://private-0b7e9-iamdevlinph.apiary-mock.com/portfolio`).then(function (data) {
+            return data.json();
+        }).then( (data) => {
+            this.setState({ portfolioData: data });
+        });
+    }
     render() {
-        var portfolioList = require('./data/portfolio.json').map(function (portfolio, index) {
+        var portfolioList = this.state.portfolioData.map(function (portfolio, index) {
             return (
                 <li key={index} className="tile">
                     <div className="portfolio__container">
