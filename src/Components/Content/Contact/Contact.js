@@ -34,7 +34,7 @@ class Contact extends Component {
                                         <textarea id="icon_prefix2" className="materialize-textarea" required></textarea>
                                         <label htmlFor="icon_prefix2">Message</label>
                                     </div>
-                                    <div className="col s12">
+                                    <div className="col s12 contact__send-button">
                                         <center>
                                             <a className="waves-effect waves-light btn red darken-1"><i className="material-icons left fa fa-paper-plane"></i>send</a>
                                         </center>

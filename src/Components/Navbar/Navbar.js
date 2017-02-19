@@ -1,8 +1,19 @@
 import React, { Component } from 'react';
+import Scroll from 'react-scroll';
 
 import './Navbar.scss';
 
+var Link = Scroll.Link;
+var scroller = Scroll.scroller;
+
 class Navbar extends Component {
+    componentDidMount() {
+        scroller.scrollTo('about', {
+            duration: 1500,
+            delay: 100,
+            smooth: true,
+        })
+    }
     render() {
         return (
             <div className="navbar">
@@ -16,13 +27,12 @@ class Navbar extends Component {
                     <nav>
                         <div className="nav-wrapper">
                             <a href="#!" className="logo">iamDevlinPH</a>
-                            <ul className="right">
-                                <li><a href="#about">About</a></li>
-                                <li><a href="#skills">Skills</a></li>
-                                <li><a href="#portfolio">Portfolio</a></li>
-                                <li><a href="#experience">Experience</a></li>
-                                <li><a href="#contact">Contact</a></li>
-                                {/*<li><a className="dropdown-button" href="#!" data-activates="dropdown1">Dropdown<i className="material-icons right">arrow_drop_down</i></a></li>*/}
+                            <ul className="right hide-on-med-and-down">
+                                <li><Link activeClass="active" className="navbar__item" to="about" spy={true} smooth={true} duration={500} isDynamic={true}>About</Link></li>
+                                <li><Link activeClass="active" className="navbar__item" to="skills" spy={true} smooth={true} duration={500} isDynamic={true}>Skills</Link></li>
+                                <li><Link activeClass="active" className="navbar__item" to="portfolio" spy={true} smooth={true} duration={500} isDynamic={true}>Portfolio</Link></li>
+                                <li><Link activeClass="active" className="navbar__item" to="experience" spy={true} smooth={true} duration={500} isDynamic={true}>Experience</Link></li>
+                                <li><Link activeClass="active" className="navbar__item" to="contact" spy={true} smooth={true} duration={500} isDynamic={true}>Contact</Link></li>
                             </ul>
                         </div>
                     </nav>

@@ -14,11 +14,16 @@
         height: 40px !important;
         line-height: 40px !important;
     }
-    .nav-wrapper {
-        padding-left: 320px;
-        padding-right: 320px;
-    }
+    // .nav-wrapper {
+    //     padding-left: 320px;
+    //     padding-right: 320px;
+    // }
     nav {
         background-color: $red-theme;
+    }
+    &__item {
+        &.active {
+            background-color: rgba(0, 0, 0, 0.1);
+        }
     }
 }
