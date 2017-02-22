@@ -35,4 +35,8 @@
             font-weight: bold;
         }
     }
+    // responsive hack
+    .section__content {
+        text-align: center !important;
+    }
 }

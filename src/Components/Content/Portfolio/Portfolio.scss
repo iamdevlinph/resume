@@ -69,4 +69,8 @@
             text-align: center;
         }
     }
+    // responsive hack
+    .section__content {
+        text-align: center !important;
+    }
 }
