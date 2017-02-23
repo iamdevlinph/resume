@@ -30,8 +30,9 @@ class Navbar extends Component {
                             <ul className="right hide-on-med-and-down">
                                 <li><Link activeClass="active" className="navbar__item" to="about" spy={true} smooth={true} duration={500} isDynamic={true}>About</Link></li>
                                 <li><Link activeClass="active" className="navbar__item" to="skills" spy={true} smooth={true} duration={500} isDynamic={true}>Skills</Link></li>
-                                <li><Link activeClass="active" className="navbar__item" to="portfolio" spy={true} smooth={true} duration={500} isDynamic={true}>Portfolio</Link></li>
                                 <li><Link activeClass="active" className="navbar__item" to="experience" spy={true} smooth={true} duration={500} isDynamic={true}>Experience</Link></li>
+                                <li><Link activeClass="active" className="navbar__item" to="portfolio" spy={true} smooth={true} duration={500} isDynamic={true}>Portfolio</Link></li>
+                                <li><Link activeClass="active" className="navbar__item" to="education" spy={true} smooth={true} duration={500} isDynamic={true}>Education</Link></li>
                                 <li><Link activeClass="active" className="navbar__item" to="contact" spy={true} smooth={true} duration={500} isDynamic={true}>Contact</Link></li>
                             </ul>
                         </div>
