@@ -25,8 +25,8 @@ class About extends Component {
                                     <ul className="profile__list">
                                         {/*<li className="clearfix">
                                             <strong className="title">Age</strong>
-                                            <span className="cont">21</span>*/}
-                                        </li>
+                                            <span className="cont">21</span>
+                                        </li>*/}
                                         <li className="clearfix">
                                             <strong className="title">Address</strong>
                                             <span className="cont">Cebu City, Philippines</span>
