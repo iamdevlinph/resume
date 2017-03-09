@@ -23,9 +23,9 @@ class About extends Component {
                                         <h2 className="profile__position">Full Stack Developer</h2>
                                     </div>
                                     <ul className="profile__list">
-                                        <li className="clearfix">
+                                        {/*<li className="clearfix">
                                             <strong className="title">Age</strong>
-                                            <span className="cont">21</span>
+                                            <span className="cont">21</span>*/}
                                         </li>
                                         <li className="clearfix">
                                             <strong className="title">Address</strong>
