@@ -33,7 +33,7 @@ class About extends Component {
                                         </li>
                                         <li className="clearfix">
                                             <strong className="title">E-mail</strong>
-                                            <span className="cont">devlinpajaron@gmail.com</span>
+                                            <span className="cont">iamdevlinph@gmail.com</span>
                                         </li>
                                         <li className="clearfix">
                                             <strong className="title">Mobile</strong>
