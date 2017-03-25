@@ -2,51 +2,63 @@ import React, { Component } from 'react';
 
 import './About.scss';
 
+import LoaderOverlay from '../../Widgets/LoaderOverlay/LoaderOverlay';
+
 class About extends Component {
+    constructor() {
+        super();
+        this.state = { aboutData: [], fetchingOngoing: true };
+    }
+    componentDidMount() {
+        fetch(`https://private-0b7e9-iamdevlinph.apiary-mock.com/about`).then(function (data) {
+            return data.json();
+        }).then((data) => {
+            this.setState({ aboutData: data });
+            this.setState({ fetchingOngoing: false });
+        });
+    }
     render() {
+        var aboutList = this.state.aboutData.map(function (about, index) {
+            var el = null;
+            if (about.show) {
+                el = (
+                    <li key={index} className="clearfix">
+                        <strong className="title">{about.label}</strong>
+                        <span className="cont">{about.value}</span>
+                    </li>
+                );
+
+            }
+
+            return el;
+        });
         return (
             <div className="about">
                 <section id="about" className="section section-about">
                     <div className="section__box">
                         <div className="section__content profile">
-                            <div className="row">
-                                <div className="col s5">
-                                    <div className="profile__photo"><img src={require('./img/profile-picture.jpg')} alt="Profile"/></div>
-                                </div>
-                                <div className="col s7">
-                                    <div className="profile__info">
-                                        {/*<div className="profile__items clearfix">
+                            {
+                                this.state.fetchingOngoing ?
+                                    (<LoaderOverlay />)
+                                    : <div className="row">
+                                        <div className="col s5">
+                                            <div className="profile__photo"><img src={require('./img/profile-picture.jpg')} alt="Profile" /></div>
+                                        </div>
+                                        <div className="col s7">
+                                            <div className="profile__info">
+                                                {/*<div className="profile__items clearfix">
                                             <div className="profile__preword"><span>Hello</span></div>
                                         </div> */}
-                                        <h1 className="profile__title">
-                                            <span>Devlin</span> PAJARON</h1>
-                                        <h2 className="profile__position">Full-Stack Developer</h2>
+                                                <h1 className="profile__title">
+                                                    <span>Devlin</span> PAJARON</h1>
+                                                <h2 className="profile__position">Full-Stack Developer</h2>
+                                            </div>
+                                            <ul className="profile__list">
+                                                {aboutList}
+                                            </ul>
+                                        </div>
                                     </div>
-                                    <ul className="profile__list">
-                                        {/*<li className="clearfix">
-                                            <strong className="title">Age</strong>
-                                            <span className="cont">21</span>
-                                        </li>*/}
-                                        <li className="clearfix">
-                                            <strong className="title">Address</strong>
-                                            <span className="cont">Cebu City, Philippines</span>
-                                        </li>
-                                        <li className="clearfix">
-                                            <strong className="title">E-mail</strong>
-                                            <span className="cont">iamdevlinph@gmail.com</span>
-                                        </li>
-                                        <li className="clearfix">
-                                            <strong className="title">Mobile</strong>
-                                            <span className="cont">+63 943 230 2440</span>
-                                        </li>
-                                        {/*<li className="clearfix">
-                                            <strong className="title"><span className="button">Vacation</span></strong>
-                                            <span className="cont">
-                                                <i className="rsicon rsicon-calendar"></i>till April 15, 2016</span>
-                                        </li>*/}
-                                    </ul>
-                                </div>
-                            </div>
+                            }
                         </div>
                         <div className="profile__social">
                             <ul className="social">
