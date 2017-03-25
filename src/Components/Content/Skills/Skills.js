@@ -19,16 +19,21 @@ class Skills extends Component {
     }
     render() {
         var skillList = this.state.skillsData.map(function (skill, index) {
-            return (
-                <li key={index}>
-                    <div className="skills__logo">
-                        <img src={skill.img_base64} alt="Skill" />
-                    </div>
-                    <div className="skills__name">
-                        <h4>{skill.name}</h4>
-                    </div>
-                </li>
-            );
+            var el = null;
+            if (skill.show) {
+                el = (
+                    <li key={index}>
+                        <div className="skills__logo">
+                            <img src={skill.img_base64} alt="Skill" />
+                        </div>
+                        <div className="skills__name">
+                            <h4>{skill.name}</h4>
+                        </div>
+                    </li>
+                )
+            }
+
+            return el;
         });
         return (
             <div className="skills">
