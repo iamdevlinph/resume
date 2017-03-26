@@ -3,6 +3,13 @@ import React, { Component } from 'react';
 import './Contact.scss';
 
 class Contact extends Component {
+    constructor() {
+        super();
+        this.onContactSend = this.handleContactSubmit.bind(this);
+    }
+    handleContactSubmit() {
+        alert('This feature is not yet available');
+    }
     render() {
         return (
             <div className="contact">
@@ -15,28 +22,31 @@ class Contact extends Component {
                             <form className="col s12">
                                 <div className="row">
                                     <div className="input-field col s12">
-                                        <i className="material-icons prefix fa fa-user"></i>
-                                        <input id="last_name" type="text" className="validate" required/>
+                                        <i className="material-icons prefix fa fa-user" />
+                                        <input id="last_name" type="text" className="validate" required disabled/>
                                         <label htmlFor="last_name">Name</label>
                                     </div>
                                     <div className="input-field col s12">
-                                        <i className="material-icons prefix fa fa-envelope"></i>
-                                        <input id="last_name" type="email" className="validate" required/>
+                                        <i className="material-icons prefix fa fa-envelope" />
+                                        <input id="last_name" type="email" className="validate" required disabled/>
                                         <label htmlFor="last_name">Email</label>
                                     </div>
                                     <div className="input-field col s12">
-                                        <i className="material-icons prefix fa fa-phone"></i>
-                                        <input id="last_name" type="number" className="validate" required/>
+                                        <i className="material-icons prefix fa fa-phone" />
+                                        <input id="last_name" type="number" className="validate" required disabled/>
                                         <label htmlFor="last_name">Phone Number</label>
                                     </div>
                                     <div className="input-field col s12">
-                                        <i className="material-icons prefix fa fa-pencil"></i>
-                                        <textarea id="icon_prefix2" className="materialize-textarea" required></textarea>
+                                        <i className="material-icons prefix fa fa-pencil" />
+                                        <textarea id="icon_prefix2" className="materialize-textarea" required disabled></textarea>
                                         <label htmlFor="icon_prefix2">Message</label>
                                     </div>
                                     <div className="col s12 contact__send-button">
                                         <center>
-                                            <a className="waves-effect waves-light btn red darken-1"><i className="material-icons left fa fa-paper-plane"></i>send</a>
+                                            <a className="waves-effect waves-light btn red darken-1" onClick={() => this.onContactSend()}>
+                                                <i className="material-icons left fa fa-paper-plane" />
+                                                send
+                                            </a>
                                         </center>
                                     </div>
                                 </div>
