@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
+import Scroll from 'react-scroll';
 
 import './Footer.scss';
+
+var Link = Scroll.Link;
 
 class Footer extends Component {
     constructor() {
@@ -39,6 +42,11 @@ class Footer extends Component {
                             </div>
                         </div>
                     </div>
+                    <Link activeClass="active" className="navbar__item" to="about" spy={true} smooth={true} duration={500} isDynamic={true}>
+                        <div className="back-to-top">
+                            <i className="fa fa-arrow-up fa-2x" />
+                        </div>
+                    </Link>
                     <div className="footer-copyright">
                         <div className="container">
                             © 2017 <a className="copyright-text" href="https://github.com/iamdevlinph" target="_blank">iamDevlinPH</a>

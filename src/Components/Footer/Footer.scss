@@ -3,9 +3,23 @@
 .footer  {
     margin-top: 9%;
     .copyright-text {
-        color: black;
+        color: black !important;
         &:hover {
-            color: white;
+            color: white !important;
         }
+    }
+    .back-to-top {
+        position: absolute;
+        right: 1%;
+        bottom: 3.3%;
+        cursor: pointer;
+        height: 50px;
+        width: 50px;
+        background: rgba(0,0,0,0.3);
+        padding: 12px 14px;
+        border-radius: 15px;
+    }
+    a {
+        color: white !important;
     }
 }
