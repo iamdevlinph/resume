@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import './Skills.scss';
 
 import LoaderOverlay from '../../Widgets/LoaderOverlay/LoaderOverlay';
+import SkillToolTip from '../../Widgets/SkillToolTip/SkillToolTip';
 
 class Skills extends Component {
     constructor() {
@@ -20,15 +21,13 @@ class Skills extends Component {
     render() {
         var skillList = this.state.skillsData.map(function (skill, index) {
             var el = null;
-            if (skill.show) {
+            if (skill.showSkill) {
                 el = (
                     <li key={index}>
-                        <div className="skills__logo">
-                            <img src={skill.img_base64} alt="Skill" />
-                        </div>
-                        <div className="skills__name">
-                            <h4>{skill.name}</h4>
-                        </div>
+                        <SkillToolTip duration={skill.duration} 
+                            image={skill.img_base64} 
+                            name={skill.name}
+                            show={skill.showDuration}/>
                     </li>
                 )
             }
