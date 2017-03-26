@@ -1,8 +1,11 @@
 .skill-tool-tip {
-    &:hover .tooltip {
-        display: inline;
-        position: fixed;
-        overflow: hidden;
+    &:hover,
+    &:active {
+        .tooltip {
+            display: inline;
+            position: fixed;
+            overflow: hidden;
+        }
     }
     .tooltip {
         display: none;
@@ -12,7 +15,7 @@
         padding: 7px 20px;
         &__title {
             text-align: center;
-            text-decoration:underline !important;
+            text-decoration: underline !important;
             font-weight: bold;
         }
         &__content {
