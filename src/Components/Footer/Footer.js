@@ -42,7 +42,7 @@ class Footer extends Component {
                             </div>
                         </div>
                     </div>
-                    <Link activeClass="active" className="navbar__item" to="about" spy={true} smooth={true} duration={500} isDynamic={true}>
+                    <Link to="about" smooth={true} duration={500}>
                         <div className="back-to-top">
                             <i className="fa fa-arrow-up fa-2x" />
                         </div>
