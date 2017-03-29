@@ -7,18 +7,25 @@ import LoaderOverlay from '../../Widgets/LoaderOverlay/LoaderOverlay';
 class About extends Component {
     constructor() {
         super();
-        this.state = { aboutData: [], fetchingOngoing: true };
+        this.state = {
+            profileData: [],
+            profilePicture: '',
+            profileMessage: '',
+            fetchingOngoing: true
+        };
     }
     componentDidMount() {
         fetch(`https://private-0b7e9-iamdevlinph.apiary-mock.com/about`).then(function (data) {
             return data.json();
         }).then((data) => {
-            this.setState({ aboutData: data });
+            this.setState({ profileData: data.profile_data });
+            this.setState({ profilePicture: data.profile_picture });
+            this.setState({ profileMessage: data.profile_message });
             this.setState({ fetchingOngoing: false });
         });
     }
     render() {
-        var aboutList = this.state.aboutData.map(function (about, index) {
+        var aboutList = this.state.profileData.map(function (about, index) {
             var el = null;
             if (about.show) {
                 el = (
@@ -42,7 +49,8 @@ class About extends Component {
                                     (<LoaderOverlay />)
                                     : <div className="row">
                                         <div className="col s5">
-                                            <div className="profile__photo"><img src={require('./img/profile-picture.jpg')} alt="Profile" /></div>
+                                            {/*<div className="profile__photo"><img src={require('./img/profile-picture.jpg')} alt="Profile" /></div>*/}
+                                            <div className="profile__photo"><img src={this.state.profilePicture} alt="Profile" /></div>
                                         </div>
                                         <div className="col s7">
                                             <div className="profile__info">
@@ -73,8 +81,7 @@ class About extends Component {
 
                     <div className="section__text">
                         <p>
-                            Hello! I'm Devlin Pajaron. A fresh graduate that is off to learn new things.<br />
-                            Currently on my way to become a JavaScript master.
+                            {this.state.profileMessage}
                         </p>
                     </div>
                 </section>
