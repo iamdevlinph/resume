@@ -49,7 +49,7 @@ class Footer extends Component {
                     </Link>
                     <div className="footer-copyright">
                         <div className="container">
-                            <p className="pull-left">
+                            <p className="pull-left copyright-text-container">
                                 © 2017 <a className="copyright-text" href="https://github.com/iamdevlinph" target="_blank">iamDevlinPH</a> 
                             </p>
                             <h5 className="pull-right"><em>Updated: 29 March, 2017</em></h5>

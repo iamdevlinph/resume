@@ -26,7 +26,7 @@ class Navbar extends Component {
                     </ul>
                     <nav>
                         <div className="nav-wrapper">
-                            <a href="#!" className="logo">iamDevlinPH</a>
+                            <a href="javascript:;" className="logo">iamDevlinPH</a>
                             <ul className="right hide-on-med-and-down">
                                 <li><Link activeClass="active" className="navbar__item" to="about" spy={true} smooth={true} duration={500} isDynamic={true}>About</Link></li>
                                 <li><Link activeClass="active" className="navbar__item" to="skills" spy={true} smooth={true} duration={500} isDynamic={true}>Skills</Link></li>
