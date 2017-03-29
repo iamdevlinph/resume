@@ -24,8 +24,9 @@ class SkillToolTip extends Component {
         var dateFrom = this.props.duration.usedFrom;
         var dateTo = this.props.duration.usedTo;
         var showDuration = this.props.duration.showDuration;
+        var altText = this.props.duration.hideDurationText;
 
-        if (!showDuration) return;
+        if (!showDuration) return altText;
 
         // use date today if 'Present'
         if (dateTo === 'Present') {
@@ -70,6 +71,7 @@ class SkillToolTip extends Component {
         var skillName = this.props.name;
         var skillImg = this.props.image;
         var showDuration = this.props.duration.showDuration;
+        var altText = this.props.duration.hideDurationText;
         return (
             <div className="skill-tool-tip"
                 onMouseMove={() => this.onHover(skillName)}>
@@ -80,7 +82,7 @@ class SkillToolTip extends Component {
                     <h4>{skillName}</h4>
                 </div>
                 {
-                    !showDuration ? '' : (
+                    !showDuration && !altText ? '' : (
                         <div className="tooltip">
                             <div className="tooltip__title">{skillName}</div>
                             <div className="tooltip__content">
