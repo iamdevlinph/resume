@@ -27,7 +27,11 @@ class Experience extends Component {
                     <div className="timeline-panel">
                         <div className="timeline-heading">
                             <div className="duration">{experience.duration}</div>
-                            <div className="company"><img src={experience.company_img_base64} alt="Company" /></div>
+                            <div className="company">
+                                <a href={experience.company_website} target="_blank">
+                                    <img src={experience.company_img_base64} alt="Company" />
+                                </a>
+                            </div>
                             <div className="title">{experience.title}</div>
                         </div>
                         <div className="timeline-body">
