@@ -59,7 +59,7 @@ class About extends Component {
                                         </div> */}
                                                 <h1 className="profile__title">
                                                     <span>Devlin</span> PAJARON</h1>
-                                                <h2 className="profile__position">Full-Stack Developer</h2>
+                                                <h2 className="profile__position">JavaScript Developer</h2>
                                             </div>
                                             <ul className="profile__list">
                                                 {aboutList}
