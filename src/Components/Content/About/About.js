@@ -27,7 +27,7 @@ class About extends Component {
     render() {
         var aboutList = this.state.profileData.map(function (about, index) {
             var el = null;
-            if (about.show) {
+            if (about.show && !about.isUrlProtected) {
                 el = (
                     <li key={index} className="clearfix">
                         <strong className="title">{about.label}</strong>
@@ -35,6 +35,13 @@ class About extends Component {
                     </li>
                 );
 
+            } else if (about.show && about.isUrlProtected) {
+                el = (
+                    <li key={index} className="clearfix">
+                        <strong className="title">{about.label}</strong>
+                        <a className="cont email" href={about.value} target="_blank">Click to view my {about.label}</a>
+                    </li>
+                );
             }
 
             return el;
