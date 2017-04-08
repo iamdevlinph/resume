@@ -8,7 +8,7 @@ import Skills from './Skills/Skills';
 import Experience from './Experience/Experience';
 import Portfolio from './Portfolio/Portfolio';
 import Education from './Education/Education';
-import Contact from './Contact/Contact';
+// import Contact from './Contact/Contact';
 
 var Element = Scroll.Element;
 
@@ -32,9 +32,9 @@ class Content extends Component {
                     <Element name="education">
                         <Education />
                     </Element>
-                    <Element name="contact">
+                    {/* <Element name="contact">
                         <Contact />
-                    </Element>
+                    </Element> */}
                 </div>
             </div>
         );

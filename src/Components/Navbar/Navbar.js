@@ -33,7 +33,7 @@ class Navbar extends Component {
                                 <li><Link activeClass="active" className="navbar__item" to="experience" spy={true} smooth={true} duration={500} isDynamic={true}>Experience</Link></li>
                                 <li><Link activeClass="active" className="navbar__item" to="portfolio" spy={true} smooth={true} duration={500} isDynamic={true}>Portfolio</Link></li>
                                 <li><Link activeClass="active" className="navbar__item" to="education" spy={true} smooth={true} duration={500} isDynamic={true}>Education</Link></li>
-                                <li><Link activeClass="active" className="navbar__item" to="contact" spy={true} smooth={true} duration={500} isDynamic={true}>Contact</Link></li>
+                                {/*<li><Link activeClass="active" className="navbar__item" to="contact" spy={true} smooth={true} duration={500} isDynamic={true}>Contact</Link></li>*/}
                             </ul>
                         </div>
                     </nav>
