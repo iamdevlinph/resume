@@ -78,9 +78,9 @@ class About extends Component {
                         <div className="profile__social">
                             <ul className="social">
                                 {/*<li><a href="https://www.twitter.com/" target="_blank"><i className="fa fa-twitter"></i></a></li>*/}
-                                <li><a href="https://www.facebook.com/akodevlin" target="_blank"><i className="fa fa-facebook"></i></a></li>
-                                <li><a href="https://ph.linkedin.com/in/devlin-pajaron-53414a118" target="_blank"><i className="fa fa-linkedin"></i></a></li>
-                                <li><a href="https://github.com/iamdevlinph" target="_blank"><i className="fa fa-github"></i></a></li>
+                                <li><a className='waves-effect' href="https://www.facebook.com/akodevlin" target="_blank"><i className="fa fa-facebook"></i></a></li>
+                                <li><a className='waves-effect' href="https://ph.linkedin.com/in/devlin-pajaron-53414a118" target="_blank"><i className="fa fa-linkedin"></i></a></li>
+                                <li><a className='waves-effect' href="https://github.com/iamdevlinph" target="_blank"><i className="fa fa-github"></i></a></li>
                                 {/*<li><a href="https://www.twitter.com/" target="_blank"><i className="fa fa-google-plus"></i></a></li>*/}
                             </ul>
                         </div>
