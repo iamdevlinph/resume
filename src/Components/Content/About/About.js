@@ -15,14 +15,12 @@ class About extends Component {
         };
     }
     componentDidMount() {
-        fetch(`https://private-0b7e9-iamdevlinph.apiary-mock.com/about`).then(function (data) {
-            return data.json();
-        }).then((data) => {
-            this.setState({ profileData: data.profile_data });
-            this.setState({ profilePicture: data.profile_picture });
-            this.setState({ profileMessage: data.profile_message });
-            this.setState({ fetchingOngoing: false });
-        });
+        var data = require('./data/about.json');
+        console.log(data);;
+        this.setState({ profileData: data.profile_data });
+        this.setState({ profilePicture: data.profile_picture });
+        this.setState({ profileMessage: data.profile_message });
+        this.setState({ fetchingOngoing: false });
     }
     render() {
         var aboutList = this.state.profileData.map(function (about, index) {

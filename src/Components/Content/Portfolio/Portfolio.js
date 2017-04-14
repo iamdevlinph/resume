@@ -10,12 +10,9 @@ class Portfolio extends Component {
         this.state = { portfolioData: [], fetchingOngoing: true };
     }
     componentDidMount() {
-        fetch(`https://private-0b7e9-iamdevlinph.apiary-mock.com/portfolio`).then(function (data) {
-            return data.json();
-        }).then((data) => {
-            this.setState({ portfolioData: data });
-            this.setState({ fetchingOngoing: false });
-        });
+        var data = require('./data/portfolio.json');
+        this.setState({ portfolioData: data });
+        this.setState({ fetchingOngoing: false });
     }
     render() {
         var portfolioList = this.state.portfolioData.map(function (portfolio, index) {

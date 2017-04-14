@@ -11,12 +11,9 @@ class Skills extends Component {
         this.state = { skillsData: [], fetchingOngoing: true };
     }
     componentDidMount() {
-        fetch(`https://private-0b7e9-iamdevlinph.apiary-mock.com/skills`).then(function (data) {
-            return data.json();
-        }).then((data) => {
-            this.setState({ skillsData: data });
-            this.setState({ fetchingOngoing: false });
-        });
+        var data = require('./data/skills.json');
+        this.setState({ skillsData: data });
+        this.setState({ fetchingOngoing: false });
     }
     render() {
         var skillList = this.state.skillsData.map(function (skill, index) {
@@ -24,10 +21,10 @@ class Skills extends Component {
             if (skill.showSkill) {
                 el = (
                     <li key={index}>
-                        <SkillToolTip duration={skill.duration} 
-                            image={skill.img_base64} 
+                        <SkillToolTip duration={skill.duration}
+                            image={skill.img_base64}
                             name={skill.name}
-                            show={skill.showDuration}/>
+                            show={skill.showDuration} />
                     </li>
                 )
             }

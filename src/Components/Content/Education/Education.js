@@ -10,12 +10,9 @@ class Education extends Component {
         this.state = { educationData: [], fetchingOngoing: true };
     }
     componentDidMount() {
-        fetch(`https://private-0b7e9-iamdevlinph.apiary-mock.com/education`).then(function (data) {
-            return data.json();
-        }).then((data) => {
-            this.setState({ educationData: data });
-            this.setState({ fetchingOngoing: false });
-        });
+        var data = require('./data/education.json');
+        this.setState({ educationData: data });
+        this.setState({ fetchingOngoing: false });
     }
     render() {
         var educationList = this.state.educationData.map(function (education, index) {

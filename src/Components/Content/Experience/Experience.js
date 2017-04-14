@@ -10,12 +10,9 @@ class Experience extends Component {
         this.state = { experienceData: [], fetchingOngoing: true };
     }
     componentDidMount() {
-        fetch(`https://private-0b7e9-iamdevlinph.apiary-mock.com/experience`).then(function (data) {
-            return data.json();
-        }).then((data) => {
-            this.setState({ experienceData: data });
-            this.setState({ fetchingOngoing: false });
-        });
+        var data = require('./data/experience.json');
+        this.setState({ experienceData: data });
+        this.setState({ fetchingOngoing: false });
     }
     render() {
         var experienceList = this.state.experienceData.map(function (experience, index) {
