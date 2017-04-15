@@ -16,7 +16,6 @@ class About extends Component {
     }
     componentDidMount() {
         var data = require('./data/about.json');
-        console.log(data);;
         this.setState({ profileData: data.profile_data });
         this.setState({ profilePicture: data.profile_picture });
         this.setState({ profileMessage: data.profile_message });
