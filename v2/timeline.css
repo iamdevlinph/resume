@@ -75,9 +75,9 @@
     left: 6px;
 }
 
-.timeline-item:last-child .timeline-marker:after {
+/*.timeline-item:last-child .timeline-marker:after {
     content: none;
-}
+}*/
 
 .timeline-item:not(.period):hover .timeline-marker:before {
     background: transparent;
