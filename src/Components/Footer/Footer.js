@@ -52,7 +52,7 @@ class Footer extends Component {
                             <p className="pull-left copyright-text-container">
                                 © 2017 <a className="copyright-text" href="https://github.com/iamdevlinph" target="_blank">iamDevlinPH</a> 
                             </p>
-                            <h5 className="pull-right"><em>Updated: 15 April, 2017</em></h5>
+                            <h5 className="pull-right"><em>Updated: 18 April, 2017</em></h5>
                         </div>
                     </div>
                 </footer>
