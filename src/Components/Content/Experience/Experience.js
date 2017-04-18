@@ -10,9 +10,14 @@ class Experience extends Component {
         this.state = { experienceData: [], fetchingOngoing: true };
     }
     componentDidMount() {
-        var data = require('./data/experience.json');
-        this.setState({ experienceData: data });
-        this.setState({ fetchingOngoing: false });
+        fetch('https://rawgit.com/iamdevlinph/resume/dev/src/Components/Content/Experience/data/experience.json')
+            .then(function (data) {
+                return data.json();
+            })
+            .then((data) => {
+                this.setState({ experienceData: data });
+                this.setState({ fetchingOngoing: false });
+            });
     }
     render() {
         var experienceList = this.state.experienceData.map(function (experience, index) {

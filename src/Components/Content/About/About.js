@@ -15,11 +15,16 @@ class About extends Component {
         };
     }
     componentDidMount() {
-        var data = require('./data/about.json');
-        this.setState({ profileData: data.profile_data });
-        this.setState({ profilePicture: data.profile_picture });
-        this.setState({ profileMessage: data.profile_message });
-        this.setState({ fetchingOngoing: false });
+        fetch(`https://rawgit.com/iamdevlinph/resume/dev/src/Components/Content/About/data/about.json`)
+            .then(function (data) {
+                return data.json();
+            })
+            .then((data) => {
+                this.setState({ profileData: data.profile_data });
+                this.setState({ profilePicture: data.profile_picture });
+                this.setState({ profileMessage: data.profile_message });
+                this.setState({ fetchingOngoing: false });
+            });
     }
     render() {
         var aboutList = this.state.profileData.map(function (about, index) {

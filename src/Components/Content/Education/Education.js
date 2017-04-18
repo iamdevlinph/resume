@@ -10,9 +10,14 @@ class Education extends Component {
         this.state = { educationData: [], fetchingOngoing: true };
     }
     componentDidMount() {
-        var data = require('./data/education.json');
-        this.setState({ educationData: data });
-        this.setState({ fetchingOngoing: false });
+        fetch(`https://raw.githubusercontent.com/iamdevlinph/resume/dev/src/Components/Content/Education/data/education.json`)
+            .then(function (data) {
+                return data.json();
+            }).then((data) => {
+                this.setState({ educationData: data });
+                this.setState({ portfolioData: data });
+                this.setState({ fetchingOngoing: false });
+            });
     }
     render() {
         var educationList = this.state.educationData.map(function (education, index) {

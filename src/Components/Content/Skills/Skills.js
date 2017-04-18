@@ -11,9 +11,13 @@ class Skills extends Component {
         this.state = { skillsData: [], fetchingOngoing: true };
     }
     componentDidMount() {
-        var data = require('./data/skills.json');
-        this.setState({ skillsData: data });
-        this.setState({ fetchingOngoing: false });
+        fetch(`https://rawgit.com/iamdevlinph/resume/dev/src/Components/Content/Skills/data/skills.json`)
+            .then(function (data) {
+                return data.json();
+            }).then((data) => {
+                this.setState({ skillsData: data });
+                this.setState({ fetchingOngoing: false });
+            });
     }
     render() {
         var skillList = this.state.skillsData.map(function (skill, index) {

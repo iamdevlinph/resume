@@ -10,9 +10,13 @@ class Portfolio extends Component {
         this.state = { portfolioData: [], fetchingOngoing: true };
     }
     componentDidMount() {
-        var data = require('./data/portfolio.json');
-        this.setState({ portfolioData: data });
-        this.setState({ fetchingOngoing: false });
+        fetch(`https://rawgit.com/iamdevlinph/resume/dev/src/Components/Content/Portfolio/data/portfolio.json`)
+            .then(function (data) {
+                return data.json();
+            }).then((data) => {
+                this.setState({ portfolioData: data });
+                this.setState({ fetchingOngoing: false });
+            });
     }
     render() {
         var portfolioList = this.state.portfolioData.map(function (portfolio, index) {
