@@ -536,58 +536,6 @@
 
 
 
-
-.timeline {
-    position: relative;
-}
-
-
-
-.timeline:before {
-	background: #ededed; /* Old browsers */
-	background: -moz-linear-gradient(top,  #ededed 1%, #ededed 75%, #ffffff 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#ededed), color-stop(75%,#ededed), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  #ededed 1%,#ededed 75%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  #ededed 1%,#ededed 75%,#ffffff 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  #ededed 1%,#ededed 75%,#ffffff 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  #ededed 1%,#ededed 75%,#ffffff 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
-    bottom: 0;
-    content: "";
-    left: 18px;
-    position: absolute;
-    top: 0;
-    width: 3px;
-	height:100%;
-	
-}
-
-
-.timeline:after{
-	background: #ffffff;
-	border:3px solid #efefef;
-	font-family: 'fontello';
-	top:0;
-	left:-5px;
-	width:50px;
-	height:50px;
-	position: absolute;
-	text-align:center;
-	color:#333333;
-	font-size:20px;
-	line-height:45px;
-}
-
-
-.timeline.experience:after{
-	content: '\e8ba';
-}
-
-.timeline.education:after{
-	content: '\e80c';
-}
-
-
 .exp{
 	padding-left: 50px;
 	padding-top: 20px;

@@ -1,0 +1,8 @@
+.content {
+    padding: 20px 40px !important;
+}
+.info-card-dev {
+    background: #fff;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+}
