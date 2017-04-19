@@ -357,17 +357,17 @@
 /*------------------------ About section ------------------------*/
 
 
-.about{
+.resume{
 	overflow:hidden;
 }
 
-.about .profile h1{
+.resume .profile h1{
 	font-size:28px;
 	line-height:25px;
 }
 
 
-.about .profile h3{
+.resume .profile h3{
 	font-size:22px;
 	color:#777777;
 }
@@ -1451,8 +1451,8 @@ span.meta-date{
 	.main-nav.tabbed ul li a{font-size:0;}
 	.main-nav.tabbed ul li:last-child{border-right:none;border-bottom:none;}
 	.main-nav.tabbed ul li a i {left: 0;text-align: center;width: 100%;}
-	.about .profile h1{font-size:25px;}
-	.about .profile h3{line-height:30px;font-size:20px;}
+	.resume .profile h1{font-size:25px;}
+	.resume .profile h3{line-height:30px;font-size:20px;}
 	.img-profile .name-profile {display:none;}
 	.bottom-header{margin-bottom:10px;}
 	.info ul.info-list{margin-bottom:10px;border-left:0;}
