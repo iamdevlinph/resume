@@ -43,19 +43,27 @@ class App extends Component {
                                 <section className="ofsInBottom">
                                     <div className="resume">
                                         {/*<!-- START SKILLS -->*/}
-                                        <Skills />
+                                        <div className="resume-card">
+                                            <Skills />
+                                        </div>
                                         {/*<!-- END SKILLS -->*/}
 
                                         {/*<!-- START EXPERIENCE -->*/}
-                                        <Experience />
+                                        <div className="resume-card">
+                                            <Experience />
+                                        </div>
                                         {/*<!-- END EXPERIENCE -->*/}
 
                                         {/*<!-- START EDUCATION -->*/}
-                                        <Education />
+                                        <div className="resume-card">
+                                            <Education />
+                                        </div>
                                         {/*<!-- END EDUCATION -->*/}
 
                                         {/*<!-- START PORTFOLIO -->*/}
-                                        <Portfolio />
+                                        <div className="resume-card">
+                                            <Portfolio />
+                                        </div>
                                         {/*<!-- END PORTFOLIO -->*/}
                                     </div>
                                 </section>
