@@ -20,7 +20,7 @@ class About extends Component {
                             <nav id="main-nav" className="main-nav clearfix tabbed">
                                 <ul>
                                     <li className="active">
-                                        <a href="" className="active">
+                                        <a href="" className="">
                                             <i className="icon-user"></i>
                                             <p>Devlin Pajaron</p>
                                             <p>JavaScript Developer</p>
