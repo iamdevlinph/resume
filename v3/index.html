@@ -20,24 +20,6 @@
     <link href="css/main.css" rel="stylesheet" type="text/css" media="all" />
     <link href="css/timeline.css" rel="stylesheet" type="text/css" media="all" />
     <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
-    <style>
-        .margLTop {
-            margin-top: 50px !important;
-        }
-        
-        .left-content {
-            position: fixed !important;
-            width: 280px !important;
-        }
-        
-        .right-content {
-            margin-left: 280px !important;
-        }
-        
-        .main-title {
-            border-bottom: none !important;
-        }
-    </style>
 </head>
 
 <body>
@@ -50,13 +32,14 @@
         <!-- End preloader inner -->
     </div>
     <!-- End preloader-->
-    <div id="wrapper" class="margLTop  margLBottom">
+    <div id="wrapper" class="margLTop margLBottom">
         <div class="container">
             <div class="row ">
+
+                <!-- START ABOUT -->
                 <div class="col-md-3 nopr left-content">
                     <header id="header">
                         <div class="main-header">
-                            <!--Profile image-->
                             <figure class="img-profile">
                                 <img src="img/profile.jpg" alt="" />
                                 <!--<figcaption class="name-profile">
@@ -83,10 +66,14 @@
                         </div>
                     </header>
                 </div>
+                <!-- END ABOUT -->
+                
+                <!-- START RESUME -->
                 <div class="col-md-9 right-content">
                     <section class="ofsInBottom">
                         <div class="resume">
-                            <div class="info-card-dev">
+                            <!-- START SKILLS -->
+                            <div class="resume-card">
                                 <div class="main-title">
                                     <h1>skills</h1>
                                     <hr />
@@ -135,8 +122,10 @@
                                     </div>
                                 </div>
                             </div>
+                            <!-- END SKILLS -->
 
-                            <div class="info-card-dev">
+                            <!-- START EXPERIENCE -->
+                            <div class="resume-card">
                                 <div class="main-title">
                                     <h1>experience</h1>
                                     <hr/>
@@ -170,8 +159,10 @@
                                     </div>
                                 </div>
                             </div>
+                            <!-- END EXPERIENCE -->
 
-                            <div class="info-card-dev">
+                            <!-- START EDUCATION -->
+                            <div class="resume-card">
                                 <div class="main-title">
                                     <h1>education</h1>
                                     <hr/>
@@ -205,8 +196,10 @@
                                     </div>
                                 </div>
                             </div>
+                            <!-- END EDUCATION -->
 
-                            <div class="info-card-dev">
+                            <!-- START PORTFOLIO -->
+                            <div class="resume-card">
                                 <div class="main-title">
                                     <h1>my works</h1>
                                     <hr />
@@ -260,9 +253,11 @@
                                     </div>
                                 </div>
                             </div>
+                            <!-- END PORTFOLIO -->
                         </div>
                     </section>
                 </div>
+                <!-- END RESUME -->
             </div>
         </div>
     </div>
