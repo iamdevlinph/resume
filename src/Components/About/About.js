@@ -21,7 +21,9 @@ class About extends Component {
                                 <ul>
                                     <li className="active">
                                         <a href="" className="active">
-                                            <i className="icon-user"></i> Devlin Pajaron
+                                            <i className="icon-user"></i>
+                                            <p>Devlin Pajaron</p>
+                                            <p>JavaScript Developer</p>
                                         </a>
                                     </li>
                                 </ul>
