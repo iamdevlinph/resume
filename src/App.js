@@ -6,6 +6,8 @@ import React, { Component } from 'react';
 // import Content from './Components/Content/Content';
 // import Footer from './Components/Footer/Footer';
 
+import About from './Components/About/About';
+
 import './css/bootstrap.scss';
 import './css/font.scss';
 import './css/fontello.scss';
@@ -14,7 +16,6 @@ import './css/main.scss';
 import './css/timeline.scss';
 import './css/custom.scss';
 
-import profileImg from './img/profile.jpg';
 import placeHolder from './img/portfolio/1.jpg';
 
 // import './js/jquery-1.11.3.min.js';
@@ -32,35 +33,7 @@ class App extends Component {
                         <div className="row ">
 
                             {/*<!-- START ABOUT -->*/}
-                            <div className="col-md-3 nopr left-content">
-                                <header id="header">
-                                    <div className="main-header">
-                                        <figure className="img-profile">
-                                            <img src={profileImg} alt="" />
-                                            {/*<!--<figcaption className="name-profile">
-							        <span>Carlose smith <sup>&reg;</sup></span>
-						        </figcaption>-->*/}
-                                        </figure>
-                                        <nav id="main-nav" className="main-nav clearfix tabbed">
-                                            <ul>
-                                                <li className="active">
-                                                    <a href="" className="active">
-                                                        <i className="icon-user"></i> Devlin Pajaron
-                                        </a>
-                                                </li>
-                                            </ul>
-                                        </nav>
-                                    </div>
-                                    <div className="bottom-header bgWhite ofsTSmall ofsBSmall tCenter">
-                                        <ul className="social">
-                                            <li><a href="#"><i className="icon-facebook"></i></a></li>
-                                            <li><a href="#"><i className="icon-twitter"></i></a></li>
-                                            <li><a href="#"><i className="icon-linkedin"></i></a></li>
-                                        </ul>
-                                        <p>&copy; 2015 Mutationthemes.</p>
-                                    </div>
-                                </header>
-                            </div>
+                            <About />
                             {/*<!-- END ABOUT -->*/}
 
                             {/*<!-- START RESUME -->*/}
