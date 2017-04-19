@@ -9,6 +9,7 @@ import React, { Component } from 'react';
 import About from './Components/About/About';
 import Skills from './Components/Skills/Skills';
 import Experience from './Components/Experience/Experience';
+import Portfolio from './Components/Portfolio/Portfolio';
 
 import './css/bootstrap.scss';
 import './css/font.scss';
@@ -17,8 +18,6 @@ import './css/base.scss';
 import './css/main.scss';
 import './css/timeline.scss';
 import './css/custom.scss';
-
-import placeHolder from './img/portfolio/1.jpg';
 
 // import './js/jquery-1.11.3.min.js';
 // import './js/jquery-migrate-1.2.1.js';
@@ -88,60 +87,7 @@ class App extends Component {
                                         {/*<!-- END EDUCATION -->*/}
 
                                         {/*<!-- START PORTFOLIO -->*/}
-                                        <div className="resume-card">
-                                            <div className="main-title">
-                                                <h1>my works</h1>
-                                                <hr />
-                                            </div>
-
-                                            <div className="content">
-                                                <div className="block-content ">
-                                                    <div className="works">
-                                                        <div className="row">
-                                                            <ul className="work">
-                                                                <li className="col-md-4 ">
-                                                                    <div className="item web">
-                                                                        <a href="project_single.html">
-                                                                            <div className="desc">
-                                                                                <h3 className="proj-desc">Project Name
-                                                                        <hr />
-                                                                                    <span>web design</span></h3>
-                                                                            </div>
-                                                                            <img alt="" src={placeHolder} />
-                                                                        </a>
-                                                                    </div>
-                                                                </li>
-                                                                <li className="col-md-4 ">
-                                                                    <div className="item web">
-                                                                        <a href="project_single.html">
-                                                                            <div className="desc">
-                                                                                <h3 className="proj-desc">Project Name
-                                                                        <hr />
-                                                                                    <span>web design</span></h3>
-                                                                            </div>
-                                                                            <img alt="" src={placeHolder} />
-                                                                        </a>
-                                                                    </div>
-                                                                </li>
-                                                                <li className="col-md-4 ">
-                                                                    <div className="item web">
-                                                                        <a href="project_single.html">
-                                                                            <div className="desc">
-                                                                                <h3 className="proj-desc">Project Name
-                                                                        <hr />
-                                                                                    <span>web design</span></h3>
-                                                                            </div>
-                                                                            <img alt="" src={placeHolder} />
-                                                                        </a>
-                                                                    </div>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <div className="clearfix"></div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        <Portfolio />
                                         {/*<!-- END PORTFOLIO -->*/}
                                     </div>
                                 </section>
