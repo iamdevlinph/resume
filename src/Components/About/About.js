@@ -33,7 +33,7 @@ class About extends Component {
                                 <li><a href="#"><i className="icon-twitter"></i></a></li>
                                 <li><a href="#"><i className="icon-linkedin"></i></a></li>
                             </ul>
-                            <p>&copy; 2015 Mutationthemes.</p>
+                            <p>&copy; 2017 iamdevlinph</p>
                         </div>
                     </header>
                 </div>
