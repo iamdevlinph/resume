@@ -1,9 +1,49 @@
 import React, { Component } from 'react';
+import moment from 'moment';
 
 import './Experience.scss';
 
+import experienceJson from './data/experience.json';
+
 class Experience extends Component {
+    constructor() {
+        super();
+        this.state = { experienceData: experienceJson};
+    }
+    // componentDidMount() {
+    //     fetch('./data/experience.json')
+    //         .then((data) => {
+    //             return data.json();
+    //         })
+    //         .then((data) => {
+    //             this.setState({ experienceData: data });
+    //         });
+    // }
     render() {
+        var experienceList = this.state.experienceData.map(function (experience, index) {
+            var workFrom = moment(experience.workFrom, 'DD-MMMM-YYYY').format('DD MMMM, YYYY');
+            var workTo = (experience.workTo === 'Present') ? 
+                'Present' :
+                moment(experience.workTo, 'DD-MMMM-YYYY').format('DD MMMM, YYYY');
+            return (
+                <li key={index} className="timeline-item">
+                    <div className="timeline-info">
+                        <span>{workFrom}</span>
+                        <span> - </span>
+                        <span>{workTo}</span>
+                    </div>
+                    <div className="timeline-marker"></div>
+                    <div className="timeline-content">
+                        <h3 className="timeline-title">{experience.title} - {experience.company}</h3>
+                        <p className="experience-body">{experience.description}</p>
+                        <div className="experience-footer">
+                            <span>Technologies Used:</span>
+                            <span>{experience.technologies}</span>
+                        </div>
+                    </div>
+                </li>
+            );
+        });
         return (
             <div className="experience-card">
                 <div className="main-title">
@@ -16,48 +56,7 @@ class Experience extends Component {
                             <div className="row ">
                                 <div className="col-md-12">
                                     <ul className="timeline">
-                                        <li className="timeline-item">
-                                            <div className="timeline-info">
-                                                <span>March 12, 2016</span>
-                                                <span> - </span>
-                                                <span>Present</span>
-                                            </div>
-                                            <div className="timeline-marker"></div>
-                                            <div className="timeline-content">
-                                                <h3 className="timeline-title">Event Title</h3>
-                                                <p className="experience-body">Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan
-                                                    a, consectetuer eget, posuere ut, mauris. Donec orci
-                                                    lectus, aliquam ut, faucibus non, euismod id, nulla.
-                                                    Donec vitae sapien ut libero venenatis faucibus. ullam
-                                                    dictum felis eu pede mollis pretium. Pellentesque ut
-                                                    neque.
-                                                </p>
-                                                <div className="experience-footer">
-                                                    <span>Technologies Used:</span>
-                                                    <span>A, B, C, D, E, F, G</span>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li className="timeline-item">
-                                            <div className="timeline-info">
-                                                <span>March 12, 2016</span>
-                                            </div>
-                                            <div className="timeline-marker"></div>
-                                            <div className="timeline-content">
-                                                <h3 className="timeline-title">Event Title</h3>
-                                                <p className="experience-body">Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan
-                                                    a, consectetuer eget, posuere ut, mauris. Donec orci
-                                                    lectus, aliquam ut, faucibus non, euismod id, nulla.
-                                                    Donec vitae sapien ut libero venenatis faucibus. ullam
-                                                    dictum felis eu pede mollis pretium. Pellentesque ut
-                                                    neque.
-                                                </p>
-                                                <div className="experience-footer">
-                                                    <span>Technologies Used:</span>
-                                                    <span>A, B, C, D, E, F, G</span>
-                                                </div>
-                                            </div>
-                                        </li>
+                                        {experienceList}
                                     </ul>
                                 </div>
                             </div>
