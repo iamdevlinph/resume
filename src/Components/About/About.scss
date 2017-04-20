@@ -6,4 +6,13 @@
         font-size: 8px !important;
         line-height: 20px !important;
     }
+    .about-sub-section {
+        a {
+            text-transform: none !important;
+            padding: 5px 25px !important;
+            &:before { // disable on hover animation
+                content: none !important;
+            }
+        }
+    }
 }

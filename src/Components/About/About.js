@@ -25,6 +25,21 @@ class About extends Component {
                                             <p className="title">JavaScript Developer</p>
                                         </a>
                                     </li>
+                                    <li className="about-sub-section">
+                                        <a href="#" className="">
+                                            iamdevlinph@gmail.com
+                                        </a>
+                                    </li>
+                                    <li className="about-sub-section">
+                                        <a href="#" className="">
+                                            (+63) 943 230 2440
+                                        </a>
+                                    </li>
+                                    <li className="about-sub-section">
+                                        <a href="#" className="">
+                                            Cebu City, Philippines
+                                        </a>
+                                    </li>
                                 </ul>
                             </nav>
                         </div>
