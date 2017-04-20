@@ -2,22 +2,22 @@
     &:hover,
     &:active {
         .tooltip {
-            display: inline;
-            position: fixed;
-            overflow: hidden;
+            display: inline !important;
+            position: fixed !important;
+            overflow: hidden !important;
         }
     }
     .tooltip {
-        display: none;
-        background: rgba(0, 0, 0, 0.8);
-        z-index: 500;
-        color: white;
-        padding: 7px 20px;
-        max-width: 200px;
+        display: none !important;
+        background: rgba(0, 0, 0, 0.8) !important;
+        z-index: 500 !important;
+        color: white !important;
+        padding: 7px 20px !important;
+        max-width: 200px !important;
         &__title {
-            text-align: center;
+            text-align: center !important;
             text-decoration: underline !important;
-            font-weight: bold;
+            font-weight: bold !important;
         }
         &__content {
             text-align: center !important;

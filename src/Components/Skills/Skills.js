@@ -2,8 +2,31 @@ import React, { Component } from 'react';
 
 import './Skills.scss';
 
+import SkillToolTip from '../Widgets/SkillToolTip/SkillToolTip';
+
+import skillsJson from './data/skills.json';
+
 class Skills extends Component {
+    constructor() {
+        super();
+        this.state = { skillsData: skillsJson };
+    }
     render() {
+        var skillList = this.state.skillsData.map((skill, index) => {
+            var el = null;
+            if (skill.showSkill) {
+                el = (
+                    <li key={index}>
+                        <SkillToolTip duration={skill.duration}
+                            image={skill.img_base64}
+                            name={skill.name}
+                            show={skill.showDuration} />
+                    </li>
+                )
+            }
+
+            return el;
+        });
         return (
             <div className="skills-card">
                 <div className="main-title">
@@ -11,7 +34,10 @@ class Skills extends Component {
                     <hr />
                 </div>
                 <div className="content">
-                    <div className="block-content ">
+                    <ul className="skills__list">
+                        {skillList}
+                    </ul>
+                    {/*<div className="block-content ">
                         <div className="services">
                             <div className="row ">
                                 <div className="block service tCenter">
@@ -51,7 +77,7 @@ class Skills extends Component {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div>*/}
                 </div>
             </div>
         );
