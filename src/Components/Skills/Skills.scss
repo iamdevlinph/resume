@@ -1,4 +1,8 @@
 .skills-card {
+    .icon-tools {
+        font-size: 25px !important;
+        padding-right: 5px !important;
+    } // skill icons
     .skills {
         &__list {
             margin: 0px !important;
@@ -32,8 +36,7 @@
                 padding: 0 !important;
                 border: 0 !important;
                 outline: 0 !important;
-                font-size: 12px !important;
-                // font-size: 100% !important;
+                font-size: 12px !important; // font-size: 100% !important;
                 font-weight: bold !important;
                 white-space: nowrap !important;
             }

@@ -30,7 +30,7 @@ class Skills extends Component {
         return (
             <div className="skills-card">
                 <div className="main-title">
-                    <h1>skills</h1>
+                    <h1><i className="icon-laptop"/>skills</h1>
                     <hr />
                 </div>
                 <div className="content">
