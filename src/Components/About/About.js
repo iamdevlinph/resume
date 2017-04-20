@@ -47,7 +47,7 @@ class About extends Component {
                             <ul className="social">
                                 <li><a href="https://www.facebook.com/iamdevlinph" target="_blank"><i className="icon-facebook"></i></a></li>
                                 <li><a href="https://github.com/iamdevlinph" target="_blank"><i className="icon-github"></i></a></li>
-                                <li><a href="linkedin.com/in/iamdevlinph" target="_blank"><i className="icon-linkedin"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/iamdevlinph/" target="_blank"><i className="icon-linkedin"></i></a></li>
                             </ul>
                             <p>&copy; 2017 iamdevlinph</p>
                         </div>

@@ -1,3 +1,15 @@
 .experience-card {
-    
+    .experience-footer {
+        margin-top: 10px !important;
+        span {
+            font-size: 12px;
+            &:nth-child(1) {
+                font-weight: bold;
+                display: block;
+            }
+            &:nth-child(2) {
+                font-size: 11px !important;
+            }
+        }
+    }
 }
