@@ -20,7 +20,7 @@ class Experience extends Component {
     //         });
     // }
     render() {
-        var experienceList = this.state.experienceData.map(function (experience, index) {
+        var experienceList = this.state.experienceData.map((experience, index) => {
             var workFrom = moment(experience.workFrom, 'DD-MMMM-YYYY').format('DD MMMM, YYYY');
             var workTo = (experience.workTo === 'Present') ? 
                 'Present' :

@@ -7,6 +7,8 @@
         "degree": "BS Information and Communications Technology",
         "grade": "",
         "duration": "2012-2016",
+        "studyFrom": "2012",
+        "studyTo": "2016",
         "address": "Talamban, Cebu, Philippines"
     },
     {
@@ -16,6 +18,8 @@
         "level": "Secondary",
         "grade": "",
         "duration": "2008-2012",
+        "studyFrom": "2008",
+        "studyTo": "2012",
         "address": "Labangon, Cebu City, Philippines"
     }
 ]
