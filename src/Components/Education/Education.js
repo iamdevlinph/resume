@@ -29,18 +29,17 @@ class Education extends Component {
                     </div>
                     <div className="timeline-marker"></div>
                     <div className="timeline-content">
-                        {
-                            education.degree ? 
-                            <h3 className="timeline-title">{education.school}<br/>{education.degree}</h3> : 
-                            <h3 className="timeline-title">{education.school}</h3>
-                        }
+                        <h3 className="timeline-title">
+                            {education.degree ? (<p className="education-degree">{education.degree}</p>) : null}
+                            <span>{education.school}</span>
+                        </h3>
                         <p></p>
                     </div>
                 </li>
             );
         });
         return (
-            <div className="educaiton-card">
+            <div className="education-card">
                 <div className="main-title">
                     <h1>education</h1>
                     <hr />
