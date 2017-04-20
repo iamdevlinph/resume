@@ -30,11 +30,14 @@ class Experience extends Component {
                     <div className="timeline-info">
                         <span>{workFrom}</span>
                         <span> - </span>
-                        <span>{workTo}</span>
+                        <span className={workTo === 'Present' ? 'present-work' : ''}>{workTo}</span>
                     </div>
                     <div className="timeline-marker"></div>
                     <div className="timeline-content">
-                        <h3 className="timeline-title">{experience.title} - {experience.company}</h3>
+                        <h3 className="timeline-title">
+                            <span className="experience-role">{experience.title}</span><br/>
+                            <a className="experience-company" href={experience.company_website} target="_blank">{experience.company}</a>
+                        </h3>
                         <p className="experience-body">{experience.description}</p>
                         <div className="experience-footer">
                             <span>Technologies Used:</span>
