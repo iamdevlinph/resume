@@ -1,30 +1,12 @@
 import React, { Component } from 'react';
-// import logo from './logo.svg';
-// import './App.scss';
-
-// import Navbar from './Components/Navbar/Navbar';
-// import Content from './Components/Content/Content';
-// import Footer from './Components/Footer/Footer';
+import './main.scss';
+import './App.scss';
 
 import About from './Components/About/About';
 import Skills from './Components/Skills/Skills';
 import Experience from './Components/Experience/Experience';
 import Education from './Components/Education/Education';
 import Portfolio from './Components/Portfolio/Portfolio';
-
-import './css/bootstrap.scss';
-import './css/font.scss';
-import './css/fontello.scss';
-import './css/base.scss';
-import './css/main.scss';
-import './css/timeline.scss';
-import './css/custom.scss';
-
-// import './js/jquery-1.11.3.min.js';
-// import './js/jquery-migrate-1.2.1.js';
-// import './js/modernizr.js';
-// import './js/placeholders.min.js';
-// import './js/script.js';
 
 class App extends Component {
     render() {
