@@ -21,10 +21,10 @@ class Experience extends Component {
     // }
     render() {
         var experienceList = this.state.experienceData.map((experience, index) => {
-            var workFrom = moment(experience.workFrom, 'DD-MMMM-YYYY').format('DD MMMM, YYYY');
+            var workFrom = moment(experience.workFrom, 'MMMM-YYYY').format('MMMM YYYY');
             var workTo = (experience.workTo === 'Present') ? 
                 'Present' :
-                moment(experience.workTo, 'DD-MMMM-YYYY').format('DD MMMM, YYYY');
+                moment(experience.workTo, 'MMMM-YYYY').format('MMMM YYYY');
             return (
                 <li key={index} className="timeline-item">
                     <div className="timeline-info">
