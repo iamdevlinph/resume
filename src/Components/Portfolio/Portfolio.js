@@ -2,15 +2,37 @@ import React, { Component } from 'react';
 
 import './Portfolio.scss';
 
-import placeHolder from './img/1.jpg';
+import portfolioJson from './data/portfolio.json';
 
 class Portfolio extends Component {
+    constructor() {
+        super();
+        this.state = { portfolioData: portfolioJson };
+    }
     render() {
+        var portfolioList = this.state.portfolioData.map((portfolio, index) => {
+            return (
+                <li key={index} className="col-md-4 ">
+                    <div className="item web">
+                        <a href={portfolio.url} target="_blank">
+                            <div className="desc">
+                                <h3 className="proj-desc">
+                                    {portfolio.name}
+                                    {/*<hr />
+                                    <span>web design</span>*/}
+                                </h3>
+                            </div>
+                            <img alt="" src={portfolio.img_base64} />
+                        </a>
+                    </div>
+                </li>
+            );
+        });
         return (
             <div className="portfolio-card">
                 <div className="main-title">
                     <h1><i className="icon-folder-open" />portfolio</h1>
-                    <hr className="divider--fade"/>
+                    <hr className="divider--fade" />
                 </div>
 
                 <div className="content">
@@ -18,42 +40,7 @@ class Portfolio extends Component {
                         <div className="works">
                             <div className="row">
                                 <ul className="work">
-                                    <li className="col-md-4 ">
-                                        <div className="item web">
-                                            <a href="project_single.html">
-                                                <div className="desc">
-                                                    <h3 className="proj-desc">Project Name
-                                                                        <hr />
-                                                        <span>web design</span></h3>
-                                                </div>
-                                                <img alt="" src={placeHolder} />
-                                            </a>
-                                        </div>
-                                    </li>
-                                    <li className="col-md-4 ">
-                                        <div className="item web">
-                                            <a href="project_single.html">
-                                                <div className="desc">
-                                                    <h3 className="proj-desc">Project Name
-                                                                        <hr />
-                                                        <span>web design</span></h3>
-                                                </div>
-                                                <img alt="" src={placeHolder} />
-                                            </a>
-                                        </div>
-                                    </li>
-                                    <li className="col-md-4 ">
-                                        <div className="item web">
-                                            <a href="project_single.html">
-                                                <div className="desc">
-                                                    <h3 className="proj-desc">Project Name
-                                                                        <hr />
-                                                        <span>web design</span></h3>
-                                                </div>
-                                                <img alt="" src={placeHolder} />
-                                            </a>
-                                        </div>
-                                    </li>
+                                    {portfolioList}
                                 </ul>
                             </div>
                         </div>
