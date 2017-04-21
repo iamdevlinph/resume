@@ -2,22 +2,28 @@
     // skill icons
     .skills {
         &__list {
-            margin: 0px !important;
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+            justify-content: space-between;
+            &:after {
+                content: "";
+                flex: auto;
+            }
             li {
-                width: 55px !important;
-                display: inline-block !important;
-                vertical-align: top !important;
-                margin: 0px 16px 5px 17px !important;
+                flex: 0 0 90px;
+                height: 90px;
+                margin: 5px;
             }
         }
         &__logo {
-            height: 90px !important;
+            height: 70px !important;
             position: relative !important;
             img {
-                max-height: 100% !important;
+                max-height: 60% !important;
                 max-width: 100% !important;
-                width: auto !important;
-                height: auto !important;
+                // width: auto !important;
+                // height: auto !important;
                 position: absolute !important;
                 top: 0 !important;
                 bottom: 0 !important;
