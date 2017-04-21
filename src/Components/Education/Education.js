@@ -42,7 +42,7 @@ class Education extends Component {
             <div className="education-card">
                 <div className="main-title">
                     <h1>education</h1>
-                    <hr />
+                    <hr className="divider--fade"/>
                 </div>
                 <div className="content">
                     <div className="block-content">

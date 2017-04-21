@@ -51,7 +51,7 @@ class Experience extends Component {
             <div className="experience-card">
                 <div className="main-title">
                     <h1>experience</h1>
-                    <hr />
+                    <hr className="divider--fade"/>
                 </div>
                 <div className="content">
                     <div className="block-content ">

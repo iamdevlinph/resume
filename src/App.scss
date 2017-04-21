@@ -1,9 +1,10 @@
+@import 'Variables';
 .app {
     .content {
         padding: 20px 40px !important;
     }
     .resume-card {
-        background: #fff;
+        background: $white;
         margin-bottom: 20px;
         box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
     }
@@ -19,5 +20,15 @@
     }
     .main-title {
         border-bottom: none !important;
+    }
+    hr {
+        &.divider--fade {
+            // border-top: 1px solid $red;
+            border: 0;
+            height: 1px;
+            background: $red;
+            background-image: linear-gradient(to right, $red, $white, $white);
+            margin-bottom: 10px;
+        }
     }
 }

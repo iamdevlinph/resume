@@ -10,7 +10,7 @@ class Portfolio extends Component {
             <div className="portfolio-card">
                 <div className="main-title">
                     <h1>my works</h1>
-                    <hr />
+                    <hr className="divider--fade"/>
                 </div>
 
                 <div className="content">

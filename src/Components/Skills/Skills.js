@@ -31,7 +31,7 @@ class Skills extends Component {
             <div className="skills-card">
                 <div className="main-title">
                     <h1>skills</h1>
-                    <hr />
+                    <hr className="divider--fade"/>
                 </div>
                 <div className="content">
                     <ul className="skills__list">
