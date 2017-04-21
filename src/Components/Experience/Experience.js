@@ -50,7 +50,7 @@ class Experience extends Component {
         return (
             <div className="experience-card">
                 <div className="main-title">
-                    <h1>experience</h1>
+                    <h1><i className="icon-suitcase" />experience</h1>
                     <hr className="divider--fade"/>
                 </div>
                 <div className="content">

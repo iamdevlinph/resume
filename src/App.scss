@@ -18,9 +18,15 @@
     .right-content {
         margin-left: 280px !important;
     }
+    // resume card
+    // main title
     .main-title {
         border-bottom: none !important;
-    }
+        i {
+            font-size: 25px !important;
+            padding-right: 5px !important;
+        }
+    } // divider
     hr {
         &.divider--fade {
             // border-top: 1px solid $red;

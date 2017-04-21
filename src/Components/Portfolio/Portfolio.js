@@ -9,7 +9,7 @@ class Portfolio extends Component {
         return (
             <div className="portfolio-card">
                 <div className="main-title">
-                    <h1>my works</h1>
+                    <h1><i className="icon-folder-open" />portfolio</h1>
                     <hr className="divider--fade"/>
                 </div>
 
