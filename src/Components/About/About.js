@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import './About.scss';
 
-import profileImg from './img/profile.jpg';
+import profileImg from './img/ai.jpg';
 
 class About extends Component {
     render() {

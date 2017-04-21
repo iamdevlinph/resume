@@ -18,7 +18,7 @@ class Skills extends Component {
                 el = (
                     <li key={index}>
                         <SkillToolTip duration={skill.duration}
-                            image={skill.img_base64}
+                            image={require(skill.img_path)}
                             name={skill.name}
                             show={skill.showDuration} />
                     </li>

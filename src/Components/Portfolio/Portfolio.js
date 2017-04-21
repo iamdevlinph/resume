@@ -22,7 +22,7 @@ class Portfolio extends Component {
                                     <span>web design</span>*/}
                                 </h3>
                             </div>
-                            <img alt="" src={portfolio.img_base64} />
+                            <img alt="" src={require(portfolio.img_path)} />
                         </a>
                     </div>
                 </li>
