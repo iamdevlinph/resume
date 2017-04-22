@@ -5,6 +5,15 @@ import './About.scss';
 import profileImg from './img/ai.jpg';
 
 class About extends Component {
+    constructor() {
+        super();
+        this.noClick = this.noClick.bind(this);
+    }
+    noClick(event) {
+        event.preventDefault();
+        event.stopPropagation();
+        return false;
+    }
     render() {
         return (
             <div className="about-card">
@@ -20,23 +29,23 @@ class About extends Component {
                             <nav id="main-nav" className="main-nav clearfix tabbed">
                                 <ul>
                                     <li className="active">
-                                        <a href="javascript:;" className="active">
+                                        <a href="#" className="active" onClick={(e) => this.noClick(e)}>
                                             <p className="name">Devlin <strong>Pajaron</strong></p>
                                             <p className="title">JavaScript Developer</p>
                                         </a>
                                     </li>
                                     <li className="about-sub-section">
-                                        <a href="javascript:;" className="">
+                                        <a href="#" className="" onClick={(e) => this.noClick(e)}>
                                             iamdevlinph@gmail.com
                                         </a>
                                     </li>
                                     <li className="about-sub-section">
-                                        <a href="javascript:;" className="">
+                                        <a href="#" className="" onClick={(e) => this.noClick(e)}>
                                             (+63) 943 230 2440
                                         </a>
                                     </li>
                                     <li className="about-sub-section">
-                                        <a href="javascript:;" className="">
+                                        <a href="#" className="" onClick={(e) => this.noClick(e)}>
                                             Cebu City, Philippines
                                         </a>
                                     </li>
