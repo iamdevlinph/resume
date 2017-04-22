@@ -11,13 +11,15 @@
     .margLTop {
         margin-top: 50px !important;
     }
-    .left-content {
-        position: fixed !important;
-        width: 280px !important;
-    }
-    .right-content {
-        margin-left: 280px !important;
-    }
+    @media screen and (min-width: 1010px) {
+        .left-content {
+            position: fixed !important;
+            width: 280px !important;
+        }
+        .right-content {
+            margin-left: 280px !important;
+        }
+    } 
     // resume card
     // main title
     .main-title {
