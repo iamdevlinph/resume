@@ -1236,9 +1236,8 @@ span.meta-date {
         padding-right: 15px;
     }
     .main-nav.tabbed ul li {
-        float: left;
-        width: 25%;
-        border-right: 1px solid #26292e;
+        // float: left;
+        // width: 25%;
         border-bottom: none;
     }
     .main-nav.tabbed ul li:last-child {
@@ -1309,13 +1308,12 @@ span.meta-date {
         padding-right: 15px;
     }
     .main-nav.tabbed ul li {
-        float: left;
-        width: 25%;
-        border-right: 1px solid #26292e;
-        border-bottom: none;
+        // float: left;
+        // width: 25%;
+        border-bottom: 1px solid #26292e;
     }
     .main-nav.tabbed ul li a {
-        font-size: 0;
+        // font-size: 0;
     }
     .main-nav.tabbed ul li:last-child {
         border-right: none;
@@ -1418,13 +1416,12 @@ span.meta-date {
         background: #33373d;
     }
     .main-nav.tabbed ul li {
-        float: left;
-        width: 25%;
-        border-right: 1px solid #26292e;
-        border-bottom: none;
+        // float: left;
+        // width: 25%;
+        border-bottom: 1px solid #26292e;
     }
     .main-nav.tabbed ul li a {
-        font-size: 0;
+        // font-size: 0;
     }
     .main-nav.tabbed ul li:last-child {
         border-right: none;

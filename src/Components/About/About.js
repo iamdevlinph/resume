@@ -2,13 +2,13 @@ import React, { Component } from 'react';
 
 import './About.scss';
 
-import profileImg from './img/profile.jpg';
+import profileImg from './img/ai.jpg';
 
 class About extends Component {
     render() {
         return (
             <div className="about-card">
-                <div className="col-md-3 nopr left-content">
+                <div className="col-md-3 left-content">
                     <header id="header">
                         <div className="main-header">
                             <figure className="img-profile">
@@ -20,23 +20,23 @@ class About extends Component {
                             <nav id="main-nav" className="main-nav clearfix tabbed">
                                 <ul>
                                     <li className="active">
-                                        <a href="#" className="active">
+                                        <a href="javascript:;" className="active">
                                             <p className="name">Devlin <strong>Pajaron</strong></p>
                                             <p className="title">JavaScript Developer</p>
                                         </a>
                                     </li>
                                     <li className="about-sub-section">
-                                        <a href="#" className="">
+                                        <a href="javascript:;" className="">
                                             iamdevlinph@gmail.com
                                         </a>
                                     </li>
                                     <li className="about-sub-section">
-                                        <a href="#" className="">
+                                        <a href="javascript:;" className="">
                                             (+63) 943 230 2440
                                         </a>
                                     </li>
                                     <li className="about-sub-section">
-                                        <a href="#" className="">
+                                        <a href="javascript:;" className="">
                                             Cebu City, Philippines
                                         </a>
                                     </li>
