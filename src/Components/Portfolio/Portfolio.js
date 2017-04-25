@@ -11,22 +11,24 @@ class Portfolio extends Component {
     }
     render() {
         var portfolioList = this.state.portfolioData.map((portfolio, index) => {
-            return (
-                <li key={index} className="col-md-4 ">
-                    <div className="item web">
-                        <a href={portfolio.url} target="_blank">
-                            <div className="desc">
-                                <h3 className="proj-desc">
-                                    {portfolio.name}
-                                    {/*<hr />
+            if (portfolio.isShow) {
+                return (
+                    <li key={index} className="col-md-4 ">
+                        <div className="item web">
+                            <a href={portfolio.url} target="_blank">
+                                <div className="desc">
+                                    <h3 className="proj-desc">
+                                        {portfolio.name}
+                                        {/*<hr />
                                     <span>web design</span>*/}
-                                </h3>
-                            </div>
-                            <img alt="" src={require(portfolio.img_path)} />
-                        </a>
-                    </div>
-                </li>
-            );
+                                    </h3>
+                                </div>
+                                <img alt="" src={require(portfolio.img_path)} />
+                            </a>
+                        </div>
+                    </li>
+                );
+            }
         });
         return (
             <div className="portfolio-card">
