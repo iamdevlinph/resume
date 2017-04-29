@@ -24,17 +24,18 @@ class App extends Component {
                             <div className="col-md-9 right-content">
                                 <section className="ofsInBottom">
                                     <div className="resume">
+                                        {/*<!-- START EXPERIENCE -->*/}
+                                        <div className="resume-card">
+                                            <Experience />
+                                        </div>
+
+                                        {/*<!-- END EXPERIENCE -->*/}
+
                                         {/*<!-- START SKILLS -->*/}
                                         <div className="resume-card">
                                             <Skills />
                                         </div>
                                         {/*<!-- END SKILLS -->*/}
-
-                                        {/*<!-- START EXPERIENCE -->*/}
-                                        <div className="resume-card">
-                                            <Experience />
-                                        </div>
-                                        {/*<!-- END EXPERIENCE -->*/}
 
                                         {/*<!-- START EDUCATION -->*/}
                                         <div className="resume-card">
