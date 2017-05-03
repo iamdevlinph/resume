@@ -15,6 +15,7 @@ import './css/font.scss';
 import './css/fontello.scss';
 import './index.scss';
 import './css/timeline.scss'; // Experience and Education cards
+import './css/balloon.scss'; // tooltip
 
 // import JS
 // import './js/jquery-1.11.3.min.js';

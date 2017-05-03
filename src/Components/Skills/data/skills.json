@@ -15,6 +15,7 @@
     },
     {
         "name": "BEM",
+        "long_name": "Block Element Modifier",
         "img_path": "./img/Bem.jpg",
         "tags": [
             "Methodology"
