@@ -214,7 +214,7 @@
         "showSkill": true
     },
     {
-        "name": "VueJS",
+        "name": "Vue.JS",
         "img_path": "./img/vuejs.png",
         "tags": [
             "Front-End"
