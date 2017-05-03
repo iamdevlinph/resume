@@ -6,14 +6,19 @@
             flex-wrap: wrap;
             list-style: none;
             justify-content: space-between;
-            &:after {
-                content: "";
-                flex: auto;
-            }
+            // &:after {
+            //     content: "";
+            //     flex: auto;
+            // }
             li {
                 flex: 0 0 90px;
                 height: 90px;
                 margin: 5px;
+            }
+            .empty {
+                height: 0;
+                margin-top: 0;
+                margin-bottom: 0;
             }
         }
         &__logo {

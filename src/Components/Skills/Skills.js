@@ -27,11 +27,19 @@ class Skills extends Component {
 
             return el;
         });
+        // add 7 empty elements
+        for (var x = 0; x < 7; x++) {
+            var key = "empty-" + x;
+            skillList.push(
+                <li className="empty" key={key}>
+                </li>
+            );
+        }
         return (
             <div className="skills-card">
                 <div className="main-title">
                     <h1><i className="icon-code" /> skills</h1>
-                    <hr className="divider--fade"/>
+                    <hr className="divider--fade" />
                 </div>
                 <div className="content">
                     <ul className="skills__list">
