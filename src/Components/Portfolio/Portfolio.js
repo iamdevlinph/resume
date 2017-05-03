@@ -11,8 +11,9 @@ class Portfolio extends Component {
     }
     render() {
         var portfolioList = this.state.portfolioData.map((portfolio, index) => {
+            var el = null;
             if (portfolio.isShow) {
-                return (
+                el = (
                     <li key={index} className="col-md-4 ">
                         <div className="item web">
                             <a href={portfolio.url} target="_blank">
@@ -29,6 +30,8 @@ class Portfolio extends Component {
                     </li>
                 );
             }
+
+            return el;
         });
         return (
             <div className="portfolio-card">
