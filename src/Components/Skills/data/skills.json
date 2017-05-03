@@ -214,6 +214,19 @@
         "showSkill": true
     },
     {
+        "name": "VueJS",
+        "img_path": "./img/vuejs.png",
+        "tags": [
+            "Front-End"
+        ],
+        "duration": {
+            "usedFrom": "25-February-2017",
+            "usedTo": "Present",
+            "showDuration": true
+        },
+        "showSkill": true
+    },
+    {
         "name": "WordPress",
         "img_path": "./img/WP.jpg",
         "tags": [
