@@ -13,9 +13,10 @@
         &:hover {
             color: #CD5353;
         }
+        &__contract,
         &__address {
             margin-left: 5px;
-            font-size: 11px;
+            font-size: 12px;
             text-transform: none !important;
         }
     }

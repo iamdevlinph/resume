@@ -38,6 +38,7 @@ class Experience extends Component {
                             <span className="experience-role">{experience.title}</span><br/>
                             <a className="experience-company" href={experience.company_website} target="_blank">{experience.company}</a>
                             <span className="experience-company__address"><i className="icon-building" />{experience.address}</span>
+                            <span className="experience-company__contract"><i className="icon-user" />{experience.contract}</span>
                         </h3>
                         <p className="experience-body">{experience.description}</p>
                         <div className="experience-footer">
