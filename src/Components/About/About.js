@@ -57,6 +57,8 @@ class About extends Component {
                                 <li><a href="https://www.facebook.com/iamdevlinph" target="_blank"><i className="icon-facebook"></i></a></li>
                                 <li><a href="https://github.com/iamdevlinph" target="_blank"><i className="icon-github-circled"></i></a></li>
                                 <li><a href="https://www.linkedin.com/in/iamdevlinph/" target="_blank"><i className="icon-linkedin"></i></a></li>
+                                <li><a href="skype:live:devlinpajaron?chat"><i className="icon-skype"></i></a></li>
+                                <li><a href="http://stackoverflow.com/users/4620773/iamdevlinph" target="_blank"><i className="icon-stack-overflow"></i></a></li>
                             </ul>
                             <p>&copy; 2017 iamdevlinph</p>
                             <p className="resume-updated"><em>Updated at 4 May, 2017</em></p>
