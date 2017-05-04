@@ -18,6 +18,7 @@
             margin-left: 5px;
             font-size: 12px;
             text-transform: none !important;
+            color: #999;
         }
     }
     .experience-footer {
@@ -37,5 +38,12 @@
         font-family: 'open_sanssemibold';
         font-style: italic;
         font-size: 10px;
+    }
+
+    // timeline
+    .timeline-item:hover {
+        .emphasis-hover {
+            color: black !important;
+        }
     }
 }

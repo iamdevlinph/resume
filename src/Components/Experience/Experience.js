@@ -30,9 +30,9 @@ class Experience extends Component {
             return (
                 <li key={index} className="timeline-item">
                     <div className="timeline-info">
-                        <span>{workFrom}</span>
+                        <span className="emphasis-hover">{workFrom}</span>
                         <span> - </span>
-                        <span className={workTo === 'Present' ? 'present-work' : ''}>{workTo}</span> <span className="work-duration">({workDuration})</span>
+                        <span className={workTo === 'Present' ? 'present-work' : 'emphasis-hover'}>{workTo}</span> <span className="emphasis-hover work-duration">({workDuration})</span>
                     </div>
                     <div className="timeline-marker"></div>
                     <div className="timeline-content">
@@ -42,10 +42,10 @@ class Experience extends Component {
                             <span className="experience-company__address"><i className="icon-building" />{experience.address}</span>
                             <span className="experience-company__contract"><i className="icon-user" />{experience.contract}</span>
                         </h3>
-                        <p className="experience-body">{experience.description}</p>
+                        <p className="emphasis-hover experience-body">{experience.description}</p>
                         <div className="experience-footer">
                             <span>Technologies Used:</span>
-                            <span>{experience.technologies}</span>
+                            <span className="emphasis-hover">{experience.technologies}</span>
                         </div>
                     </div>
                 </li>
