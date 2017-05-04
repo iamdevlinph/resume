@@ -54,7 +54,7 @@ class About extends Component {
                         </div>
                         <div className="bottom-header bgWhite ofsTSmall ofsBSmall tCenter">
                             <ul className="social">
-                                <li><a href="https://www.facebook.com/iamdevlinph" target="_blank"><i className="icon-facebook"></i></a></li>
+                                {/*<li><a href="https://www.facebook.com/iamdevlinph" target="_blank"><i className="icon-facebook"></i></a></li>*/}
                                 <li><a href="https://github.com/iamdevlinph" target="_blank"><i className="icon-github-circled"></i></a></li>
                                 <li><a href="https://www.linkedin.com/in/iamdevlinph/" target="_blank"><i className="icon-linkedin"></i></a></li>
                                 <li><a href="skype:live:devlinpajaron?chat"><i className="icon-skype"></i></a></li>
