@@ -8,7 +8,7 @@ import experienceJson from './data/experience.json';
 class Experience extends Component {
     constructor() {
         super();
-        this.state = { experienceData: experienceJson};
+        this.state = { experienceData: experienceJson };
     }
     // componentDidMount() {
     //     fetch('./data/experience.json')
@@ -20,22 +20,24 @@ class Experience extends Component {
     //         });
     // }
     render() {
+        const dateUtils = this.props.dateUtils;
         var experienceList = this.state.experienceData.map((experience, index) => {
             var workFrom = moment(experience.workFrom, 'MMMM-YYYY').format('MMMM YYYY');
-            var workTo = (experience.workTo === 'Present') ? 
+            var workTo = (experience.workTo === 'Present') ?
                 'Present' :
                 moment(experience.workTo, 'MMMM-YYYY').format('MMMM YYYY');
+            var workDuration = dateUtils.getDuration(workFrom, workTo, 'MMMM YYYY');
             return (
                 <li key={index} className="timeline-item">
                     <div className="timeline-info">
                         <span>{workFrom}</span>
                         <span> - </span>
-                        <span className={workTo === 'Present' ? 'present-work' : ''}>{workTo}</span>
+                        <span className={workTo === 'Present' ? 'present-work' : ''}>{workTo}</span> <span className="work-duration">({workDuration})</span>
                     </div>
                     <div className="timeline-marker"></div>
                     <div className="timeline-content">
                         <h3 className="timeline-title">
-                            <span className="experience-role">{experience.title}</span><br/>
+                            <span className="experience-role">{experience.title}</span><br />
                             <a className="experience-company" href={experience.company_website} target="_blank">{experience.company}</a>
                             <span className="experience-company__address"><i className="icon-building" />{experience.address}</span>
                             <span className="experience-company__contract"><i className="icon-user" />{experience.contract}</span>
@@ -53,7 +55,7 @@ class Experience extends Component {
             <div className="experience-card">
                 <div className="main-title">
                     <h1><i className="icon-suitcase" />experience</h1>
-                    <hr className="divider--fade"/>
+                    <hr className="divider--fade" />
                 </div>
                 <div className="content">
                     <div className="block-content ">

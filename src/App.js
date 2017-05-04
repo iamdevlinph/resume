@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import './main.scss';
 import './App.scss';
 
+import * as dateUtils from './utils/date.util.js';
+
 import About from './Components/About/About';
 import Skills from './Components/Skills/Skills';
 import Experience from './Components/Experience/Experience';
@@ -26,14 +28,14 @@ class App extends Component {
                                     <div className="resume">
                                         {/*<!-- START EXPERIENCE -->*/}
                                         <div className="resume-card">
-                                            <Experience />
+                                            <Experience dateUtils={dateUtils} />
                                         </div>
 
                                         {/*<!-- END EXPERIENCE -->*/}
 
                                         {/*<!-- START SKILLS -->*/}
                                         <div className="resume-card">
-                                            <Skills />
+                                            <Skills dateUtils={dateUtils} />
                                         </div>
                                         {/*<!-- END SKILLS -->*/}
 

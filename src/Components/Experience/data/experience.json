@@ -24,7 +24,8 @@
         "company_img": "./img/AsiaInspection.png",
         "company_website": "http://www.asiainspection.com/",
         "duration": "April 2016 - June 2016",
-        "workFrom": "21-April-2016",
+        "workFrom": "April-2016",
+        "__workFrom": "21-April-2016",
         "workTo": "June-2016",
         "description": "Created an automatic report generation system to replace the manual method.",
         "technologies": "HTML, CSS, PHP, CodeIgniter, AngularJS, JavaScript, jQuery, GIT, MySQL, API"
