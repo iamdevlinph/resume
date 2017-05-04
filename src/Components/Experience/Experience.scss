@@ -13,6 +13,11 @@
         &:hover {
             color: #CD5353;
         }
+        &__address {
+            margin-left: 5px;
+            font-size: 11px;
+            text-transform: none !important;
+        }
     }
     .experience-footer {
         margin-top: 10px !important;
