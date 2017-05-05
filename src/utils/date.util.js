@@ -27,14 +27,25 @@ export function getDuration (from, to, format) {
     return duration;
 }
 
+// To Do
 function diffYears(diff) {
-    return diff + ' years';
+    var years = Math.floor(diff / 365);
+    var yearStr = (years > 1) ? 'years' : 'year';
+    var remainder = diff - (years * 365);
+    var returnString = years + ' ' + yearStr;
+    if (remainder > 30) { // considered as month
+        var months = Math.floor(remainder / 30);
+        returnString +=', ' + months + ' months';
+    }
+    return returnString;
 }
 
 function diffMonths(diff) {
+    // + 1 to include current month
+    var string = 'month';
     var months = Math.floor(diff / 30) + 1;
     diff = months;
-    return diff + ' months';
+    return diff + ' ' + ((months > 1) ? string + 's' : string);
 }
 
 // check if date is 'Present'

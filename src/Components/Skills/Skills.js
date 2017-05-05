@@ -10,36 +10,16 @@ class Skills extends Component {
         super();
         this.state = { skillsData: skillsJson };
     }
-    calculateDuration (from, to) {
-        if (to === 'Present') {
-            to = moment().format();
-        } else {
-            to = moment(to, 'DD-MMMM-YYYY').format();
-        }
-        from = moment(from, 'DD-MMMM-YYYY').format();
-        var diff = moment(to).diff(from, 'days');
-        if (diff > 30) {
-            var months = Math.floor(diff / 30);
-            var isMonths = (months > 1) ? 'months' : 'month';
-            var toReturn = months.toString() + ' ' + isMonths;
-            if (months > 12) {
-                var years = Math.floor(diff / 365);
-                var isYears = (years > 1) ? 'years' : 'year';
-                toReturn = years.toString() + ' ' + isYears;
-            }
-            diff = toReturn;
-        }
-        return diff;
-    }
     render() {
+        const dateUtils = this.props.dateUtils;
         var skillList = this.state.skillsData.map((skill, index) => {
             var el = null;
             var duration = '';
             if (skill.duration.showDuration) {
-                var fromDate = moment(skill.duration.usedFrom, 'DD-MMMM-YYYY').format('D MMM, YYYY');
-                var toDate = (skill.duration.usedTo !== 'Present') ? moment(skill.duration.usedTo, 'DD-MMMM-YYYY').format('D MMM, YYYY') : skill.duration.usedTo;
+                var fromDate = moment(skill.duration.usedFrom, 'DD-MMMM-YYYY').format('MMMM YYYY');
+                var toDate = (skill.duration.usedTo !== 'Present') ? moment(skill.duration.usedTo, 'DD-MMMM-YYYY').format('MMMM YYYY') : skill.duration.usedTo;
                 var dates = fromDate + ' - ' + toDate;
-                duration = dates + '\n' + this.calculateDuration(skill.duration.usedFrom, skill.duration.usedTo);
+                duration = dates + '\n' + dateUtils.getDuration(skill.duration.usedFrom, skill.duration.usedTo, 'DD-MMMM-YYYY');
             } else {
                 duration = skill.duration.hideDurationText;
             }
