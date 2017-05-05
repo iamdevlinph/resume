@@ -16,7 +16,6 @@ export function getDuration (from, to, format) {
 
     // get days since it is the smallest then go up to biggest
     var diff = moment(moment(to, DATE_FORMAT)).diff(moment(from, DATE_FORMAT), 'days');
-    console.log(diff);
     if (diff > 365) { // year as biggest unit
         duration = diffYears(diff);
     } else if (diff > 30) { // month as biggest unit

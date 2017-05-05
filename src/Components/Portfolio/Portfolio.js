@@ -34,7 +34,7 @@ class Portfolio extends Component {
             return el;
         });
         return (
-            <div className="portfolio-card">
+            <div className="portfolio-card no-print">
                 <div className="main-title">
                     <h1><i className="icon-folder-open" />portfolio</h1>
                     <hr className="divider--fade" />

@@ -4,15 +4,21 @@ import './About.scss';
 
 import profileImg from './img/ai_resize.jpg';
 
+import * as printUtils from '../../utils/print.util.js';
+
 class About extends Component {
     constructor() {
         super();
         this.noClick = this.noClick.bind(this);
+        this.print = this.print.bind(this);
     }
     noClick(event) {
         event.preventDefault();
         event.stopPropagation();
         return false;
+    }
+    print() {
+        printUtils.print();
     }
     render() {
         return (
@@ -61,6 +67,7 @@ class About extends Component {
                                 <li><a href="http://stackoverflow.com/users/4620773/iamdevlinph" target="_blank"><i className="icon-stack-overflow"></i></a></li>
                             </ul>
                             <p>&copy; 2017 iamdevlinph</p>
+                            <button className="btn btn-print no-print" onClick={() => this.print()}>Download Resume</button>
                             <p className="resume-updated"><em>Updated at 4 May, 2017</em></p>
                         </div>
                     </header>

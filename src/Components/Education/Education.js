@@ -39,7 +39,7 @@ class Education extends Component {
             );
         });
         return (
-            <div className="education-card">
+            <div className="education-card no-print">
                 <div className="main-title">
                     <h1><i className="icon-graduation-cap" />education</h1>
                     <hr className="divider--fade"/>

@@ -23,6 +23,7 @@ import './css/balloon.scss'; // tooltip
 // import './js/modernizr.js';
 // import './js/placeholders.min.js';
 // import './js/script.js';
+import './js/jspdf.js';
 
 // console.log("%cThe layout of this resume is inspired from rscardwp.px-lab.com", "color: red; font-family: sans-serif; font-size: 4.5em; font-weight: bolder; text-shadow: #000 1px 1px;");
 ReactDOM.render(
