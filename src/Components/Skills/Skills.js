@@ -16,8 +16,8 @@ class Skills extends Component {
             var el = null;
             var duration = '';
             if (skill.duration.showDuration) {
-                var fromDate = moment(skill.duration.usedFrom, 'DD-MMMM-YYYY').format('MMMM YYYY');
-                var toDate = (skill.duration.usedTo !== 'Present') ? moment(skill.duration.usedTo, 'DD-MMMM-YYYY').format('MMMM YYYY') : skill.duration.usedTo;
+                var fromDate = moment(skill.duration.usedFrom, 'DD-MMMM-YYYY').format('MMM YYYY');
+                var toDate = (skill.duration.usedTo !== 'Present') ? moment(skill.duration.usedTo, 'DD-MMMM-YYYY').format('MMM YYYY') : skill.duration.usedTo;
                 var dates = fromDate + ' - ' + toDate;
                 duration = dates + '\n' + dateUtils.getDuration(skill.duration.usedFrom, skill.duration.usedTo, 'DD-MMMM-YYYY');
             } else {
