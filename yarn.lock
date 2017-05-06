@@ -2614,6 +2614,10 @@ html-webpack-plugin@2.24.0:
     pretty-error "^2.0.2"
     toposort "^1.0.0"
 
+"html2canvas@git+ssh://git@github.com/iamdevlinph/html2canvas.git":
+  version "0.5.0-beta4"
+  resolved "git+ssh://git@github.com/iamdevlinph/html2canvas.git#7d74b4369ae19973769770961e8efce969287949"
+
 htmlparser2@~3.3.0:
   version "3.3.0"
   resolved "https://registry.yarnpkg.com/htmlparser2/-/htmlparser2-3.3.0.tgz#cc70d05a59f6542e43f0e685c982e14c924a9efe"
