@@ -14,7 +14,6 @@ yarn add <package_name> | --dev //to add dependencies
 * moment (dates and skill durations)
 * html2canvas (convert page to image)
 * jsPDF (convert image to pdf and download)
-* Modified [Split](https://themeforest.net/item/split-personal-cvvcard-template/12915369?ref=cirvitis) Portfolio template
 
 ## Deployment
 This resume can be deployed to github pages.
@@ -22,19 +21,22 @@ This resume can be deployed to github pages.
 2. Change it to `https://<username>.github.io/<repo_name>`
 3. Run `npm run build` to deploy to github-pages (`npm run build-local` for local deployment)
 
+## Make it yours
+1. Change the `href` in the `github-fork-ribbon` in `public/index.html`
+
 ## Fonts and Icons
 This project uses [fontello](fontello.com) to manage the icons. `Fontello` allows using fonts from different creators.
 
 Currently, the icons are limited but you can add.
 
-Downloading icons
+**Downloading icons**
 1. Go to [fontello](fontello.com)
 2. Import the `config.json` in `src/font`
 3. This will pre-select the icons included already. You can add by just selecting the icons you want to add
 4. Then click `Download webfont`
 5. This will download a zip file. Copy all contents and replace the files in `src/font`
 
-Adding icons to be used in css
+**Adding icons to be used in css**
 1. Open the file `src/font/fontello.svg`
 2. Find the line of the icon you want to add `<glyph glyph-name="folder-open" unicode="&#xe800;"`
 3. Copy the code after the `x` like `&#xe800` to `e800`
@@ -72,9 +74,12 @@ my-app/
         print.util.js // handle the printing
 ```
 ## Disclaimer
-* [Split](https://themeforest.net/item/split-personal-cvvcard-template/12915369?ref=cirvitis) for the resume template
+* [Split](https://themeforest.net/item/split-personal-cvvcard-template/12915369?ref=cirvitis) for the base template, modified it a bit to suit my taste
 * [Timeline](http://codepen.io/phasethree/pen/NNOvrW/) CSS
+* [Balloon CSS](https://github.com/kazzkiq/balloon.css) for the tooltips
+* [Github-Fork-Ribbon](https://github.com/simonwhitaker/github-fork-ribbon-css) pure css github fork ribbon
 
+---
 ---
 ## Original Readme
 
