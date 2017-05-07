@@ -1,5 +1,4 @@
-## React Practice App
-
+## React Resume
 Resume template written in React.
 
 ## Getting started
@@ -22,6 +21,25 @@ This resume can be deployed to github pages.
 1. Open `package.json` and edit `homepage` line
 2. Change it to `https://<username>.github.io/<repo_name>`
 3. Run `npm run build` to deploy to github-pages (`npm run build-local` for local deployment)
+
+## Fonts and Icons
+This project uses [fontello](fontello.com) to manage the icons. `Fontello` allows using fonts from different creators.
+
+Currently, the icons are limited but you can add.
+
+Downloading icons
+1. Go to [fontello](fontello.com)
+2. Import the `config.json` in `src/font`
+3. This will pre-select the icons included already. You can add by just selecting the icons you want to add
+4. Then click `Download webfont`
+5. This will download a zip file. Copy all contents and replace the files in `src/font`
+
+Adding icons to be used in css
+1. Open the file `src/font/fontello.svg`
+2. Find the line of the icon you want to add `<glyph glyph-name="folder-open" unicode="&#xe800;"`
+3. Copy the code after the `x` like `&#xe800` to `e800`
+4. Open file `src/css/fontello.scss`
+5. Add a new class on the bottom `.icon-folder-open:before {content: '\e800'; }` (Important to have prefix `icon-` to be consistent)
 
 ## Folder Structure
 ```
