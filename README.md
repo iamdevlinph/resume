@@ -1,20 +1,64 @@
 ## React Practice App
 
-## Workflow
-1. `master` branch will be for deploying app to `gh-pages`
+Resume template written in React.
 
-2. Feature branches must checkout from `dev` branch
+## Getting started
+```ssh
+yarn install //install all dependencies
+```
+```ssh
+yarn add <package_name> | --dev //to add dependencies
+```
+## This project includes
+* React
+* Lodash (for sorting)
+* moment (dates and skill durations)
+* html2canvas (convert page to image)
+* jsPDF (convert image to pdf and download)
+* Modified [Split](https://themeforest.net/item/split-personal-cvvcard-template/12915369?ref=cirvitis) Portfolio template
 
 ## Deployment
-To deploy changes to `gh-pages`
+This resume can be deployed to github pages.
+1. Open `package.json` and edit `homepage` line
+2. Change it to `https://<username>.github.io/<repo_name>`
+3. Run `npm run build` to deploy to github-pages (`npm run build-local` for local deployment)
 
-1. Checkout `master` branch
+## Folder Structure
+```
+my-app/
+  README.md
+  node_modules/
+  package.json
+  public/
+    index.html
+    favicon.ico
+  src/
+    App.css
+    App.js
+    App.test.js
+    index.css
+    index.js
+    logo.svg
+    Components/
+        About/
+        Education/
+        Experience/
+        Portfolio/
+        Skills/
+    css/
+    font/
+    img/
+    js/
+    utils/
+        date.util.js // calculating durations
+        print.util.js // handle the printing
+```
+## Disclaimer
+* [Split](https://themeforest.net/item/split-personal-cvvcard-template/12915369?ref=cirvitis) for the resume template
+* [Timeline](http://codepen.io/phasethree/pen/NNOvrW/) CSS
 
-2. `git pull --rebase origin dev` to get latest changes
-
-3. `git push origin` to push changes from `dev` to `master`
-
-4. Run `npm run build` (build-local for local build only) to create `gh-pages` ready app
+---
+## Original Readme
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
