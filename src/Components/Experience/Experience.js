@@ -10,15 +10,6 @@ class Experience extends Component {
         super();
         this.state = { experienceData: experienceJson };
     }
-    // componentDidMount() {
-    //     fetch('./data/experience.json')
-    //         .then((data) => {
-    //             return data.json();
-    //         })
-    //         .then((data) => {
-    //             this.setState({ experienceData: data });
-    //         });
-    // }
     render() {
         const dateUtils = this.props.dateUtils;
         var experienceList = this.state.experienceData.map((experience, index) => {

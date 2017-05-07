@@ -9,15 +9,6 @@ class Education extends Component {
         super();
         this.state = { educationData: educationJson };
     }
-    // componentDidMount() {
-    //     fetch('./data/experience.json')
-    //         .then((data) => {
-    //             return data.json();
-    //         })
-    //         .then((data) => {
-    //             this.setState({ educationData: data });
-    //         });
-    // }
     render() {
         var educationList = this.state.educationData.map((education, index) => {
             return (

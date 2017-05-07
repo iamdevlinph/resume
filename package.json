@@ -55,7 +55,6 @@
     "font-awesome": "4.7.0",
     "html2canvas": "git+ssh://git@github.com/iamdevlinph/html2canvas.git",
     "lodash": "4.17.4",
-    "materialize-css": "0.98.0",
     "moment": "2.18.1",
     "react": "15.4.2",
     "react-dom": "15.4.2"
