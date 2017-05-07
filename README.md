@@ -74,7 +74,7 @@ my-app/
         print.util.js // handle the printing
 ```
 ## Disclaimer
-* [Split](https://themeforest.net/item/split-personal-cvvcard-template/12915369?ref=cirvitis) for the base template, modified it a bit to suit my taste
+* Inspired by [Split](http://demo.mutationmedia.net/SPLIT/) and [Material CV/Resume](http://demo.deviserweb.com/cv/)
 * [Timeline](http://codepen.io/phasethree/pen/NNOvrW/) CSS
 * [Balloon CSS](https://github.com/kazzkiq/balloon.css) for the tooltips
 * [Github-Fork-Ribbon](https://github.com/simonwhitaker/github-fork-ribbon-css) pure css github fork ribbon
