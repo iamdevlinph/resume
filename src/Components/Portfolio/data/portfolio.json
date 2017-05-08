@@ -12,15 +12,21 @@
         "isShow": false
     },
     {
-        "name": "Resume (ReactJS)",
+        "name": "Resume (React)",
         "img_path": "./img/resume.png",
         "url": "https://iamdevlinph.github.io/resume/",
         "isShow": true
     },
     {
-        "name": "AsiaInspection (AngularJS)",
+        "name": "AsiaInspection (Angular)",
         "img_path": "./img/aca.jpg",
         "url": "https://aca.asiainspection.com",
+        "isShow": true
+    },
+    {
+        "name": "Boxer Landing Page Template (Vue.JS)",
+        "img_path": "./img/boxer.png",
+        "url": "https://iamdevlinph.github.io/VueJS-Landing-Page-Boilerplate/",
         "isShow": true
     }
 ]
