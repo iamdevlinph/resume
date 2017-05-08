@@ -5,10 +5,11 @@ export function print() {
     hideNonPrintElements();
     window.scrollTo(0,0); // scroll up
     window.html2canvas = html2canvas;
-    html2canvas(document.body).then(function (canvas) {
+    var divToPrint = document.getElementById('print-container');
+    html2canvas(divToPrint).then(function (canvas) {
         var dataUrl = canvas.toDataURL();
         var doc = new jsPDF('portrait', 'pt', 'a4');
-        doc.addImage(dataUrl, 'PNG', 0, 0, canvas.width/2.4, canvas.height/2.4);
+        doc.addImage(dataUrl, 'PNG', 0, 0, canvas.width/2, canvas.height/2);
         doc.save('Devlin Pajaron - Resume.pdf');
         showNonPrintElements();
     });

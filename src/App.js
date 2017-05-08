@@ -15,7 +15,7 @@ class App extends Component {
         return (
             <div className="app">
                 <div id="wrapper" className="margLTop margLBottom">
-                    <div className="container">
+                    <div className="container" id="print-container">
                         <div className="row ">
 
                             {/*<!-- START ABOUT -->*/}
