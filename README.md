@@ -74,7 +74,7 @@ my-app/
         print.util.js // handle the printing
 ```
 ## Disclaimer
-* Inspired by [Split](http://demo.mutationmedia.net/SPLIT/) and [Material CV/Resume](http://demo.deviserweb.com/cv/)
+* Inspired by [Split](http://demo.mutationmedia.net/SPLIT/) Resume Template, and [Material CV/Resume](http://demo.deviserweb.com/cv/) Template
 * [Timeline](http://codepen.io/phasethree/pen/NNOvrW/) CSS
 * [Balloon CSS](https://github.com/kazzkiq/balloon.css) for the tooltips
 * [Github-Fork-Ribbon](https://github.com/simonwhitaker/github-fork-ribbon-css) pure css github fork ribbon
