@@ -8,15 +8,15 @@
         margin-bottom: 20px;
         box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
     }
-    .margLTop {
+    .marg-top {
         margin-top: 15px !important;
     }
     @media screen and (min-width: 1010px) {
-        .left-content {
+        .left-col {
             position: fixed !important;
             width: 280px !important;
         }
-        .right-content {
+        .right-col {
             margin-left: 280px !important;
         }
     } 

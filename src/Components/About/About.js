@@ -23,7 +23,7 @@ class About extends Component {
     render() {
         return (
             <div className="about-card">
-                <div className="col-md-3 left-content">
+                <div className="col-md-3 left-col">
                     <header id="header">
                         <div className="main-header">
                             <figure className="img-profile">

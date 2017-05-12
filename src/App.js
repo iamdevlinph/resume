@@ -14,7 +14,7 @@ class App extends Component {
     render() {
         return (
             <div className="app">
-                <div id="wrapper" className="margLTop margLBottom">
+                <div id="wrapper" className="marg-top marg-bottom">
                     <div className="container" id="print-container">
                         <div className="row ">
 
@@ -23,8 +23,8 @@ class App extends Component {
                             {/*<!-- END ABOUT -->*/}
 
                             {/*<!-- START RESUME -->*/}
-                            <div className="col-md-9 right-content">
-                                <section className="ofsInBottom">
+                            <div className="col-md-9 right-col">
+                                <section className="offset-bottom">
                                     <div className="resume">
                                         {/*<!-- START EXPERIENCE -->*/}
                                         <div className="resume-card">
