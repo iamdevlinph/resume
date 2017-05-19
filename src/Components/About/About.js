@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import './About.scss';
 
 import profileImg from './img/ai_resize.jpg';
+import resumePDF from './data/resume.pdf';
 
 import * as printUtils from '../../utils/print.util.js';
 
@@ -18,7 +19,7 @@ class About extends Component {
         return false;
     }
     print() {
-        printUtils.print();
+        window.open(resumePDF);
     }
     render() {
         return (

@@ -1,0 +1,55 @@
+{
+	// Enable Auto convert on save
+	"markdown-pdf.convertOnSave": false,
+
+	// Excluded file name of convertOnSave option
+	"markdown-pdf.convertOnSaveExclude": [
+		"^work",
+		"work.md$",
+		"work|test",
+		"[0-9][0-9][0-9][0-9]-work",
+		"work\\d"  // \d -> \\d. All '\' need to be written as '\\'.
+	],
+
+	// Output Directory
+	"markdown-pdf.outputDirectory": "",
+
+	// A list of local paths to the stylesheets to use from the markdown-pdf
+	"markdown-pdf.styles": [
+		"markdown-resume.css"                                 // OK. Relative path
+	],
+
+	// Set the style file name. for example: github.css, monokai.css ...
+	// fine name list : https://github.com/isagalaev/highlight.js/tree/master/src/styles
+	// demo site : https://highlightjs.org/static/demo/
+	"markdown-pdf.highlightStyle": "github.css",
+
+	// Enable Syntax highlighting
+	"markdown-pdf.highlight": true,
+
+	// Output format: pdf, html, png, jpeg
+	"markdown-pdf.type": "pdf",
+
+	// Page Option. Page size: A3, A4, A5, Legal, Letter, Tabloid
+	"markdown-pdf.format": "A4",
+
+	// Page Option. portrait or landscape
+	"markdown-pdf.orientation": "portrait",
+
+	// Page Option. Border Top. units: mm, cm, in, px
+	"markdown-pdf.border.top": "1cm",
+
+	// Page Option. Border bottom. units: mm, cm, in, px
+	"markdown-pdf.border.bottom": "1cm",
+
+	// Page Option. Border right. units: mm, cm, in, px
+	"markdown-pdf.border.right": "1cm",
+
+	// Page Option. Border left. units: mm, cm, in, px
+	"markdown-pdf.border.left": "1cm",
+	// Footer height. units: mm, cm, in, px
+    "markdown-pdf.footer.height": "0.8cm",
+    "markdown.preview.fontSize": 10,
+    "markdown.preview.lineHeight": 1,
+    "markdown-pdf.breaks": true
+}

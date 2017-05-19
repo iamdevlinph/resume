@@ -114,7 +114,7 @@
         ],
         "duration": {
             "usedFrom": "01-September-2015",
-            "usedTo": "01-July-2016",
+            "usedTo": "01-April-2016",
             "showDuration": true
         },
         "showSkill": true
@@ -134,7 +134,7 @@
         "showSkill": false
     },
     {
-        "name": "MYSQL",
+        "name": "MySQL",
         "img_path": "./img/MYSQL.jpg",
         "tags": [
             "Data"
