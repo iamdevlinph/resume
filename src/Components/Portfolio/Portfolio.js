@@ -17,7 +17,7 @@ class Portfolio extends Component {
                     <li key={index} className="col-md-4 ">
                         <div className="item web">
                             <a href={portfolio.url} target="_blank">
-                                <div className="desc">
+                                <div className="desc no-print">
                                     <h3 className="proj-desc">
                                         {portfolio.name}
                                         {/*<hr />
@@ -25,6 +25,9 @@ class Portfolio extends Component {
                                     </h3>
                                 </div>
                                 <img alt="" src={require(portfolio.img_path)} />
+                                <span className="show-to-print">
+                                    {portfolio.name}
+                                </span>
                             </a>
                         </div>
                     </li>
@@ -34,7 +37,7 @@ class Portfolio extends Component {
             return el;
         });
         return (
-            <div className="portfolio-card no-print">
+            <div className="portfolio-card">
                 <div className="main-title">
                     <h1><i className="icon-folder-open" />portfolio</h1>
                     <hr className="divider--fade" />

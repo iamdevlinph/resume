@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 import './About.scss';
 
 import profileImg from './img/ai_resize.jpg';
-import resumePDF from './data/resume.pdf';
 
 import * as printUtils from '../../utils/print.util.js';
 
@@ -19,7 +18,7 @@ class About extends Component {
         return false;
     }
     print() {
-        window.open(resumePDF);
+        printUtils.print();
     }
     render() {
         return (
@@ -69,7 +68,7 @@ class About extends Component {
                             </ul>
                             <p>&copy; 2017 iamdevlinph</p>
                             <button className="btn btn-print no-print" onClick={() => this.print()}>Download Resume</button>
-                            <p className="resume-updated"><em>Updated at 4 May, 2017</em></p>
+                            <p className="resume-updated"><em>Updated at 20 May, 2017</em></p>
                         </div>
                     </header>
                 </div>

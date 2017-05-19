@@ -9,6 +9,7 @@ import './css/fontello.scss';
 import './index.scss';
 import './css/timeline.scss'; // Experience and Education cards
 import './css/balloon.scss'; // tooltip
+import './css/print.scss';
 
 // import JS
 import './js/jspdf.js';
