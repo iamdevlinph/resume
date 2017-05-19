@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import App from './App';
 
 // import CSS
+import './css/custom.scss';
 import './css/bootstrap.scss';
 import './css/font.scss';
 import './css/fontello.scss';
