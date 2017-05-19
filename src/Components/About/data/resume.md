@@ -65,7 +65,7 @@
     </tbody>
 </table>
 
-<h2>Skills</h1>
+<h2>Skills</h2>
 <table>
     <thead>
         <tr>
