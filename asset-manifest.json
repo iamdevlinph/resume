@@ -1,6 +1,6 @@
 {
-  "main.js": "static/js/main.d59de261.js",
-  "main.js.map": "static/js/main.d59de261.js.map",
+  "main.js": "static/js/main.acc42663.js",
+  "main.js.map": "static/js/main.acc42663.js.map",
   "static/media/AngularJS.jpg": "static/media/AngularJS.68b11a08.jpg",
   "static/media/CSS.jpg": "static/media/CSS.40f66bb7.jpg",
   "static/media/GIT.jpg": "static/media/GIT.80f6288e.jpg",
@@ -28,6 +28,8 @@
   "static/media/aca.jpg": "static/media/aca.dd51ca54.jpg",
   "static/media/ai_resize.jpg": "static/media/ai_resize.e8617e9a.jpg",
   "static/media/boxer.png": "static/media/boxer.6dcf4568.png",
+  "static/media/fontello.eot?92040386": "static/media/fontello.08ffeb12.eot",
+  "static/media/fontello.ttf?92040386": "static/media/fontello.08f29141.ttf",
   "static/media/freecodecamp-tribute-page.jpg": "static/media/freecodecamp-tribute-page.0df10df1.jpg",
   "static/media/resume.jpg": "static/media/resume.0a420bc5.jpg",
   "static/media/resume.png": "static/media/resume.bbae9ec8.png",
