@@ -41,18 +41,27 @@ class About extends Component {
                                         </a>
                                     </li>
                                     <li className="about-sub-section">
-                                        <a href="#" className="" onClick={(e) => this.noClick(e)}>
+                                        <a href="#" className="about-sub-section__link" onClick={(e) => this.noClick(e)}>
                                             iamdevlinph@gmail.com
+                                            <i className="about-sub-section__link__icon icon-mail" />
                                         </a>
                                     </li>
                                     <li className="about-sub-section">
-                                        <a href="#" className="" onClick={(e) => this.noClick(e)}>
+                                        <a href="skype:live:devlinpajaron?chat" className="about-sub-section__link">
+                                            live:devlinpajaron
+                                            <i className="about-sub-section__link__icon icon-skype" />
+                                        </a>
+                                    </li>
+                                    <li className="about-sub-section">
+                                        <a href="#" className="about-sub-section__link" onClick={(e) => this.noClick(e)}>
                                             (+63) 943 230 2440
+                                            <i className="about-sub-section__link__icon icon-phone" />
                                         </a>
                                     </li>
                                     <li className="about-sub-section">
-                                        <a href="#" className="" onClick={(e) => this.noClick(e)}>
+                                        <a href="#" className="about-sub-section__link" onClick={(e) => this.noClick(e)}>
                                             Cebu City, Philippines
+                                            <i className="about-sub-section__link__icon icon-home" />
                                         </a>
                                     </li>
                                 </ul>
@@ -63,7 +72,7 @@ class About extends Component {
                                 {/*<li><a href="https://www.facebook.com/iamdevlinph" target="_blank"><i className="icon-facebook"></i></a></li>*/}
                                 <li><a href="https://github.com/iamdevlinph" target="_blank"><i className="icon-github-circled"></i></a></li>
                                 <li><a href="https://www.linkedin.com/in/iamdevlinph/" target="_blank"><i className="icon-linkedin"></i></a></li>
-                                <li><a href="skype:live:devlinpajaron?chat"><i className="icon-skype"></i></a></li>
+                                {/*<li><a href="skype:live:devlinpajaron?chat"><i className="icon-skype"></i></a></li>*/}
                                 <li><a href="http://stackoverflow.com/users/4620773/iamdevlinph" target="_blank"><i className="icon-stack-overflow"></i></a></li>
                             </ul>
                             <p>&copy; 2017 iamdevlinph</p>

@@ -11,12 +11,18 @@
         line-height: 20px !important;
     }
     .about-sub-section {
-        a {
+        &__link {
             text-transform: none !important;
             padding: 5px 25px !important;
             &:before {
                 // disable on hover animation
                 content: none !important;
+            }
+            &__icon {
+                position: relative;
+                left: 0;
+                font-size: 15px;
+                margin-left: 10px;
             }
         }
     }
