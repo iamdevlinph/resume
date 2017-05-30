@@ -18,15 +18,21 @@
         "isShow": true
     },
     {
-        "name": "AsiaInspection (Angular)",
+        "name": "AsiaInspection (AngularJS)",
         "img_path": "./img/aca.jpg",
         "url": "https://aca.asiainspection.com",
         "isShow": true
     },
     {
-        "name": "Boxer Landing Page Template (Vue.JS)",
+        "name": "Boxer Landing Page Template (Vue.js)",
         "img_path": "./img/boxer.png",
         "url": "https://iamdevlinph.github.io/VueJS-Landing-Page-Boilerplate/",
+        "isShow": true
+    },
+    {
+        "name": "Blog (React)",
+        "img_path": "./img/blog.png",
+        "url": "https://iamdevlinph.github.io/#/",
         "isShow": true
     }
 ]

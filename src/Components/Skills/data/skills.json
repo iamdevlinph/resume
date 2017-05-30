@@ -1,6 +1,6 @@
 [
     {
-        "name": "Angular",
+        "name": "AngularJS",
         "img_path": "./img/AngularJS.jpg",
         "tags": [
             "Front-End",
@@ -215,7 +215,7 @@
         "showSkill": true
     },
     {
-        "name": "Vue.JS",
+        "name": "Vue.js",
         "img_path": "./img/vuejs.png",
         "tags": [
             "Front-End"
