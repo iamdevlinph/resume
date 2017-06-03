@@ -54,6 +54,20 @@
         "showSkill": true
     },
     {
+        "name": "D3.js",
+        "img_path": "./img/d3js.jpg",
+        "tags": [
+            "Front-End"
+        ],
+        "duration": {
+            "usedFrom": "22-May-2017",
+            "usedTo": "Present",
+            "showDuration": false,
+            "hideDurationText": "Still a fresh blood"
+        },
+        "showSkill": true
+    },
+    {
         "name": "GIT",
         "img_path": "./img/GIT.jpg",
         "tags": [
