@@ -55,7 +55,7 @@
     },
     {
         "name": "D3.js",
-        "img_path": "./img/d3js.jpg",
+        "img_path": "./img/d3js.png",
         "tags": [
             "Front-End"
         ],
