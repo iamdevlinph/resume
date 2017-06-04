@@ -13,7 +13,7 @@ export function print() {
         var dataUrl = canvas.toDataURL('image/jpeg');
         var doc = new jsPDF('portrait', 'pt', 'a4');
         doc.addImage(dataUrl, 'PNG', 0, 0, canvas.width/2, canvas.height/2);
-        doc.save('Devlin Pajaron - Resume.pdf');
+        // doc.save('Devlin Pajaron - Resume.pdf');
         showNonPrintElements();
         hideAfterPrint();
         divToPrint.className = originalDivToPrintClass;
@@ -52,6 +52,6 @@ function showToPrint() {
 function hideAfterPrint() {
     var elemsToShow = document.getElementsByClassName("show-to-print"); //elemsToShow is an array
     for (var i = 0; i < elemsToShow.length; i++) {
-        elemsToShow[i].style.display = origDisplay[i]; // depending on what you're doing
+        elemsToShow[i].style.display = origDisplayToPrint[i]; // depending on what you're doing
     }
 }
