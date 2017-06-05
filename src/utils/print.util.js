@@ -13,7 +13,7 @@ export function print() {
         var dataUrl = canvas.toDataURL('image/jpeg');
         var doc = new jsPDF('portrait', 'pt', 'a4');
         doc.addImage(dataUrl, 'PNG', 0, 0, canvas.width/2, canvas.height/2);
-        // doc.save('Devlin Pajaron - Resume.pdf');
+        doc.save('Devlin Pajaron - Resume.pdf');
         showNonPrintElements();
         hideAfterPrint();
         divToPrint.className = originalDivToPrintClass;
