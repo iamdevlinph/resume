@@ -6,11 +6,13 @@ Make you to have `yarn` installed globally
 ```ssh
 npm install -g yarn
 ```
+Install packages
 ```ssh
-yarn install //install all dependencies
+yarn install
 ```
+To add packages. `--dev` flag is optional
 ```ssh
-yarn add <package_name> | --dev //to add dependencies
+yarn add <package_name> | --dev
 ```
 ## This project includes
 * React
@@ -18,6 +20,11 @@ yarn add <package_name> | --dev //to add dependencies
 * moment (dates and skill durations)
 * html2canvas (convert page to image)
 * jsPDF (convert image to pdf and download)
+
+## Development
+To start the project
+1. Run `npm run start`
+2. Open `http://localhost:3000/` in your browser
 
 ## Deployment
 This resume can be deployed to github pages.
