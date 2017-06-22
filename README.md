@@ -25,6 +25,7 @@ yarn add <package_name> | --dev
 To start the project
 1. Run `npm run start`
 2. Open `http://localhost:3000/` in your browser
+3. Saving any changes in your codes reloads the page in the browser
 
 ## Deployment
 This resume can be deployed to github pages.
