@@ -74,6 +74,7 @@ class About extends Component {
                                 <li><a href="https://www.linkedin.com/in/iamdevlinph/" target="_blank"><i className="icon-linkedin"></i></a></li>
                                 {/*<li><a href="skype:live:devlinpajaron?chat"><i className="icon-skype"></i></a></li>*/}
                                 <li><a href="http://stackoverflow.com/users/4620773/iamdevlinph" target="_blank"><i className="icon-stack-overflow"></i></a></li>
+                                <li><a href="https://twitter.com/iamdevlinph" target="_blank"><i className="icon-twitter"></i></a></li>
                             </ul>
                             <p>&copy; 2017 iamdevlinph</p>
                             <button className="btn btn-print no-print" onClick={() => this.print()}>Download Resume</button>
