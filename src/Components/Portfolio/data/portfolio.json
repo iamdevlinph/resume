@@ -33,6 +33,6 @@
         "name": "Blog (Jekyll)",
         "img_path": "./img/blog.png",
         "url": "https://iamdevlinph.github.io/#/",
-        "isShow": true
+        "isShow": false
     }
 ]
