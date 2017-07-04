@@ -1,7 +1,8 @@
+@import 'Variables';
 .experience-card {
     .present-work {
         font-weight: bold !important;
-        color: #CD5353;
+        color: $red;
     }
     .experience-role {
         // text-decoration: underline !important;
@@ -11,7 +12,7 @@
     .experience-company {
         color: black;
         &:hover {
-            color: #CD5353;
+            color: $red;
         }
         &__contract,
         &__address {
