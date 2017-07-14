@@ -52,7 +52,7 @@ class Skills extends Component {
         return (
             <div className="skills-card">
                 <div className="main-title">
-                    <h1><i className="icon-code" /> skills</h1>
+                    <h1><i className="icon-code" />technologies</h1>
                     <hr className="divider--fade" />
                 </div>
                 <div className="content">

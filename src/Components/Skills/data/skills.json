@@ -254,6 +254,6 @@
             "showDuration": false,
             "hideDurationText": "Just a summer class."
         },
-        "showSkill": true
+        "showSkill": false
     }
 ]
