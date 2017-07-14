@@ -11,6 +11,7 @@ class About extends Component {
         super();
         this.noClick = this.noClick.bind(this);
         this.print = this.print.bind(this);
+        this.showPdf = this.showPdf.bind(this);
     }
     noClick(event) {
         event.preventDefault();
@@ -18,7 +19,11 @@ class About extends Component {
         return false;
     }
     print() {
+        // will not be used for now
         printUtils.print();
+    }
+    showPdf() {
+        window.open('/resume/Devlin Pajaron - Resume.pdf')
     }
     render() {
         return (
@@ -77,7 +82,7 @@ class About extends Component {
                                 <li><a href="https://twitter.com/iamdevlinph" target="_blank"><i className="icon-twitter"></i></a></li>
                             </ul>
                             <p>&copy; 2017 iamdevlinph</p>
-                            <button className="btn btn-print no-print" onClick={() => this.print()}>Download Resume</button>
+                            <button className="btn btn-print no-print" onClick={() => this.showPdf()}><i className="icon-download"/> PDF</button>&nbsp;
                             <p className="resume-updated"><em>Updated at 20 May, 2017</em></p>
                         </div>
                     </header>
