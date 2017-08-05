@@ -9,7 +9,8 @@
         "duration": {
             "usedFrom": "21-April-2016",
             "usedTo": "Present",
-            "showDuration": true
+            "showDuration": false,
+            "hideDurationText": "Been using AngularJS on my first day of work. Still on 1.5 though. Will learn Angular 4 soon"
         },
         "showSkill": true
     },
@@ -23,7 +24,8 @@
         "duration": {
             "usedFrom": "14-July-2016",
             "usedTo": "Present",
-            "showDuration": true
+            "showDuration": false,
+            "hideDurationText": "I always try to follow this methodology as much as possible, whether it's just a personal project"
         },
         "showSkill": true
     },
@@ -36,7 +38,8 @@
         "duration": {
             "usedFrom": "01-September-2015",
             "usedTo": "01-July-2016",
-            "showDuration": true
+            "showDuration": false,
+            "hideDurationText": "Used this through college and a few months on work. Can read some code but I don't prefer coding in it anymore"
         },
         "showSkill": true
     },
@@ -49,7 +52,8 @@
         "duration": {
             "usedFrom": "01-July-2014",
             "usedTo": "Present",
-            "showDuration": true
+            "showDuration": false,
+            "hideDurationText": "I know some basic stuff. But really can't consider myself good with it"
         },
         "showSkill": true
     },
@@ -63,7 +67,7 @@
             "usedFrom": "22-May-2017",
             "usedTo": "Present",
             "showDuration": false,
-            "hideDurationText": "Still a fresh blood"
+            "hideDurationText": "Still a fresh blood. Just used it to create own legends and tooltips. It's just like jQuery"
         },
         "showSkill": true
     },
@@ -76,7 +80,8 @@
         "duration": {
             "usedFrom": "01-September-2015",
             "usedTo": "Present",
-            "showDuration": true
+            "showDuration": false,
+            "hideDurationText": "I know the basic Git operations necessary until creating a pull request. I just google advanced stuff"
         },
         "showSkill": true
     },
@@ -89,7 +94,8 @@
         "duration": {
             "usedFrom": "01-July-2014",
             "usedTo": "Present",
-            "showDuration": true
+            "showDuration": false,
+            "hideDurationText": "If you ask me what tags are in new in HTML5, I wouldn't be able to answer that"
         },
         "showSkill": true
     },
@@ -102,7 +108,8 @@
         "duration": {
             "usedFrom": "01-November-2015",
             "usedTo": "01-March-2016",
-            "showDuration": true
+            "showDuration": false,
+            "hideDurationText": "Just a one-semester knowledge. Can read some Java code"
         },
         "showSkill": true
     },
@@ -115,7 +122,8 @@
         "duration": {
             "usedFrom": "21-April-2016",
             "usedTo": "Present",
-            "showDuration": true
+            "showDuration": false,
+            "hideDurationText": "I got the JavaScript  Fatigue and I only read the chapter 1 of YDKJS"
         },
         "showSkill": true
     },
@@ -129,7 +137,8 @@
         "duration": {
             "usedFrom": "01-September-2015",
             "usedTo": "01-April-2016",
-            "showDuration": true
+            "showDuration": false,
+            "hideDurationText": "Used this through out our thesis for animations and stuff. But now I realize it's not that good - performance wise"
         },
         "showSkill": true
     },
@@ -156,7 +165,8 @@
         "duration": {
             "usedFrom": "01-July-2014",
             "usedTo": "01-July-2016",
-            "showDuration": true
+            "showDuration": false,
+            "hideDurationText": "I became a front-end guy that I don't do much database stuff anymore. But will learn mongodb instead if I have the time"
         },
         "showSkill": true
     },
@@ -170,7 +180,7 @@
             "usedFrom": "-",
             "usedTo": "-",
             "showDuration": false,
-            "hideDurationText": "Just integrated it"
+            "hideDurationText": "Just integrated it. And did some hacky stuff to make it work as intended"
         },
         "showSkill": true
     },
@@ -184,7 +194,7 @@
             "usedFrom": "",
             "usedTo": "",
             "showDuration": false,
-            "hideDurationText": "Basic Photoshop since highschool"
+            "hideDurationText": "Basic Photoshop since highschool. Don't ask me to make your face good"
         },
         "showSkill": true
     },
@@ -197,7 +207,8 @@
         "duration": {
             "usedFrom": "01-July-2014",
             "usedTo": "01-July-2016",
-            "showDuration": true
+            "showDuration": false,
+            "hideDurationText": "Ah, college memories. Where we were thought C on the first 2 years; switched course and learned PHP. But I don't like it anymore"
         },
         "showSkill": true
     },
@@ -211,7 +222,8 @@
         "duration": {
             "usedFrom": "28-January-2017",
             "usedTo": "Present",
-            "showDuration": true
+            "showDuration": false,
+            "hideDurationText": "I can manage the components part only. Not that much of Redux yet"
         },
         "showSkill": true
     },
@@ -224,7 +236,8 @@
         "duration": {
             "usedFrom": "14-July-2016",
             "usedTo": "Present",
-            "showDuration": true
+            "showDuration": false,
+            "hideDurationText": "I always try to use SASS as much as possible. I like the nesting and this feature '&'"
         },
         "showSkill": true
     },
@@ -237,7 +250,8 @@
         "duration": {
             "usedFrom": "25-February-2017",
             "usedTo": "09-May-2017",
-            "showDuration": true
+            "showDuration": false,
+            "hideDurationText": "Learning curve of Vue is easier than React. It's the combination of AngularJS and React. Vuex is also easier to implement than Redux"
         },
         "showSkill": true
     },
@@ -252,7 +266,7 @@
             "usedFrom": "2015",
             "usedTo": "2015",
             "showDuration": false,
-            "hideDurationText": "Just a summer class."
+            "hideDurationText": "Just a summer class"
         },
         "showSkill": false
     }

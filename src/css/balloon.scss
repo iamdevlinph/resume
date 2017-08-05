@@ -83,6 +83,9 @@ button[data-balloon] {
 
 [data-balloon-pos="down"]:after {
     margin-top: 11px;
+    white-space: pre-wrap !important; // custom
+    min-height: 50px !important; // custom
+    min-width: 150px !important; // custom
 }
 
 [data-balloon-pos="down"]:before {

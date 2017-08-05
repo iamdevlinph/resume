@@ -23,9 +23,9 @@ class Skills extends Component {
             } else {
                 duration = skill.duration.hideDurationText;
             }
-            var skillName = (skill.long_name) ? skill.long_name : skill.name;
-            var tooltip = skillName + '\n';
-            tooltip += duration;
+            // var skillName = (skill.long_name) ? skill.long_name : skill.name;
+            // var tooltip = skillName + '\n';
+            var tooltip = duration;
             if (skill.showSkill) {
                 el = (
                     <li key={index} data-balloon={tooltip} data-balloon-pos="down" data-balloon-break>
