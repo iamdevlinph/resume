@@ -208,7 +208,7 @@
             "usedFrom": "01-July-2014",
             "usedTo": "01-July-2016",
             "showDuration": false,
-            "hideDurationText": "Ah, college memories. Where we were thought C on the first 2 years; switched course and learned PHP. But I don't like it anymore"
+            "hideDurationText": "Ah, college memories. Where we were thought C on the first 2 years; switched course and learned PHP. But I prefer JavaScript now"
         },
         "showSkill": true
     },
@@ -223,7 +223,22 @@
             "usedFrom": "28-January-2017",
             "usedTo": "Present",
             "showDuration": false,
-            "hideDurationText": "I can manage the components part only. Not that much of Redux yet"
+            "hideDurationText": "I can manage the components part only. Not that much of Redux yet. Used in a start-up project and personal projects"
+        },
+        "showSkill": true
+    },
+    {
+        "name": "Redux",
+        "img_path": "./img/Redux.png",
+        "tags": [
+            "Front-End",
+            "Library"
+        ],
+        "duration": {
+            "usedFrom": "August-2017",
+            "usedTo": "Present",
+            "showDuration": false,
+            "hideDurationText": "Getting the hang out of it. Using it along with React for a start-up project"
         },
         "showSkill": true
     },
@@ -251,7 +266,7 @@
             "usedFrom": "25-February-2017",
             "usedTo": "09-May-2017",
             "showDuration": false,
-            "hideDurationText": "Learning curve of Vue is easier than React. It's the combination of AngularJS and React. Vuex is also easier to implement than Redux"
+            "hideDurationText": "Learning curve of Vue is easier than React. It's the combination of AngularJS and React. Vuex is also easier to implement than Redux. Got into Vue.js freelance once but not that long"
         },
         "showSkill": true
     },
