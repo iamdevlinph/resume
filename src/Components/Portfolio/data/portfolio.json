@@ -26,7 +26,7 @@
     {
         "name": "Boxer Landing Page Template (Vue.js)",
         "img_path": "./img/boxer.png",
-        "url": "https://iamdevlinph.github.io/VueJS-Landing-Page-Boilerplate/",
+        "url": "https://codesandcoffee.github.io/vuejs-landing-page/",
         "isShow": true
     },
     {
@@ -34,5 +34,17 @@
         "img_path": "./img/blog.png",
         "url": "https://iamdevlinph.github.io/#/",
         "isShow": false
+    },
+    {
+        "name": "Me",
+        "img_path": "./img/me.png",
+        "url": "https://iamdevlinph.github.io/me/",
+        "isShow": true
+    },
+    {
+        "name": "codes and coffee",
+        "img_path": "./img/codesandcoffee.png",
+        "url": "http://www.codesandcoffee.com/",
+        "isShow": true
     }
 ]

@@ -8,6 +8,9 @@ class Portfolio extends Component {
     constructor() {
         super();
         this.state = { portfolioData: portfolioJson };
+
+        // meta
+        //1545x771 px
     }
     render() {
         var portfolioList = this.state.portfolioData.map((portfolio, index) => {
