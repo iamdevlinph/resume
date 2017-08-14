@@ -27,7 +27,7 @@ class Portfolio extends Component {
                                     <span>web design</span>*/}
                                     </h3>
                                 </div>
-                                <img class="portfolio-preview" alt="" src={require(portfolio.img_path)} />
+                                <img className="portfolio-preview" alt="" src={require(portfolio.img_path)} />
                                 <span className="show-to-print">
                                     {portfolio.name}
                                 </span>
