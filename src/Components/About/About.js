@@ -83,7 +83,7 @@ class About extends Component {
                             </ul>
                             <p>&copy; 2017 iamdevlinph</p>
                             <button className="btn btn-print no-print" onClick={() => this.showPdf()}><i className="icon-download"/> PDF</button>&nbsp;
-                            <p className="resume-updated"><em>Updated at 20 May, 2017</em></p>
+                            <p className="resume-updated"><em>Updated at 06 August, 2017</em></p>
                         </div>
                     </header>
                 </div>
