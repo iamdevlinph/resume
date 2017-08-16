@@ -12,7 +12,8 @@
         "workFrom": "July-2016",
         "workTo": "Present",
         "description": "Took part in a project for migrating from PHP to AngularJS. Created new pages. Created reusable components. Ingegrated internal APIs and Paypal API. Implemented data visualization using D3.js.",
-        "technologies": "HTML, CSS, SASS, JavaScript, AngularJS, Gulp, Node, GIT, Paypal API, D3.js"
+        "technologies": "HTML, CSS, SASS, JavaScript, AngularJS, Gulp, Node, GIT, Paypal API, D3.js",
+        "exact_start_date": "JUly 14, 2016"
     },
     {
         "title": "Full Stack Developer",
