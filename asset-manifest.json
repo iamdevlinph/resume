@@ -1,6 +1,6 @@
 {
-  "main.js": "static/js/main.075ff28d.js",
-  "main.js.map": "static/js/main.075ff28d.js.map",
+  "main.js": "static/js/main.0bc898c9.js",
+  "main.js.map": "static/js/main.0bc898c9.js.map",
   "static\\media\\AngularJS.jpg": "static/media/AngularJS.68b11a08.jpg",
   "static\\media\\CSS.jpg": "static/media/CSS.40f66bb7.jpg",
   "static\\media\\GIT.jpg": "static/media/GIT.80f6288e.jpg",
@@ -39,5 +39,7 @@
   "static\\media\\me.png": "static/media/me.e5e6313c.png",
   "static\\media\\resume.jpg": "static/media/resume.0a420bc5.jpg",
   "static\\media\\resume.png": "static/media/resume.bbae9ec8.png",
-  "static\\media\\sass.jpg": "static/media/sass.51622f05.jpg"
+  "static\\media\\sass.jpg": "static/media/sass.51622f05.jpg",
+  "static\\media\\webpack.png": "static/media/webpack.3f938cb1.png",
+  "static\\media\\yarn.png": "static/media/yarn.bbd513c2.png"
 }
