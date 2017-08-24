@@ -171,6 +171,20 @@
         "showSkill": true
     },
     {
+        "name": "npm",
+        "img_path": "./img/npm.png",
+        "tags": [
+            ""
+        ],
+        "duration": {
+            "usedFrom": "",
+            "usedTo": "",
+            "showDuration": false,
+            "hideDurationText": "Used for managing packages"
+        },
+        "showSkill": true
+    },
+    {
         "name": "Paypal API",
         "img_path": "./img/Paypal.png",
         "tags": [
@@ -257,16 +271,16 @@
         "showSkill": true
     },
     {
-        "name": "Vue.js",
-        "img_path": "./img/vuejs.png",
+        "name": "Webpack",
+        "img_path": "./img/webpack.png",
         "tags": [
-            "Front-End"
+            ""
         ],
         "duration": {
-            "usedFrom": "25-February-2017",
-            "usedTo": "09-May-2017",
+            "usedFrom": "",
+            "usedTo": "",
             "showDuration": false,
-            "hideDurationText": "Learning curve of Vue is easier than React. It's the combination of AngularJS and React. Vuex is also easier to implement than Redux. Got into Vue.js freelance once but not that long"
+            "hideDurationText": "Most boilerplates have webpack already. But I have a general idea about it"
         },
         "showSkill": true
     },
@@ -284,5 +298,33 @@
             "hideDurationText": "Just a summer class"
         },
         "showSkill": false
+    },
+    {
+        "name": "Vue.js",
+        "img_path": "./img/vuejs.png",
+        "tags": [
+            "Front-End"
+        ],
+        "duration": {
+            "usedFrom": "25-February-2017",
+            "usedTo": "09-May-2017",
+            "showDuration": false,
+            "hideDurationText": "Learning curve of Vue is easier than React. It's the combination of AngularJS and React. Vuex is also easier to implement than Redux. Got into Vue.js freelance once but not that long"
+        },
+        "showSkill": true
+    },
+    {
+        "name": "Yarn",
+        "img_path": "./img/yarn.png",
+        "tags": [
+            ""
+        ],
+        "duration": {
+            "usedFrom": "",
+            "usedTo": "",
+            "showDuration": false,
+            "hideDurationText": "Alternative to npm. Seems to be much faster"
+        },
+        "showSkill": true
     }
 ]
