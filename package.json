@@ -54,8 +54,8 @@
     "font-awesome": "4.7.0",
     "lodash": "4.17.4",
     "moment": "2.18.1",
-    "react": "15.4.2",
-    "react-dom": "15.4.2"
+    "react": "^16.0.0-rc.2",
+    "react-dom": "^16.0.0-rc.2"
   },
   "scripts": {
     "start": "node scripts/start.js",

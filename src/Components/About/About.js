@@ -4,23 +4,16 @@ import './About.scss';
 
 import profileImg from './img/ai_resize.jpg';
 
-import * as printUtils from '../../utils/print.util.js';
-
 class About extends Component {
     constructor() {
         super();
         this.noClick = this.noClick.bind(this);
-        this.print = this.print.bind(this);
         this.showPdf = this.showPdf.bind(this);
     }
     noClick(event) {
         event.preventDefault();
         event.stopPropagation();
         return false;
-    }
-    print() {
-        // will not be used for now
-        printUtils.print();
     }
     showPdf() {
         window.open('/resume/Devlin Pajaron - Resume.pdf')
