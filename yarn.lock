@@ -4557,7 +4557,7 @@ react-dev-utils@0.4.2:
     sockjs-client "1.0.3"
     strip-ansi "3.0.1"
 
-react-dom@next:
+react-dom@^16.0.0-rc.2:
   version "16.0.0-rc.2"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.0.0-rc.2.tgz#f94dc1c350acd67284233558996a8293d7aa99c7"
   dependencies:
@@ -4566,7 +4566,7 @@ react-dom@next:
     object-assign "^4.1.0"
     prop-types "^15.5.6"
 
-react@next:
+react@^16.0.0-rc.2:
   version "16.0.0-rc.2"
   resolved "https://registry.yarnpkg.com/react/-/react-16.0.0-rc.2.tgz#1e55cc18fd9c56260f1d0ccf9caca6d3152dc83c"
   dependencies:
