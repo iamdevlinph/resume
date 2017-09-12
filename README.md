@@ -1,6 +1,10 @@
 ## React Resume
 Resume template written in React.
 
+## To Do:
+- Add redux to manage data
+- Create a back-end to fetch data
+
 ## Getting started
 Make you to have `yarn` installed globally
 ```ssh
@@ -16,10 +20,8 @@ yarn add <package_name> | --dev
 ```
 ## This project includes
 * React
-* Lodash (for sorting)
-* moment (dates and skill durations)
-* html2canvas (convert page to image)
-* jsPDF (convert image to pdf and download)
+* Lodash
+* moment.js
 
 ## Development
 To start the project
@@ -39,7 +41,7 @@ This resume can be deployed to github pages.
 ## Fonts and Icons
 This project uses [fontello](fontello.com) to manage the icons. `Fontello` allows using fonts from different creators.
 
-Currently, the icons are limited but you can add.
+Currently, the icons are limited but the good thing is you only add what you really use.
 
 **Downloading icons**
 1. Go to [fontello](fontello.com)
