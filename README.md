@@ -2,8 +2,9 @@
 Resume template written in React.
 
 ## To Do:
-- Add redux to manage data
-- Create a back-end to fetch data
+- Separate json file to fetch
+- Integrate redux, redux-saga, and react-redux
+- Fetch each section separately and dynamically
 
 ## Getting started
 Make you to have `yarn` installed globally
