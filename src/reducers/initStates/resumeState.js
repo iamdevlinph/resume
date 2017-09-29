@@ -1,4 +1,4 @@
 export const resumeState = {
-  isFetching: false,
+  isFetching: true,
   skills: {}
 };

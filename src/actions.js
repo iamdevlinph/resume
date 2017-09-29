@@ -3,9 +3,10 @@ export const RECEIVE_HELLO_WORLD = 'RECEIVE_HELLO_WORLD';
 
 export const REQUEST_SKILLS = 'REQUEST_SKILLS';
 export const RECEIVE_SKILLS = 'RECEIVE_SKILLS';
+export const UPDATE_SKILLS_AJAX_STATUS = 'UPDATE_SKILLS_AJAX_STATUS';
 
 export const requestHelloWorld = () => ({ type: REQUEST_HELLO_WORLD });
 export const receiveHelloWorld = (text) => ({ type: RECEIVE_HELLO_WORLD, text });
 
 export const requestSkills = () => ({ type: REQUEST_SKILLS });
-export const receiveSkills = (skills) => ({ type: RECEIVE_SKILLS, skills });
+// export const receiveSkills = (skills) => ({ type: RECEIVE_SKILLS, test: 'testaaaa' });

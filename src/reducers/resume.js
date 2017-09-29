@@ -1,11 +1,22 @@
-import { RECEIVE_SKILLS } from '../actions';
+import { RECEIVE_SKILLS, UPDATE_SKILLS_AJAX_STATUS } from '../actions';
 import initialState from './initialState'
 
-export default (state = initialState.resumeState, { type, text }) => {
-  console.log(state)
-  switch (type) {
+export default (state = initialState.resumeState, action) => {
+  switch (action.type) {
+    case UPDATE_SKILLS_AJAX_STATUS:
+      return [
+        ...state,
+        {
+          isFetching: action.payload
+        }
+      ]
     case RECEIVE_SKILLS:
-      return 'Hello skills';
+      return [
+        ...state,
+        {
+          skills: action.skills
+        }
+      ];
     default:
       return state;
   }

@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux';
 
-import helloWorld from './helloWorld';
+import resume from './resume';
 
 export default combineReducers({
-  helloWorld,
+  resume
 });
