@@ -18,6 +18,6 @@ import './js/jspdf.js';
 // custom console.log
 // console.log("%cEnter message here", "color: red; font-family: sans-serif; font-size: 4.5em; font-weight: bolder; text-shadow: #000 1px 1px;");
 ReactDOM.render(
-    <App />,
-    document.getElementById('root')
+  <App />,
+  document.getElementById('root')
 );

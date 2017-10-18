@@ -6,7 +6,7 @@ import store from './store';
 import Home from './Home';
 
 export default () => (
-    <Provider store={store}>
-        <Home />
-    </Provider>
+  <Provider store={store}>
+    <Home />
+  </Provider>
 );
