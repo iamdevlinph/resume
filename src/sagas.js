@@ -24,6 +24,5 @@ function* getSkills(action) {
   and only the latest one willbe runs
 */
 export default function* mySaga() {
-  // yield takeLatest(REQUEST_HELLO_WORLD, helloWorld);
   yield takeLatest(REQUEST_SKILLS, getSkills);
 }

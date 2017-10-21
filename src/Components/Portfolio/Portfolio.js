@@ -24,7 +24,7 @@ class Portfolio extends Component {
                   <h3 className="proj-desc">
                     {portfolio.name}
                     {/*<hr />
-                                    <span>web design</span>*/}
+                     <span>web design</span>*/}
                   </h3>
                 </div>
                 <img className="portfolio-preview" alt="" src={require(portfolio.img_path)} />
