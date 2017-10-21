@@ -4,8 +4,8 @@ import moment from 'moment';
 import './Experience.scss';
 
 class Experience extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = { experienceData: this.props.experience };
   }
   render() {

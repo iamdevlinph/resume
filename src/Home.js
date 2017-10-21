@@ -36,14 +36,15 @@ class Home extends Component {
               <div className="col-md-9 right-col">
                 <section className="offset-bottom">
                   <div className="resume">
+
                     {/*<!-- START EXPERIENCE -->*/}
                     <div className="resume-card">
                       <div className="experience-card">
                         <div className="main-title">
-                          <h1><i className="icon-code" />technologies</h1>
+                          <h1><i className="icon-suitcase" />experience</h1>
                           <hr className="divider--fade" />
                         </div>
-                        {!this.props.skills.isFetching ?
+                        {!this.props.experience.isFetching ?
                           (<Experience dateUtils={dateUtils}
                             experience={this.props.experience.data} />) : null
                         }
