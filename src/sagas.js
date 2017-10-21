@@ -2,6 +2,7 @@ import { put, takeLatest, call } from 'redux-saga/effects';
 
 import { REQUEST_SKILLS, RECEIVE_SKILLS, UPDATE_SKILLS_AJAX_STATUS } from './actions';
 import { REQUEST_EXPERIENCE, RECEIVE_EXPERIENCE, UPDATE_EXPERIENCE_AJAX_STATUS } from './actions';
+import { REQUEST_EDUCATION, RECEIVE_EDUCATION, UPDATE_EDUCATION_AJAX_STATUS } from './actions';
 
 import resumeApi from './api/api';
 
@@ -24,6 +25,15 @@ function* getExperience(action) {
   }
 }
 
+function* getEducation(action) {
+  try {
+    const education = yield call(resumeApi.fetchData, 'education');
+    yield put({ type: RECEIVE_EDUCATION, education: yield education.json() });
+    yield put({ type: UPDATE_EDUCATION_AJAX_STATUS, payload: false })
+  } catch (e) {
+  }
+}
+
 /*
   alternatively you may use takelatest
 
@@ -34,4 +44,5 @@ function* getExperience(action) {
 export default function* mySaga() {
   yield takeLatest(REQUEST_SKILLS, getSkills);
   yield takeLatest(REQUEST_EXPERIENCE, getExperience);
+  yield takeLatest(REQUEST_EDUCATION, getEducation);
 }

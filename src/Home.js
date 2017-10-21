@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 
-import { requestSkills, requestExperience } from './actions';
+import { requestSkills, requestExperience, requestEducation } from './actions';
 
 import './main.scss';
 import './Home.scss';
@@ -17,8 +17,9 @@ import Portfolio from './Components/Portfolio/Portfolio';
 
 class Home extends Component {
   componentWillMount() {
-    this.props.requestSkills();
     this.props.requestExperience();
+    this.props.requestSkills();
+    this.props.requestEducation();
   }
 
   render() {
@@ -69,7 +70,15 @@ class Home extends Component {
 
                     {/*<!-- START EDUCATION -->*/}
                     <div className="resume-card">
-                      <Education />
+                      <div className="education-card">
+                        <div className="main-title">
+                          <h1><i className="icon-graduation-cap" />education</h1>
+                          <hr className="divider--fade" />
+                        </div>
+                        {!this.props.education.isFetching ?
+                          (<Education education={this.props.education.data} />) : null
+                        }
+                      </div>
                     </div>
                     {/*<!-- END EDUCATION -->*/}
 
@@ -99,12 +108,16 @@ const mapStateToProps = state => (
     experience: {
       data: state.experience.data,
       isFetching: state.experience.isFetching
+    },
+    education: {
+      data: state.education.data,
+      isFetching: state.education.isFetching
     }
   }
 );
 
 const mapDispatchToProps = dispatch => bindActionCreators(
-  { requestSkills, requestExperience }, dispatch
+  { requestSkills, requestExperience, requestEducation }, dispatch
 );
 
 export default connect(mapStateToProps, mapDispatchToProps)(Home);

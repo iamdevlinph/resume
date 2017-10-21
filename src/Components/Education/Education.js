@@ -2,12 +2,10 @@ import React, { Component } from 'react';
 
 import './Education.scss';
 
-import educationJson from './data/education.json';
-
 class Education extends Component {
-  constructor() {
-    super();
-    this.state = { educationData: educationJson };
+  constructor(props) {
+    super(props);
+    this.state = { educationData: this.props.education };
   }
   render() {
     var educationList = this.state.educationData.map((education, index) => {
@@ -30,20 +28,14 @@ class Education extends Component {
       );
     });
     return (
-      <div className="education-card">
-        <div className="main-title">
-          <h1><i className="icon-graduation-cap" />education</h1>
-          <hr className="divider--fade" />
-        </div>
-        <div className="content">
-          <div className="block-content">
-            <div className="timeline education">
-              <div className="row ">
-                <div className="col-md-12">
-                  <ul className="timeline">
-                    {educationList}
-                  </ul>
-                </div>
+      <div className="content">
+        <div className="block-content">
+          <div className="timeline education">
+            <div className="row ">
+              <div className="col-md-12">
+                <ul className="timeline">
+                  {educationList}
+                </ul>
               </div>
             </div>
           </div>
