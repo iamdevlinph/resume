@@ -16,14 +16,13 @@ import Education from './Components/Education/Education';
 import Portfolio from './Components/Portfolio/Portfolio';
 
 class Home extends Component {
-  componentDidMount() {
+  componentWillMount() {
     this.props.requestSkills();
   }
 
   render() {
     return (
       <div className="app">
-        {this.props.resume}
         <div id="wrapper" className="marg-top marg-bottom">
           <div className="container" id="print-container">
             <div className="row ">
@@ -50,9 +49,9 @@ class Home extends Component {
                           <h1><i className="icon-code" />technologies</h1>
                           <hr className="divider--fade" />
                         </div>
-                        {this.props.resume.isFetching ?
+                        {!this.props.skills.isFetching ?
                           (<Skills dateUtils={dateUtils}
-                            skills={this.props.resume.skills} />) : null
+                            skills={this.props.skills.data} />) : null
                         }
                       </div>
                     </div>
@@ -83,12 +82,15 @@ class Home extends Component {
 
 const mapStateToProps = state => (
   {
-    resume: state.resume
+    skills: {
+      data: state.skills.data,
+      isFetching: state.skills.isFetching
+    },
   }
 );
+
 const mapDispatchToProps = dispatch => bindActionCreators(
-  {
-    requestSkills
-  }, dispatch);
+  { requestSkills }, dispatch
+);
 
 export default connect(mapStateToProps, mapDispatchToProps)(Home);

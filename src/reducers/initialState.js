@@ -1,5 +1,5 @@
-import { resumeState } from './initStates/resumeState';
+import { skillsState } from './initStates/skillsState';
 
 export default {
-  resumeState,
+  skillsState,
 };

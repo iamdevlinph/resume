@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux';
 
-import resume from './resume';
+import skills from './skills';
 
 export default combineReducers({
-  resume
+  skills
 });

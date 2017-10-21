@@ -3,16 +3,13 @@ import moment from 'moment';
 
 import './Skills.scss';
 
-import skillsJson from './data/skills.json';
-
 class Skills extends Component {
   constructor(props) {
     super(props);
     console.log(this.props)
-    this.state = { skillsData: skillsJson };
+    this.state = { skillsData: this.props.skills };
   }
   render() {
-    console.log(this.props)
     const dateUtils = this.props.dateUtils;
     var skillList = this.state.skillsData.map((skill, index) => {
       var el = null;
@@ -32,7 +29,7 @@ class Skills extends Component {
         el = (
           <li key={index} data-balloon={tooltip} data-balloon-pos="down" data-balloon-break>
             <div className="skills__logo">
-              <img src={require(skill.img_path)} alt={skill.name} />
+              <img src={skill.img_path} alt={skill.name} />
             </div>
             <div className="skills__name">
               <h4>{skill.name}</h4>
