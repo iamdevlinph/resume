@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 
-import { requestSkills } from './actions';
+import { requestSkills, requestExperience } from './actions';
 
 import './main.scss';
 import './Home.scss';
@@ -18,6 +18,7 @@ import Portfolio from './Components/Portfolio/Portfolio';
 class Home extends Component {
   componentWillMount() {
     this.props.requestSkills();
+    this.props.requestExperience();
   }
 
   render() {
@@ -37,9 +38,17 @@ class Home extends Component {
                   <div className="resume">
                     {/*<!-- START EXPERIENCE -->*/}
                     <div className="resume-card">
-                      <Experience dateUtils={dateUtils} />
+                      <div className="experience-card">
+                        <div className="main-title">
+                          <h1><i className="icon-code" />technologies</h1>
+                          <hr className="divider--fade" />
+                        </div>
+                        {!this.props.skills.isFetching ?
+                          (<Experience dateUtils={dateUtils}
+                            experience={this.props.experience.data} />) : null
+                        }
+                      </div>
                     </div>
-
                     {/*<!-- END EXPERIENCE -->*/}
 
                     {/*<!-- START SKILLS -->*/}
@@ -86,11 +95,15 @@ const mapStateToProps = state => (
       data: state.skills.data,
       isFetching: state.skills.isFetching
     },
+    experience: {
+      data: state.experience.data,
+      isFetching: state.experience.isFetching
+    }
   }
 );
 
 const mapDispatchToProps = dispatch => bindActionCreators(
-  { requestSkills }, dispatch
+  { requestSkills, requestExperience }, dispatch
 );
 
 export default connect(mapStateToProps, mapDispatchToProps)(Home);

@@ -1,6 +1,6 @@
 const resumeApi = {
-  fetchSkills() {
-    return fetch('https://raw.githubusercontent.com/iamdevlinph/resume-data/master/skills.json', {
+  fetchData(type) {
+    return fetch(`https://raw.githubusercontent.com/iamdevlinph/resume-data/master/${type}.json`, {
       method: 'GET'
     }).catch(() => {
       console.log('Fail zone');

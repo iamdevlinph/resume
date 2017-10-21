@@ -3,12 +3,10 @@ import moment from 'moment';
 
 import './Experience.scss';
 
-import experienceJson from './data/experience.json';
-
 class Experience extends Component {
   constructor() {
     super();
-    this.state = { experienceData: experienceJson };
+    this.state = { experienceData: this.props.experience };
   }
   render() {
     const dateUtils = this.props.dateUtils;
@@ -43,20 +41,14 @@ class Experience extends Component {
       );
     });
     return (
-      <div className="experience-card">
-        <div className="main-title">
-          <h1><i className="icon-suitcase" />experience</h1>
-          <hr className="divider--fade" />
-        </div>
-        <div className="content">
-          <div className="block-content ">
-            <div className="timeline experience">
-              <div className="row ">
-                <div className="col-md-12">
-                  <ul className="timeline">
-                    {experienceList}
-                  </ul>
-                </div>
+      <div className="content">
+        <div className="block-content ">
+          <div className="timeline experience">
+            <div className="row ">
+              <div className="col-md-12">
+                <ul className="timeline">
+                  {experienceList}
+                </ul>
               </div>
             </div>
           </div>

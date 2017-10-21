@@ -10,3 +10,7 @@ export default () => (
     <Home />
   </Provider>
 );
+
+store.subscribe(() => {
+  console.log(store.getState()); // Some DOM api calls.
+});

@@ -1,19 +1,27 @@
 import { put, takeLatest, call } from 'redux-saga/effects';
 
 import { REQUEST_SKILLS, RECEIVE_SKILLS, UPDATE_SKILLS_AJAX_STATUS } from './actions';
+import { REQUEST_EXPERIENCE, RECEIVE_EXPERIENCE, UPDATE_EXPERIENCE_AJAX_STATUS } from './actions';
 
 import resumeApi from './api/api';
 
 // worker saga: will be fired on USER_FETCH_REQUESTED actions
 function* getSkills(action) {
-
   try {
-    const skills = yield call(resumeApi.fetchSkills);
+    const skills = yield call(resumeApi.fetchData, 'skills');
     yield put({ type: RECEIVE_SKILLS, skills: yield skills.json() });
     yield put({ type: UPDATE_SKILLS_AJAX_STATUS, payload: false })
   } catch (e) {
   }
+}
 
+function* getExperience(action) {
+  try {
+    const experience = yield call(resumeApi.fetchData, 'experience');
+    yield put({ type: RECEIVE_EXPERIENCE, experience: yield experience.json() });
+    yield put({ type: UPDATE_EXPERIENCE_AJAX_STATUS, payload: false })
+  } catch (e) {
+  }
 }
 
 /*
@@ -25,4 +33,5 @@ function* getSkills(action) {
 */
 export default function* mySaga() {
   yield takeLatest(REQUEST_SKILLS, getSkills);
+  yield takeLatest(REQUEST_EXPERIENCE, getExperience);
 }

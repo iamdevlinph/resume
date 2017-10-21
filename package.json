@@ -65,7 +65,8 @@
     "start": "node scripts/start.js",
     "test": "node scripts/test.js --env=jsdom",
     "build": "node scripts/build.js && gh-pages -d build",
-    "build-local": "node scripts/build.js && pushstate-server build"
+    "build-local": "node scripts/build.js && pushstate-server build",
+    "build-only": "node scripts/build.js"
   },
   "homepage": "https://iamdevlinph.github.io/resume",
   "jest": {
