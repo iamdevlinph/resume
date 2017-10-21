@@ -2,12 +2,10 @@ import React, { Component } from 'react';
 
 import './Portfolio.scss';
 
-import portfolioJson from './data/portfolio.json';
-
 class Portfolio extends Component {
-  constructor() {
-    super();
-    this.state = { portfolioData: portfolioJson };
+  constructor(props) {
+    super(props);
+    this.state = { portfolioData: this.props.portfolio };
 
     // meta
     //1545x771 px
@@ -27,7 +25,7 @@ class Portfolio extends Component {
                      <span>web design</span>*/}
                   </h3>
                 </div>
-                <img className="portfolio-preview" alt="" src={require(portfolio.img_path)} />
+                <img className="portfolio-preview" alt="" src={portfolio.img_path} />
                 <span className="show-to-print">
                   {portfolio.name}
                 </span>
@@ -40,23 +38,16 @@ class Portfolio extends Component {
       return el;
     });
     return (
-      <div className="portfolio-card">
-        <div className="main-title">
-          <h1><i className="icon-folder-open" />portfolio</h1>
-          <hr className="divider--fade" />
-        </div>
-
-        <div className="content">
-          <div className="block-content ">
-            <div className="works">
-              <div className="row">
-                <ul className="work">
-                  {portfolioList}
-                </ul>
-              </div>
+      <div className="content">
+        <div className="block-content ">
+          <div className="works">
+            <div className="row">
+              <ul className="work">
+                {portfolioList}
+              </ul>
             </div>
-            <div className="clearfix"></div>
           </div>
+          <div className="clearfix"></div>
         </div>
       </div>
     );
