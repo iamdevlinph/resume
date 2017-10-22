@@ -17,3 +17,8 @@ export const REQUEST_PORTFOLIO = 'REQUEST_PORTFOLIO';
 export const RECEIVE_PORTFOLIO = 'RECEIVE_PORTFOLIO';
 export const UPDATE_PORTFOLIO_AJAX_STATUS = 'UPDATE_PORTFOLIO_AJAX_STATUS';
 export const requestPortfolio = () => ({ type: REQUEST_PORTFOLIO });
+
+export const REQUEST_ABOUT = 'REQUEST_ABOUT';
+export const RECEIVE_ABOUT = 'RECEIVE_ABOUT';
+export const UPDATE_ABOUT_AJAX_STATUS = 'UPDATE_ABOUT_AJAX_STATUS';
+export const requestAbout = () => ({ type: REQUEST_ABOUT });

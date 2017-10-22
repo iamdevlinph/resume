@@ -4,6 +4,7 @@ import { REQUEST_SKILLS, RECEIVE_SKILLS, UPDATE_SKILLS_AJAX_STATUS } from './act
 import { REQUEST_EXPERIENCE, RECEIVE_EXPERIENCE, UPDATE_EXPERIENCE_AJAX_STATUS } from './actions';
 import { REQUEST_EDUCATION, RECEIVE_EDUCATION, UPDATE_EDUCATION_AJAX_STATUS } from './actions';
 import { REQUEST_PORTFOLIO, RECEIVE_PORTFOLIO, UPDATE_PORTFOLIO_AJAX_STATUS } from './actions';
+import { REQUEST_ABOUT, RECEIVE_ABOUT, UPDATE_ABOUT_AJAX_STATUS } from './actions';
 
 import resumeApi from './api/api';
 
@@ -44,6 +45,15 @@ function* getPortfolio(action) {
   }
 }
 
+function* getAbout(action) {
+  try {
+    const about = yield call(resumeApi.fetchData, 'about');
+    yield put({ type: RECEIVE_ABOUT, about: yield about.json() });
+    yield put({ type: UPDATE_ABOUT_AJAX_STATUS, payload: false })
+  } catch (e) {
+  }
+}
+
 /*
   alternatively you may use takelatest
 
@@ -56,4 +66,5 @@ export default function* mySaga() {
   yield takeLatest(REQUEST_EXPERIENCE, getExperience);
   yield takeLatest(REQUEST_EDUCATION, getEducation);
   yield takeLatest(REQUEST_PORTFOLIO, getPortfolio);
+  yield takeLatest(REQUEST_ABOUT, getAbout);
 }

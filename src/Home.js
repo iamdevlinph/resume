@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 
-import { requestSkills, requestExperience, requestEducation, requestPortfolio } from './actions';
+import { requestSkills, requestExperience, requestEducation, requestPortfolio, requestAbout } from './actions';
 
 import './main.scss';
 import './Home.scss';
@@ -17,6 +17,7 @@ import Portfolio from './Components/Portfolio/Portfolio';
 
 class Home extends Component {
   componentWillMount() {
+    this.props.requestAbout();
     this.props.requestExperience();
     this.props.requestSkills();
     this.props.requestEducation();
@@ -31,7 +32,8 @@ class Home extends Component {
             <div className="row ">
 
               {/*<!-- START ABOUT -->*/}
-              <About />
+              {!this.props.about.isFetching ?
+                (<About about={this.props.about.data} />) : null}
               {/*<!-- END ABOUT -->*/}
 
               {/*<!-- START RESUME -->*/}
@@ -110,6 +112,10 @@ class Home extends Component {
 
 const mapStateToProps = state => (
   {
+    about: {
+      data: state.about.data,
+      isFetching: state.about.isFetching
+    },
     skills: {
       data: state.skills.data,
       isFetching: state.skills.isFetching
@@ -130,7 +136,7 @@ const mapStateToProps = state => (
 );
 
 const mapDispatchToProps = dispatch => bindActionCreators(
-  { requestSkills, requestExperience, requestEducation, requestPortfolio }, dispatch
+  { requestAbout, requestSkills, requestExperience, requestEducation, requestPortfolio }, dispatch
 );
 
 export default connect(mapStateToProps, mapDispatchToProps)(Home);

@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
+import * as _ from 'lodash';
 
 import './About.scss';
 
-import profileImg from './img/ai_resize.jpg';
-
 class About extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.noClick = this.noClick.bind(this);
     this.showPdf = this.showPdf.bind(this);
+    this.state = { about: this.props.about };
   }
   noClick(event) {
     event.preventDefault();
@@ -19,47 +19,52 @@ class About extends Component {
     window.open('/resume/Devlin Pajaron - Resume.pdf')
   }
   render() {
+    let social_links = _.orderBy(this.state.about.social_links, ['order'], ['asc']).map((val, idx) => {
+      let link_el = null;
+      if (val.show) {
+        link_el = (
+          <li key={idx}><a href={val.url} target="_blank"><i className={val.icon} /></a></li>
+        )
+      }
+      return link_el;
+    });
     return (
       <div className="about-card">
         <div className="col-md-3 left-col">
           <header id="header">
             <div className="main-header">
               <figure className="img-profile">
-                <img src={profileImg} alt="" />
-                {/*<!--<figcaption className="name-profile">
-							        <span>Carlose smith <sup>&reg;</sup></span>
-						        </figcaption>-->*/}
+                <img src={this.state.about.profile_photo_url} alt="" />
+                {/* <figcaption className="name-profile">
+                  <span>name <sup>&reg;</sup></span>
+                </figcaption> */}
               </figure>
               <nav id="main-nav" className="main-nav clearfix tabbed">
                 <ul>
                   <li className="active">
                     <a href="#" className="active" onClick={(e) => this.noClick(e)}>
-                      <p className="name">Devlin <strong>Pajaron</strong></p>
+                      <p className="name">{this.state.about.first_name} <strong>{this.state.about.last_name}</strong></p>
                       <p className="title">JavaScript Developer</p>
                     </a>
                   </li>
                   <li className="about-sub-section">
                     <a href="#" className="about-sub-section__link" onClick={(e) => this.noClick(e)}>
-                      iamdevlinph@gmail.com
-                                            <i className="about-sub-section__link__icon icon-mail" />
+                      {this.state.about.email}<i className="about-sub-section__link__icon icon-mail" />
                     </a>
                   </li>
                   <li className="about-sub-section">
-                    <a href="skype:live:devlinpajaron?chat" className="about-sub-section__link">
-                      live:devlinpajaron
-                                            <i className="about-sub-section__link__icon icon-skype" />
-                    </a>
-                  </li>
-                  <li className="about-sub-section">
-                    <a href="#" className="about-sub-section__link" onClick={(e) => this.noClick(e)}>
-                      (+63) 943 230 2440
-                                            <i className="about-sub-section__link__icon icon-phone" />
+                    <a href={`skype:${this.state.about.skype}?chat`} className="about-sub-section__link">
+                      {this.state.about.skype}<i className="about-sub-section__link__icon icon-skype" />
                     </a>
                   </li>
                   <li className="about-sub-section">
                     <a href="#" className="about-sub-section__link" onClick={(e) => this.noClick(e)}>
-                      Cebu City, Philippines
-                                            <i className="about-sub-section__link__icon icon-home" />
+                      {this.state.about.mobile}<i className="about-sub-section__link__icon icon-phone" />
+                    </a>
+                  </li>
+                  <li className="about-sub-section">
+                    <a href="#" className="about-sub-section__link" onClick={(e) => this.noClick(e)}>
+                      {this.state.about.address}<i className="about-sub-section__link__icon icon-home" />
                     </a>
                   </li>
                 </ul>
@@ -67,12 +72,7 @@ class About extends Component {
             </div>
             <div className="bottom-header bgWhite ofsTSmall ofsBSmall tCenter">
               <ul className="social">
-                {/*<li><a href="https://www.facebook.com/iamdevlinph" target="_blank"><i className="icon-facebook"></i></a></li>*/}
-                <li><a href="https://github.com/iamdevlinph" target="_blank"><i className="icon-github-circled"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/iamdevlinph/" target="_blank"><i className="icon-linkedin"></i></a></li>
-                {/*<li><a href="skype:live:devlinpajaron?chat"><i className="icon-skype"></i></a></li>*/}
-                <li><a href="http://stackoverflow.com/users/4620773/iamdevlinph" target="_blank"><i className="icon-stack-overflow"></i></a></li>
-                <li><a href="https://twitter.com/iamdevlinph" target="_blank"><i className="icon-twitter"></i></a></li>
+                {social_links}
               </ul>
               <p>&copy; 2017 iamdevlinph</p>
               <button className="btn btn-print no-print" onClick={() => this.showPdf()}><i className="icon-download" /> PDF</button>&nbsp;
