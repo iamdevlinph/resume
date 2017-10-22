@@ -1,10 +1,11 @@
 ## React Resume
 Resume template written in React.
 
-## To Do:
-- Separate json file (for data) to fetch
-- Integrate redux, redux-saga, and react-redux
-- Fetch each section separately and dynamically (Code splitting)
+## Milestone:
+- [x] Separate json file (for data) to fetch
+- [x] Integrate redux, redux-saga, and react-redux
+- [ ] Loader css
+- [ ] Use css-grids
 
 ## Getting started
 Make you to have `yarn` installed globally
