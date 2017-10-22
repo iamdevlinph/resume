@@ -11,8 +11,8 @@ class Portfolio extends Component {
     //1545x771 px
   }
   render() {
-    var portfolioList = this.state.portfolioData.map((portfolio, index) => {
-      var el = null;
+    let portfolioList = this.state.portfolioData.map((portfolio, index) => {
+      let el = null;
       if (portfolio.isShow) {
         el = (
           <li key={index} className="col-md-4 ">

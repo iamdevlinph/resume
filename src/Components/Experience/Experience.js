@@ -10,12 +10,12 @@ class Experience extends Component {
   }
   render() {
     const dateUtils = this.props.dateUtils;
-    var experienceList = this.state.experienceData.map((experience, index) => {
-      var workFrom = moment(experience.workFrom, 'MMMM-YYYY').format('MMMM YYYY');
-      var workTo = (experience.workTo === 'Present') ?
+    let experienceList = this.state.experienceData.map((experience, index) => {
+      let workFrom = moment(experience.workFrom, 'MMMM-YYYY').format('MMMM YYYY');
+      let workTo = (experience.workTo === 'Present') ?
         'Present' :
         moment(experience.workTo, 'MMMM-YYYY').format('MMMM YYYY');
-      var workDuration = dateUtils.getDuration(workFrom, workTo, 'MMMM YYYY');
+      let workDuration = dateUtils.getDuration(workFrom, workTo, 'MMMM YYYY');
       return (
         <li key={index} className="timeline-item">
           <div className="timeline-info">

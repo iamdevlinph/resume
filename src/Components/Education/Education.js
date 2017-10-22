@@ -8,7 +8,7 @@ class Education extends Component {
     this.state = { educationData: this.props.education };
   }
   render() {
-    var educationList = this.state.educationData.map((education, index) => {
+    let educationList = this.state.educationData.map((education, index) => {
       return (
         <li key={index} className="timeline-item">
           <div className="timeline-info">
