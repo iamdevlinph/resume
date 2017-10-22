@@ -16,7 +16,7 @@ class About extends Component {
     return false;
   }
   showPdf() {
-    window.open('/resume/Devlin Pajaron - Resume.pdf')
+    window.open('/Devlin Pajaron - Resume.pdf')
   }
   render() {
     let social_links = _.orderBy(this.state.about.social_links, ['order'], ['asc']).map((val, idx) => {
