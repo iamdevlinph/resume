@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import moment from 'moment';
+import * as _ from 'lodash';
 
 import './Skills.scss';
 
@@ -10,7 +11,7 @@ class Skills extends Component {
   }
   render() {
     const dateUtils = this.props.dateUtils;
-    let skillList = this.state.skillsData.map((skill, index) => {
+    let skillList = _.orderBy(this.state.skillsData, [skill => skill.name.toLowerCase()], ['asc']).map((skill, index) => {
       let el = null;
       let duration = '';
       if (skill.duration.showDuration) {
