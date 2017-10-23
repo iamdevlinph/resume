@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import moment from 'moment';
 import * as _ from 'lodash';
 
 import './About.scss';
@@ -19,6 +20,7 @@ class About extends Component {
     window.open('/Devlin Pajaron - Resume.pdf')
   }
   render() {
+    let updated_at = moment(this.state.about.updated_at, 'YYYY-MM-DD').format('DD MMMM, YYYY');
     let social_links = _.orderBy(this.state.about.social_links, ['order'], ['asc']).map((val, idx) => {
       let link_el = null;
       if (val.show) {
@@ -76,7 +78,7 @@ class About extends Component {
               </ul>
               <p>&copy; 2017 iamdevlinph</p>
               <button className="btn btn-print no-print" onClick={() => this.showPdf()}><i className="icon-download" /> PDF</button>&nbsp;
-                            <p className="resume-updated"><em>Updated at 24 August, 2017</em></p>
+                            <p className="resume-updated"><em>Updated at {updated_at}</em></p>
             </div>
           </header>
         </div>
