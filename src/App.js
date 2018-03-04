@@ -1,12 +1,20 @@
 import React from 'react';
 import { Provider } from 'react-redux';
-import 'babel-polyfill';
+import { injectGlobal } from 'styled-components';
 
+import Routes from './routes';
 import store from './store';
-import Home from './Home';
 
 export default () => (
-  <Provider store={store}>
-    <Home />
+  <Provider store={store} >
+    <Routes />
   </Provider>
 );
+
+// Global style
+// eslint-disable-next-line
+injectGlobal`
+  body {
+    font-size: 16px;
+  }
+`;
