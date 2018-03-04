@@ -15,6 +15,6 @@ export default () => (
 // eslint-disable-next-line
 injectGlobal`
   body {
-    font-size: 16px;
+    margin: 0;
   }
 `;

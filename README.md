@@ -6,3 +6,6 @@ A rewrite of my resume repo using the [react-kit](https://github.com/codesandcof
 ![open prs](https://img.shields.io/github/issues-pr/iamdevlinph/resume.svg)
 ![code size](https://img.shields.io/github/languages/code-size/iamdevlinph/resume.svg)
 ![contributors](https://img.shields.io/github/contributors/iamdevlinph/resume.svg)
+
+# Includes
+- CSS Grid

@@ -11,5 +11,8 @@ module.exports = {
   "globals": {
     "document": true
   },
-  "parser": "babel-eslint"
+  "parser": "babel-eslint",
+  // "env": {
+  //   "jest": true
+  // }
 };

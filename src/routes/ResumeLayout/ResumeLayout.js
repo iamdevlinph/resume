@@ -1,21 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
 
-import { Navbar } from '../../components';
-
-const Layout = styled.div`
-  display: inherit;
-  text-align: center;
-`;
+import './resume-layout.css';
 
 class HomeLayout extends React.Component {
   render() {
     return (
-      <Layout>
-        <Navbar />
+      <div className="resume-layout">
         {this.props.children}
-      </Layout>
+      </div>
     );
   }
 }

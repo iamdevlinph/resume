@@ -2,7 +2,7 @@ import React from 'react';
 import { HashRouter, Route, Switch } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
-import HomeLayout from './HomeLayout/HomeLayout';
+import ResumeLayout from './ResumeLayout/ResumeLayout';
 import loadableCons from './loadableCons';
 
 const AppRoute = ({ component: Component, layout: Layout, ...rest }) => (
@@ -19,8 +19,7 @@ const AppRoute = ({ component: Component, layout: Layout, ...rest }) => (
 export default () => (
   <HashRouter >
     <Switch>
-      <AppRoute exact path="/" layout={HomeLayout} component={loadableCons.Counter} />
-      <AppRoute exact path="/about" layout={HomeLayout} component={loadableCons.About} />
+      <AppRoute exact path="/" layout={ResumeLayout} component={loadableCons.Resume} />
     </Switch>
   </HashRouter >
 );

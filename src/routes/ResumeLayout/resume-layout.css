@@ -1,0 +1,5 @@
+.resume-layout {
+  display: grid;
+  grid-template-areas: "l-pad main-area r-pad";
+  grid-template-columns: 11% auto 11%;
+}
