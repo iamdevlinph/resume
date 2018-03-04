@@ -1,20 +1,25 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
 
-import './resume-layout.css';
+const ResumeGridLayout = styled.div`
+  display: grid;
+  grid-template-areas: "l-pad main-area r-pad";
+  grid-template-columns: auto 1200px auto;
+`;
 
-class HomeLayout extends React.Component {
+class ResumeLayout extends React.Component {
   render() {
     return (
-      <div className="resume-layout">
+      <ResumeGridLayout>
         {this.props.children}
-      </div>
+      </ResumeGridLayout>
     );
   }
 }
 
-HomeLayout.propTypes = {
+ResumeLayout.propTypes = {
   children: PropTypes.object.isRequired,
 };
 
-export default HomeLayout;
+export default ResumeLayout;

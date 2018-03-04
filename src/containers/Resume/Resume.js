@@ -7,7 +7,7 @@ import './resume-grid.css';
 const ResumeGrid = styled.div`
   display: grid;
   grid-area: main-area;
-  grid-template-columns: 25% auto;
+  grid-template-columns: 280px auto;
   grid-column-gap: 10px;
 `;
 
