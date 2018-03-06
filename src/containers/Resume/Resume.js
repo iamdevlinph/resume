@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { About, Section } from '../index';
+import { AboutCard, Card } from '../index';
 
 const ResumeGrid = styled.div`
   display: grid;
@@ -23,13 +23,13 @@ class ResumeContainer extends React.Component {
     return (
       <ResumeGrid>
         <Border>
-          <About />
+          <AboutCard />
         </Border>
         <Border>
-          <Section title="Experience Container" />
-          <Section title="Technology Container" />
-          <Section title="Education Container" />
-          <Section title="Portfolio Container" />
+          <Card title="Experience Container" />
+          <Card title="Technology Container" />
+          <Card title="Education Container" />
+          <Card title="Portfolio Container" />
         </Border>
       </ResumeGrid>
     );
