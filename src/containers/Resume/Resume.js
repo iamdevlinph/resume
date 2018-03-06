@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { About, Education, Experience, Portfolio, Skills } from '../index';
+import { About, Section } from '../index';
 
 const ResumeGrid = styled.div`
   display: grid;
@@ -14,19 +14,23 @@ const ResumeGrid = styled.div`
   }
 `;
 
+const Border = styled.div`
+  border: 1px solid black;
+`;
+
 class ResumeContainer extends React.Component {
   render() {
     return (
       <ResumeGrid>
-        <div className="left-content">
+        <Border>
           <About />
-        </div>
-        <div className="right-content">
-          <Education />
-          <Experience />
-          <Portfolio />
-          <Skills />
-        </div>
+        </Border>
+        <Border>
+          <Section title="Experience Container" />
+          <Section title="Technology Container" />
+          <Section title="Education Container" />
+          <Section title="Portfolio Container" />
+        </Border>
       </ResumeGrid>
     );
   }

@@ -8,7 +8,7 @@ const fakeDelay = ms => new Promise((resolve) => {
 
 export default {
   Resume: Loadable({
-    loader: () => fakeDelay(2000).then(() => import('../containers/Resume/Resume')),
+    loader: () => fakeDelay(0).then(() => import('../containers/Resume/Resume')),
     loading: Loading,
   }),
 };
