@@ -15,4 +15,5 @@
     "statusBar.background": "#263238",
     "statusBar.foreground": "#9E9E9E"
   },
+  "emmet.triggerExpansionOnTab": true,
 }
