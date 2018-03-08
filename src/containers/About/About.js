@@ -13,11 +13,14 @@ class AboutContainer extends React.Component {
   render() {
     return (
       <AboutGrid>
-        <Avatar>
-          <img src="https://res.cloudinary.com/dfrhytey3/image/upload/v1520350961/icon_jgxnta.jpg" alt="profile" />
-        </Avatar>
+        <AvatarSection>
+          {/* <Avatar src={this.props.about.profile_photo_url} alt="profile" /> */}
+          <Avatar src="https://res.cloudinary.com/dfrhytey3/image/upload/v1520350961/icon_jgxnta.jpg" alt="profile" />
+        </AvatarSection>
         <NameTitle>
-          <Name>{this.props.about.first_name} {this.props.about.last_name}</Name>
+          <Name>{this.props.about.first_name}
+            <LastName>{this.props.about.last_name}</LastName>
+          </Name>
           <Title>{this.props.about.role}</Title>
         </NameTitle>
         <Info>{this.props.about.email}</Info>
@@ -57,20 +60,46 @@ const mapDispatchToProps = dispatch => ({
 export default connect(mapStateToProps, mapDispatchToProps)(AboutContainer);
 
 const AboutGrid = styled.div`
-  border: 1px solid black;
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,.12),0 1.5px 1px 0 rgba(0,0,0,.24) !important;
   margin: 10px 10px;
+  background: white;
+  text-align: right;
 `;
 
-const Avatar = styled.div`
+const AvatarSection = styled.div`
   text-align: center;
 `;
 
-const NameTitle = styled.div`
-  display: block;
+const Avatar = styled.img`
+  display: inline-block;
+  vertical-align: middle;
+  height: auto;
+  max-width: 100%;
 `;
 
-const Name = styled.div``;
-const Title = styled.div``;
-const Info = styled.div``;
+const NameTitle = styled.div`
+  background: #B52E31;
+  color: white;
+  text-transform: uppercase;
+  padding: 15px 25px;
+`;
+
+const Name = styled.div`
+  font-size: 20px;
+`;
+const LastName = styled.span`
+  margin-left: 5px;
+  color: #333131;
+`;
+const Title = styled.span`
+  font-size: 10px;
+`;
+const Info = styled.div`
+  background: #33373D;
+  color: #85878B;
+  padding: 7px 25px;
+  font-size: 12px;
+  border-bottom: 1px solid #26292e;
+`;
 const AboutFooter = styled.div``;
 const SocialLinks = styled.div``;

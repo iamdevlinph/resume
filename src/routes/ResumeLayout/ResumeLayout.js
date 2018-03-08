@@ -6,6 +6,7 @@ const ResumeLayoutGrid = styled.div`
   display: grid;
   grid-template-areas: "l-pad main-area r-pad";
   grid-template-columns: auto 1200px auto;
+  margin-top: 5px;
   @media only screen and (max-width: 1200px) and (min-width: 600px) {
     grid-template-columns: 0px auto 0px;
   }
