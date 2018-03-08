@@ -12,7 +12,9 @@ module.exports = {
     "document": true
   },
   "parser": "babel-eslint",
-  // "env": {
-  //   "jest": true
-  // }
+  "env": {
+    // "jest": true
+    "browser": true
+  }
+
 };
