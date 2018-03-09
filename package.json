@@ -3,12 +3,8 @@
   "version": "2.0.0",
   "private": false,
   "dependencies": {
-    "@codes-and-coffees/react-pkg": "1.0.9",
+    "@codes-and-coffees/react-pkg": "1.0.16",
     "moment": "2.21.0"
-  },
-  "devDependencies": {
-    "husky": "^0.14.3",
-    "lint-staged": "^7.0.0"
   },
   "scripts": {
     "start": "node scripts/start.js",
