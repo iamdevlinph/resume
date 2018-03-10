@@ -17,16 +17,6 @@ class TimelineComponent extends React.Component {
               <p>Nullam vel sem. Nullam vel sem.</p>
             </div>
           </li>
-          <li className="timeline-item">
-            <div className="timeline-info">
-              <span>March 23, 2016</span>
-            </div>
-            <div className="timeline-marker" />
-            <div className="timeline-content">
-              <h3 className="timeline-title">Event Title</h3>
-              <p>Nullam vel sem. Nullam vel sem.</p>
-            </div>
-          </li>
         </ul>
       </div>
     );
