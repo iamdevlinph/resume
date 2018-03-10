@@ -3,7 +3,9 @@ import React from 'react';
 class PortfolioContainer extends React.Component {
   render() {
     return (
-      <h1>Portfolio Container</h1>
+      <div>
+        portfolio stuff goes here
+      </div>
     );
   }
 }

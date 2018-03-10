@@ -1,18 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { AboutCard, Card } from '../index';
-
-const ResumeGrid = styled.div`
-  display: grid;
-  grid-area: main-area;
-  grid-template-columns: 270px auto;
-  grid-column-gap: 20px;
-  @media only screen and (max-width: 599px) {
-    grid-template-columns: auto;
-    grid-row-gap: 20px;
-  }
-`;
+import { AboutCard, Card, EducationCard, ExperienceCard, PortfolioCard, TechnologyCard } from '../index';
 
 class ResumeContainer extends React.Component {
   render() {
@@ -22,10 +11,10 @@ class ResumeContainer extends React.Component {
           <AboutCard />
         </div>
         <div>
-          <Card title="Experience Container" />
-          <Card title="Technology Container" />
-          <Card title="Education Container" />
-          <Card title="Portfolio Container" />
+          <Card title="Experience"><ExperienceCard /></Card>
+          <Card title="Technology"><TechnologyCard /></Card>
+          <Card title="Education"><EducationCard /></Card>
+          <Card title="Portfolio"><PortfolioCard /></Card>
         </div>
       </ResumeGrid>
     );
@@ -33,3 +22,14 @@ class ResumeContainer extends React.Component {
 }
 
 export default ResumeContainer;
+
+const ResumeGrid = styled.div`
+  display: grid;
+  grid-area: main-area;
+  grid-template-columns: 270px auto;
+  grid-column-gap: 10px;
+  @media only screen and (max-width: 599px) {
+    grid-template-columns: auto;
+    /* grid-row-gap: 10px; */
+  }
+`;
