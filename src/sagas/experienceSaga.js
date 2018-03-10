@@ -5,14 +5,11 @@ import { types as experienceTypes } from '../ducks/experience';
 import resumeApi from '../services/api';
 
 function* experienceWillFetch() {
-  yield put({
-    type: experienceTypes.EXPERIENCE_SUCCESS,
-  });
   try {
     const about = yield call(resumeApi.fetchData, 'experience');
     yield put({ type: experienceTypes.EXPERIENCE_SUCCESS, experience: yield about.json() });
   } catch (e) {
-    console.log(e);
+    // console.log(e);
   }
 }
 

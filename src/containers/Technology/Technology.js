@@ -13,6 +13,9 @@ class TechnologyContainer extends React.Component {
     return (
       <div>
         technology stuff goes here
+        <pre>
+          {JSON.stringify(this.props.technology, null, 2)}
+        </pre>
       </div>
     );
   }
@@ -20,6 +23,11 @@ class TechnologyContainer extends React.Component {
 
 TechnologyContainer.propTypes = {
   requestTechnology: PropTypes.func.isRequired,
+  technology: PropTypes.any,
+};
+
+TechnologyContainer.defaultProps = {
+  technology: [],
 };
 
 const mapStateToProps = state => (

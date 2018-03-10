@@ -1,19 +1,24 @@
 export const types = {
-  DATA_REQUEST: 'EDUCATION/DATA_REQUEST',
-  DATA_SUCCESS: 'EDUCATION/DATA_SUCCESS',
-  DATA_FAIL: 'EDUCATION/DATA_FAIL',
+  EDUCATION_REQUEST: 'EDUCATION/EDUCATION_REQUEST',
+  EDUCATION_SUCCESS: 'EDUCATION/EDUCATION_SUCCESS',
+  EDUCATION_FAIL: 'EDUCATION/EDUCATION_FAIL',
 };
 
 export const initialState = {
-  education: {},
+  data: {},
 };
 
 export default (state = initialState, action) => {
   switch (action.type) {
+    case types.EDUCATION_SUCCESS:
+      return Object.assign({}, state, {
+        data: action.education,
+      });
     default:
       return state;
   }
 };
 
 export const actions = {
+  requestEducation: () => ({ type: types.EDUCATION_REQUEST }),
 };
