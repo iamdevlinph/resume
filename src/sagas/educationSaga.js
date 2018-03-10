@@ -6,8 +6,8 @@ import resumeApi from '../services/api';
 
 function* educationWillFetch() {
   try {
-    const about = yield call(resumeApi.fetchData, 'education');
-    yield put({ type: educationTypes.EDUCATION_SUCCESS, education: yield about.json() });
+    const education = yield call(resumeApi.fetchData, 'education');
+    yield put({ type: educationTypes.EDUCATION_SUCCESS, education: yield education.json() });
   } catch (e) {
     // console.log(e);
   }

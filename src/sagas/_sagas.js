@@ -4,6 +4,7 @@ import aboutSaga from './aboutSaga';
 import experienceSaga from './experienceSaga';
 import technologySaga from './technologySaga';
 import educationSaga from './educationSaga';
+import portfolioSaga from './portfolioSaga';
 
 export default function* mySaga() {
   yield all([
@@ -11,5 +12,6 @@ export default function* mySaga() {
     ...experienceSaga,
     ...technologySaga,
     ...educationSaga,
+    ...portfolioSaga,
   ]);
 }

@@ -6,8 +6,8 @@ import resumeApi from '../services/api';
 
 function* experienceWillFetch() {
   try {
-    const about = yield call(resumeApi.fetchData, 'experience');
-    yield put({ type: experienceTypes.EXPERIENCE_SUCCESS, experience: yield about.json() });
+    const experience = yield call(resumeApi.fetchData, 'experience');
+    yield put({ type: experienceTypes.EXPERIENCE_SUCCESS, experience: yield experience.json() });
   } catch (e) {
     // console.log(e);
   }

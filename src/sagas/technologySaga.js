@@ -6,8 +6,8 @@ import resumeApi from '../services/api';
 
 function* technologyWillFetch() {
   try {
-    const about = yield call(resumeApi.fetchData, 'skills');
-    yield put({ type: technologyTypes.TECHNOLOGY_SUCCESS, technology: yield about.json() });
+    const technology = yield call(resumeApi.fetchData, 'skills');
+    yield put({ type: technologyTypes.TECHNOLOGY_SUCCESS, technology: yield technology.json() });
   } catch (e) {
     // console.log(e);
   }
