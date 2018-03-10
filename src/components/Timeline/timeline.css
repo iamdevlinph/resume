@@ -1,0 +1,186 @@
+.timeline {
+  line-height: 1.4em;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.timeline h1,
+.timeline h2,
+.timeline h3,
+.timeline h4,
+.timeline h5,
+.timeline h6 {
+  line-height: inherit;
+}
+
+/*----- TIMELINE ITEM -----*/
+
+.timeline-item {
+  padding-left: 40px;
+  position: relative;
+}
+
+.timeline-item:last-child {
+  padding-bottom: 0;
+}
+
+/*----- TIMELINE INFO -----*/
+
+.timeline-info {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin: 0 0 .5em 0;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+/*----- TIMELINE MARKER -----*/
+
+.timeline-marker {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 15px;
+}
+
+.timeline-marker:before {
+  background: transparent;
+  border: 3px solid #FF6B6B;
+  border-radius: 100%;
+  content: "";
+  display: block;
+  height: 15px;
+  position: absolute;
+  top: 4px;
+  left: 0;
+  width: 15px;
+  transition: background 0.3s ease-in-out, border 0.3s ease-in-out;
+}
+
+.timeline-marker:after {
+  content: "";
+  width: 3px;
+  background: #CCD5DB;
+  display: block;
+  position: absolute;
+  top: 24px;
+  bottom: 0;
+  left: 6px;
+}
+
+/*.timeline-item:last-child .timeline-marker:after {
+  content: none;
+}*/
+
+.timeline-item:not(.period):hover .timeline-marker:before {
+  background: #FF6B6B;
+  border: 3px solid #FF6B6B;
+}
+
+/*----- TIMELINE CONTENT -----*/
+
+.timeline-content {
+  padding-bottom: 20px;
+}
+
+.timeline-content p:last-child {
+  margin-bottom: 0;
+}
+
+/*----- TIMELINE PERIOD -----*/
+
+.period {
+  padding: 0;
+}
+
+.period .timeline-info {
+  display: none;
+}
+
+.period .timeline-marker:before {
+  background: transparent;
+  content: "";
+  width: 15px;
+  height: auto;
+  border: none;
+  border-radius: 0;
+  top: 0;
+  bottom: 30px;
+  position: absolute;
+  border-top: 3px solid #CCD5DB;
+  border-bottom: 3px solid #CCD5DB;
+}
+
+.period .timeline-marker:after {
+  content: "";
+  height: 32px;
+  top: auto;
+}
+
+.period .timeline-content {
+  padding: 40px 0 70px;
+}
+
+.period .timeline-title {
+  margin: 0;
+}
+
+/* ================================ */
+
+/*
+.present-work {
+  font-weight: bold !important;
+  color: red;
+}
+
+.experience-role {
+  font-family: 'open_sansbold';
+  font-size: 16px !important;
+}
+
+.experience-company {
+  color: black;
+}
+
+.experience-company:hover {
+  color: red;
+}
+
+.experience-company__contract,
+.experience-company__address {
+  margin-left: 5px;
+  font-size: 12px;
+  text-transform: none !important;
+  color: #999;
+}
+
+.experience-footer {
+  margin-top: 10px !important;
+}
+
+.experience-footer span {
+  font-size: 12px;
+}
+
+.experience-footer span:nth-child(1) {
+  font-weight: bold;
+  display: block;
+}
+
+.experience-footer span:nth-child(2) {
+  font-size: 11px !important;
+}
+
+.work-duration {
+  font-family: 'open_sanssemibold';
+  font-style: italic;
+  font-size: 10px;
+}
+
+.timeline-item:hover .emphasis-hover {
+  color: black !important;
+} */
