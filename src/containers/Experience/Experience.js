@@ -16,7 +16,7 @@ class ExperienceContainer extends React.Component {
         experience stuff goes here
         {/* <Timeline /> */}
         <pre>
-          {JSON.stringify(this.props.experience, null, 2)}
+          {/* {JSON.stringify(this.props.experience, null, 2)} */}
         </pre>
       </div>
     );
@@ -25,11 +25,11 @@ class ExperienceContainer extends React.Component {
 
 ExperienceContainer.propTypes = {
   requestExperience: PropTypes.func.isRequired,
-  experience: PropTypes.any,
+  // experience: PropTypes.any,
 };
 
 ExperienceContainer.defaultProps = {
-  experience: [],
+  // experience: [],
 };
 
 const mapStateToProps = state => (

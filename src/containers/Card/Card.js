@@ -2,12 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
+import { Divider } from '../../components';
+
 class CardContainer extends React.Component {
   render() {
     return (
       <CardGrid>
         <CardTitle>{this.props.title}</CardTitle>
-        <CardDivider />
+        <Divider />
         <CardContent>
           {this.props.children}
         </CardContent>
@@ -38,14 +40,6 @@ const CardTitle = styled.span`
   text-transform: uppercase;
   margin-bottom: 15px;
   display: block;
-`;
-
-const CardDivider = styled.hr`
-  border: 0;
-  height: 1px;
-  background: #b52e31;
-  background-image: linear-gradient(90deg,#b52e31,#fff,#fff);
-  margin-bottom: 10px;
 `;
 
 const CardContent = styled.div`

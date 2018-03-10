@@ -14,7 +14,7 @@ class PortfolioContainer extends React.Component {
       <div>
         portfolio stuff goes here
         <pre>
-          {JSON.stringify(this.props.portfolio, null, 2)}
+          {/* {JSON.stringify(this.props.portfolio, null, 2)} */}
         </pre>
       </div>
     );
@@ -23,11 +23,11 @@ class PortfolioContainer extends React.Component {
 
 PortfolioContainer.propTypes = {
   requestPortfolio: PropTypes.func.isRequired,
-  portfolio: PropTypes.any,
+  // portfolio: PropTypes.any,
 };
 
 PortfolioContainer.defaultProps = {
-  portfolio: [],
+  // portfolio: [],
 };
 
 const mapStateToProps = state => (

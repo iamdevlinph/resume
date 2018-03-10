@@ -15,7 +15,7 @@ class EducationContainer extends React.Component {
       <div>
         education stuff goes here
         {/* <Timeline /> */}
-        <pre>{JSON.stringify(this.props.education, null, 2)}</pre>
+        {/* <pre>{JSON.stringify(this.props.education, null, 2)}</pre> */}
       </div>
     );
   }
@@ -23,11 +23,11 @@ class EducationContainer extends React.Component {
 
 EducationContainer.propTypes = {
   requestEducation: PropTypes.func.isRequired,
-  education: PropTypes.any,
+  // education: PropTypes.any,
 };
 
 EducationContainer.defaultProps = {
-  education: [],
+  // education: [],
 };
 
 const mapStateToProps = state => (
