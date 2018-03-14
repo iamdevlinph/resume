@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
 import { actions as experienceActions } from '../../ducks/experience';
-// import { Timeline } from '../../components';
+import { Timeline } from '../../components';
 
 class ExperienceContainer extends React.Component {
   componentWillMount() {
@@ -13,8 +13,7 @@ class ExperienceContainer extends React.Component {
   render() {
     return (
       <div>
-        experience stuff goes here
-        {/* <Timeline /> */}
+        <Timeline />
         <pre>
           {/* {JSON.stringify(this.props.experience, null, 2)} */}
         </pre>
