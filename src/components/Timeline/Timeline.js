@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+// import moment from 'moment';
 
 class TimelineComponent extends React.Component {
   render() {
@@ -12,7 +13,11 @@ class TimelineComponent extends React.Component {
           </Marker>
           <Event>
             <Date>Jan 1970 - <Present /> <Duration>(1 YEAR, 8 MONTHS)</Duration></Date>
-            <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit fuga </div>
+            <Title>Front-End Developer</Title>
+            <Company>AsiaInspection - Cebu City, Philippines, Full-Time</Company>
+            <Content>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit fuga </p>
+            </Content>
           </Event>
         </Item>
       </Timeline>
@@ -79,6 +84,10 @@ const Present = styled.span`
     content: 'Present';
   }
 `;
-// const TimelineEventTitle = styled.span``;
-// const TimelineEventSubTitle = styled.span``;
-// const TimelineEventContent = styled.span``;
+const Title = styled.div`
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+`;
+const Company = styled.div``;
+const Content = styled.div``;
