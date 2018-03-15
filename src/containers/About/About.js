@@ -80,10 +80,8 @@ const AvatarSection = styled.div`
 `;
 
 const Avatar = styled.img`
-  display: inline-block;
   vertical-align: middle;
   height: auto;
-  max-width: 100%;
 `;
 
 const NameTitle = styled.div`
