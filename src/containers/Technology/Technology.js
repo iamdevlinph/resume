@@ -64,9 +64,8 @@ export default connect(mapStateToProps, mapDispatchToProps)(TechnologyContainer)
 
 const TechIconsHolder = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(90px, auto));
-  grid-column-gap: 10px;
-  grid-row-gap: 5px;
+  grid-template-columns: repeat(auto-fill,100px);
+  justify-content: space-between;
 `;
 
 const ReferenceSpan = styled.span`

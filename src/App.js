@@ -17,6 +17,6 @@ injectGlobal`
   body {
     margin: 0;
     background: #F5F5F5;
-    font-family:"open_sans", Arial, sans-serif;
+    font-family:"Open Sans", Arial, sans-serif;
   }
 `;

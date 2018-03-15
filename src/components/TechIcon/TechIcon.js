@@ -43,9 +43,7 @@ const TechImage = styled.img`
 `;
 
 const TechName = styled.div`
-  /* border: 1px dashed black; */
   text-transform: uppercase;
   font-size: 12px;
   font-weight: 700;
-  white-space: nowrap;
 `;

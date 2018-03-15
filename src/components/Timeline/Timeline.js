@@ -1,29 +1,62 @@
 import React from 'react';
 import styled from 'styled-components';
-// import moment from 'moment';
+import PropTypes from 'prop-types';
 
 class TimelineComponent extends React.Component {
-  render() {
-    return (
-      <Timeline>
-        <Item>
+  constructor() {
+    super();
+    this.state = { events: [] };
+  }
+  /**
+   *
+   * @param {number} id for key
+   * @param {*} dateFrom
+   * @param {*} dateTo
+   * @param {*} [dateDuration]
+   * @param {*} title
+   * @param {*} tagLine
+   * @param {*} mainContent
+   * @param {*} subContent custom component
+   */
+  componentWillReceiveProps(props) {
+    const events = props.data.map((value) => {
+      let el = null;
+      el = (
+        <Item key={value.id}>
           <Marker>
             <Period />
             <Line />
           </Marker>
           <Event>
-            <Date>Jan 1970 - <Present /> <Duration>(1 YEAR, 8 MONTHS)</Duration></Date>
-            <Title>Front-End Developer</Title>
-            <Company>AsiaInspection - Cebu City, Philippines, Full-Time</Company>
+            <Date>{value.dateFrom} - {value.dateTo}
+              {value.dateDuration ? <Duration> ({value.dateDuration})</Duration> : null}
+            </Date>
+            <Title>{value.title}</Title>
+            <TagLine>{value.tagLine}</TagLine>
             <Content>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit fuga </p>
+              <MainContent>{value.mainContent}</MainContent>
+              {value.subContent}
             </Content>
           </Event>
         </Item>
+      );
+
+      return el;
+    });
+    this.setState({ events });
+  }
+  render() {
+    return (
+      <Timeline>
+        {this.state.events}
       </Timeline>
     );
   }
 }
+
+TimelineComponent.propTypes = {
+  data: PropTypes.any.isRequired,
+};
 
 export default TimelineComponent;
 
@@ -74,20 +107,23 @@ const Date = styled.span`
   white-space: nowrap;
 `;
 const Duration = styled.span`
-  font-family: open_sanssemibold;
   font-style: italic;
   font-size: 10px;
-`;
-const Present = styled.span`
-  &:before {
-    color: #B52E31;
-    content: 'Present';
-  }
 `;
 const Title = styled.div`
   font-weight: bold;
   font-size: 16px;
   text-transform: uppercase;
+  margin-top: .5em;
 `;
-const Company = styled.div``;
-const Content = styled.div``;
+const TagLine = styled.div`
+  font-size: 14px;
+  text-transform: uppercase;
+`;
+const Content = styled.div`
+  font-size: 14px;
+`;
+const MainContent = styled.p`
+  line-height: 22px;
+  margin: 10px 0;
+`;

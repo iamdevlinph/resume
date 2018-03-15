@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import styled from 'styled-components';
+import moment from 'moment';
 
 import { actions as aboutActions } from '../../ducks/about';
 
@@ -30,7 +31,15 @@ class AboutContainer extends React.Component {
         <AboutFooter>
           <SocialLinks />
         </AboutFooter>
-        Updated at {this.props.about.updated_at}
+        Updated at {moment(this.props.about.updated_at, 'YYYY-MM-DD').format('DD MMM, YYYY')}
+        <div>
+          Powered by:
+          <div>React</div>
+          <div>Redux</div>
+          <div>Redux-Saga</div>
+          <div>CSS Grid</div>
+          <div>styled-components</div>
+        </div>
       </AboutGrid>
     );
   }
@@ -82,6 +91,7 @@ const NameTitle = styled.div`
   color: white;
   text-transform: uppercase;
   padding: 15px 25px;
+  font-weight: bold;
 `;
 
 const Name = styled.div`
@@ -93,6 +103,7 @@ const LastName = styled.span`
 `;
 const Title = styled.span`
   font-size: 10px;
+  font-weight: 400;
 `;
 const Info = styled.div`
   background: #33373D;
