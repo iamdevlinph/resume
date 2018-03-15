@@ -1,6 +1,11 @@
 ## React Resume
 Resume template written in React.
 
+![open issues](https://img.shields.io/github/issues/iamdevlinph/resume.svg)
+![open prs](https://img.shields.io/github/issues-pr/iamdevlinph/resume.svg)
+![code size](https://img.shields.io/github/languages/code-size/iamdevlinph/resume.svg)
+![contributors](https://img.shields.io/github/contributors/iamdevlinph/resume.svg)
+
 ## Milestone:
 - [x] Separate json file (for data) to fetch
 - [x] Integrate redux, redux-saga, and react-redux
