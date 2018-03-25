@@ -30,6 +30,5 @@ const ResumeGrid = styled.div`
   grid-column-gap: 10px;
   @media only screen and (max-width: 599px) {
     grid-template-columns: auto;
-    /* grid-row-gap: 10px; */
   }
 `;

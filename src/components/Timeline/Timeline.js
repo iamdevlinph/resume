@@ -99,9 +99,7 @@ const Line = styled.div`
   height: 100%;
   margin: auto;
 `;
-const Event = styled.div`
-  /* grid-area: timeline-event; */
-`;
+const Event = styled.div``;
 const Date = styled.span`
   font-size: 12px;
   font-weight: 700;

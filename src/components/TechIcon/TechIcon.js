@@ -23,7 +23,6 @@ export default TechIconComponent;
 
 const TechIcon = styled.div`
   text-align: center;
-  /* border: 1px dashed red; */
 `;
 
 const TechImageContainer = styled.div`

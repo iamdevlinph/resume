@@ -9,12 +9,19 @@ import { actions as technologyActions } from '../../ducks/technology';
 import { TechIcon } from '../../components';
 
 class TechnologyContainer extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      referenceTechList: [],
+      techList: [],
+    };
+  }
   componentWillMount() {
     this.props.requestTechnology();
   }
-  render() {
+  componentWillReceiveProps(props) {
     const referenceTechList = [];
-    const techList = _.orderBy(this.props.technology, [tech => tech.name.toLowerCase()], ['asc']).map((tech) => {
+    const techList = _.orderBy(props.technology, [tech => tech.name.toLowerCase()], ['asc']).map((tech) => {
       let el = null;
       if (tech.showSkill && !tech.referenceOnly) {
         el = <TechIcon tech={tech} key={tech.name} />;
@@ -23,15 +30,21 @@ class TechnologyContainer extends React.Component {
       }
       return el;
     });
+    this.setState({
+      referenceTechList,
+      techList,
+    });
+  }
+  render() {
     return (
       <div>
         <TechIconsHolder>
-          {techList}
+          {this.state.techList}
         </TechIconsHolder>
         <ReferenceTechIconsHolder>
           <ReferenceSpan>Reference Only</ReferenceSpan>
           <TechIconsHolder>
-            {referenceTechList}
+            {this.state.referenceTechList}
           </TechIconsHolder>
         </ReferenceTechIconsHolder>
       </div>
