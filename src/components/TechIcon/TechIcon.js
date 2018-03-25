@@ -24,12 +24,10 @@ export default TechIconComponent;
 const TechIcon = styled.div`
   text-align: center;
 `;
-
 const TechImageContainer = styled.div`
   height: 70px;
   position: relative;
 `;
-
 const TechImage = styled.img`
   max-height: 60%;
   max-width: 100%;
@@ -40,7 +38,6 @@ const TechImage = styled.img`
   right: 0;
   margin: auto;
 `;
-
 const TechName = styled.div`
   text-transform: uppercase;
   font-size: 12px;

@@ -11,10 +11,10 @@ class ResumeContainer extends React.Component {
           <AboutCard />
         </div>
         <div>
-          <Card title="Experience"><ExperienceCard /></Card>
-          <Card title="Technology"><TechnologyCard /></Card>
-          <Card title="Education"><EducationCard /></Card>
-          <Card title="Portfolio"><PortfolioCard /></Card>
+          <Card title="Experience" icon="icon-suitcase"><ExperienceCard /></Card>
+          <Card title="Technology" icon="icon-code"><TechnologyCard /></Card>
+          <Card title="Education" icon="icon-graduation-cap"><EducationCard /></Card>
+          <Card title="Portfolio" icon="icon-folder-open"><PortfolioCard /></Card>
         </div>
       </ResumeGrid>
     );

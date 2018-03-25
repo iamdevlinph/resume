@@ -80,13 +80,11 @@ const TechIconsHolder = styled.div`
   grid-template-columns: repeat(auto-fill,100px);
   justify-content: space-between;
 `;
-
 const ReferenceSpan = styled.span`
   font-weight: bold;
   text-transform: uppercase;
   font-size: 15px;
 `;
-
 const ReferenceTechIconsHolder = styled.div`
   margin-top: 50px;
 `;

@@ -4,12 +4,29 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import styled from 'styled-components';
 import moment from 'moment';
+import _ from 'lodash';
 
 import { actions as aboutActions } from '../../ducks/about';
 
 class AboutContainer extends React.Component {
+  constructor() {
+    super();
+    this.state = { socialLinks: [] };
+  }
   componentWillMount() {
     this.props.requestAbout();
+  }
+  componentWillReceiveProps(props) {
+    const socialLinks = _.orderBy(props.about.social_links, ['order'], ['asc']).map((value) => {
+      let el = null;
+      if (value.show) {
+        el = (
+          <li key={value.name}><a href={value.url}><i className={value.icon} /></a></li>
+        );
+      }
+      return el;
+    });
+    this.setState({ socialLinks });
   }
   render() {
     return (
@@ -24,22 +41,24 @@ class AboutContainer extends React.Component {
           </Name>
           <Title>{this.props.about.role}</Title>
         </NameTitle>
-        <Info>{this.props.about.email}</Info>
-        <Info>{this.props.about.skype}</Info>
-        <Info>{this.props.about.mobile}</Info>
-        <Info>{this.props.about.address}</Info>
+        <Info>{this.props.about.email}<InfoIcon className="icon-mail" /></Info>
+        <Info>{this.props.about.skype}<InfoIcon className="icon-skype" /></Info>
+        <Info>{this.props.about.mobile}<InfoIcon className="icon-phone" /></Info>
+        <Info>{this.props.about.address}<InfoIcon className="icon-home" /></Info>
         <AboutFooter>
-          <SocialLinks />
+          <SocialLinks>
+            {this.state.socialLinks}
+          </SocialLinks>
         </AboutFooter>
-        Updated at {moment(this.props.about.updated_at, 'YYYY-MM-DD').format('DD MMM, YYYY')}
-        <div>
+        <Updated>Updated at {moment(this.props.about.updated_at, 'YYYY-MM-DD').format('DD MMM, YYYY')}</Updated>
+        {/* <div>
           Powered by:
           <div>React</div>
           <div>Redux</div>
           <div>Redux-Saga</div>
           <div>CSS Grid</div>
           <div>styled-components</div>
-        </div>
+        </div> */}
       </AboutGrid>
     );
   }
@@ -74,16 +93,13 @@ const AboutGrid = styled.div`
   background: white;
   text-align: right;
 `;
-
 const AvatarSection = styled.div`
   text-align: center;
 `;
-
 const Avatar = styled.img`
   vertical-align: middle;
   height: auto;
 `;
-
 const NameTitle = styled.div`
   background: #B52E31;
   color: white;
@@ -91,24 +107,51 @@ const NameTitle = styled.div`
   padding: 15px 25px;
   font-weight: bold;
 `;
-
 const Name = styled.div`
-  font-size: 20px;
+  font-size: 25px;
 `;
 const LastName = styled.span`
   margin-left: 5px;
   color: #333131;
 `;
 const Title = styled.span`
-  font-size: 10px;
+  font-size: 14px;
   font-weight: 400;
 `;
 const Info = styled.div`
   background: #33373D;
   color: #85878B;
   padding: 7px 25px;
-  font-size: 12px;
+  font-size: 13px;
   border-bottom: 1px solid #26292e;
+  font-weight: bold;
 `;
 const AboutFooter = styled.div``;
-const SocialLinks = styled.div``;
+const SocialLinks = styled.ul`
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  li {
+    display: inline-block;
+    margin-right: 2px;
+    text-align: center;
+    a {
+      border: 2px solid #33373d;
+      color: #33373d;
+      display: inline-block;
+      height: 35px;
+      width: 35px;
+      i {
+        line-height: 32px;
+        font-size: 12px;
+      }
+    }
+  }
+`;
+const InfoIcon = styled.i`
+  margin-left: 5px;
+`;
+const Updated = styled.div`
+  text-align: center;
+`;
