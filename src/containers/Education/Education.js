@@ -4,18 +4,34 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
 import { actions as educatioActions } from '../../ducks/education';
-// import { Timeline } from '../../components';
+import { Timeline } from '../../components';
 
 class EducationContainer extends React.Component {
+  constructor() {
+    super();
+    this.state = { educationToTimeline: [] };
+  }
   componentWillMount() {
     this.props.requestEducation();
+  }
+  componentWillReceiveProps(props) {
+    const newData = props.education.map((value) => {
+      const newDataStruct = {
+        id: value.school,
+        dateFrom: value.studyFrom,
+        dateTo: value.studyTo,
+        title: value.degree,
+        tagLine: value.school,
+      };
+
+      return newDataStruct;
+    });
+    this.setState({ educationToTimeline: newData });
   }
   render() {
     return (
       <div>
-        education stuff goes here
-        {/* <Timeline /> */}
-        {/* <pre>{JSON.stringify(this.props.education, null, 2)}</pre> */}
+        <Timeline data={this.state.educationToTimeline} />
       </div>
     );
   }
@@ -23,11 +39,11 @@ class EducationContainer extends React.Component {
 
 EducationContainer.propTypes = {
   requestEducation: PropTypes.func.isRequired,
-  // education: PropTypes.any,
+  education: PropTypes.any,
 };
 
 EducationContainer.defaultProps = {
-  // education: [],
+  education: [],
 };
 
 const mapStateToProps = state => (

@@ -15,7 +15,7 @@ class TimelineComponent extends React.Component {
    * @param {*} [dateDuration]
    * @param {*} title
    * @param {*} tagLine
-   * @param {*} mainContent
+   * @param {*} [mainContent]
    * @param {*} subContent custom component
    */
   componentWillReceiveProps(props) {
@@ -33,10 +33,14 @@ class TimelineComponent extends React.Component {
             </Date>
             <Title>{value.title}</Title>
             <TagLine>{value.tagLine}</TagLine>
-            <Content>
-              <MainContent>{value.mainContent}</MainContent>
-              {value.subContent}
-            </Content>
+            {
+              value.mainContent ?
+                <Content>
+                  <MainContent>{value.mainContent}</MainContent>
+                  {value.subContent}
+                </Content> :
+                null
+            }
           </Event>
         </Item>
       );

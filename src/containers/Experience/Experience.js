@@ -10,9 +10,12 @@ import { actions as experienceActions } from '../../ducks/experience';
 import { Timeline } from '../../components';
 
 class ExperienceContainer extends React.Component {
+  constructor() {
+    super();
+    this.state = { experienceToTimeline: [] };
+  }
   componentWillMount() {
     this.props.requestExperience();
-    this.state = { experienceToTimeline: [] };
   }
   componentWillReceiveProps(props) {
     // manipulate experience data to match timeline expected data
