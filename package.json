@@ -59,5 +59,6 @@
       "react-app"
     ]
   },
-  "homepage": "https://iamdevlinph.github.io/resume"
+  "homepage_gh-pages": "https://iamdevlinph.github.io/resume",
+  "homepage": "https://resume.iamdevlinph.me"
 }
