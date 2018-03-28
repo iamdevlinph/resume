@@ -1,4 +1,60 @@
 # Resume v2
+This is a rewrite of the resume template using new stuff I learned along the way.
+
+This uses the [React Kit](https://github.com/codesandcoffees/react-kit) as the base template which is based on [Create React App](https://github.com/facebook/create-react-app)
+
+# Includes
+- React v16
+- Redux
+- Redux-saga
+- React-loadable
+- React Router v4
+- Webpack v3
+- Ducks Pattern ["Official Proposal"](https://github.com/erikras/ducks-modular-redux)
+- styled-components
+
+# App Structure
+```
+resume/
+  .vscode/
+  build/
+  config/
+  public/
+  scripts/
+  src/
+  --components/
+  --containers
+  --ducks/
+  --routes/
+  --sagas/
+  --services/
+  --App.js
+  --index.js
+  --registerServiceWorker.js
+  --store.js
+  package.json
+  README.md
+```
+## .vscode
+VSCode related settings
+## build
+Contains your build files that are generated when you build the app
+## config
+A file from `create-react-app` which holds `webpack` related configs.
+## public
+Public path of the app
+## scripts
+Scripts from `create-react-app`
+## src
+Where most of the headache is
+### components
+### containers
+### ducks
+### routes
+### sagas
+### services
+
+# Resume v2
 
 A rewrite of my resume repo using the [react-kit](https://github.com/codesandcoffees/react-kit)
 
