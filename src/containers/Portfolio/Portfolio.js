@@ -62,6 +62,6 @@ export default connect(mapStateToProps, mapDispatchToProps)(PortfolioContainer);
 const PortfolioGridList = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fill, 250px);
-  justify-content: space-between;
+  justify-content: space-around;
   grid-row-gap: 20px;
 `;

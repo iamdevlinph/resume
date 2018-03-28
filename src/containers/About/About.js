@@ -8,6 +8,8 @@ import _ from 'lodash';
 
 import { actions as aboutActions } from '../../ducks/about';
 
+import { Button, IconLink } from '../../components';
+
 class AboutContainer extends React.Component {
   constructor() {
     super();
@@ -21,7 +23,7 @@ class AboutContainer extends React.Component {
       let el = null;
       if (value.show) {
         el = (
-          <li key={value.name}><a href={value.url}><i className={value.icon} /></a></li>
+          <li key={value.name}><IconLink href={value.url} icon={value.icon} /></li>
         );
       }
       return el;
@@ -49,16 +51,12 @@ class AboutContainer extends React.Component {
           <SocialLinks>
             {this.state.socialLinks}
           </SocialLinks>
+
+          <Button><i className="icon-download" /> PDF</Button>
+          <Button><i className="icon-download" /> DOC</Button>
+          <FooterTag>Updated at {moment(this.props.about.updated_at, 'YYYY-MM-DD').format('DD MMM, YYYY')}</FooterTag>
+          <FooterTag>© 2018 iamdevlinph</FooterTag>
         </AboutFooter>
-        <Updated>Updated at {moment(this.props.about.updated_at, 'YYYY-MM-DD').format('DD MMM, YYYY')}</Updated>
-        {/* <div>
-          Powered by:
-          <div>React</div>
-          <div>Redux</div>
-          <div>Redux-Saga</div>
-          <div>CSS Grid</div>
-          <div>styled-components</div>
-        </div> */}
       </AboutGrid>
     );
   }
@@ -99,6 +97,8 @@ const AvatarSection = styled.div`
 const Avatar = styled.img`
   vertical-align: middle;
   height: auto;
+  /* remove when using the smiley avatar */
+  /* width: 100%; */
 `;
 const NameTitle = styled.div`
   background: #B52E31;
@@ -126,32 +126,24 @@ const Info = styled.div`
   border-bottom: 1px solid #26292e;
   font-weight: bold;
 `;
-const AboutFooter = styled.div``;
+const AboutFooter = styled.div`
+  margin-top: 12px;
+  text-align: center;
+`;
 const SocialLinks = styled.ul`
   list-style: none;
   margin: 0px;
   padding: 0px;
-  text-align: center;
   li {
     display: inline-block;
     margin-right: 2px;
     text-align: center;
-    a {
-      border: 2px solid #33373d;
-      color: #33373d;
-      display: inline-block;
-      height: 35px;
-      width: 35px;
-      i {
-        line-height: 32px;
-        font-size: 12px;
-      }
-    }
   }
 `;
 const InfoIcon = styled.i`
   margin-left: 5px;
 `;
-const Updated = styled.div`
-  text-align: center;
+const FooterTag = styled.div`
+  font-size: 12px;
+  color: #999;
 `;
