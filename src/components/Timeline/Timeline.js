@@ -69,20 +69,6 @@ const Timeline = styled.ul`
   margin: 0;
   padding: 0;
 `;
-const Item = styled.li`
-  display: grid;
-  grid-template-areas: "timeline-marker timeline-event";
-  grid-template-columns: 25px auto;
-  margin-bottom: 10px;
-  grid-column-gap: 20px;
-`;
-const Marker = styled.div`
-  display: grid;
-  grid-template-areas:
-    "timeline-period"
-    "timeline-line";
-  grid-template-rows: 25px auto;
-`;
 const Period = styled.div`
   grid-area: timeline-period;
   -moz-border-radius: 50px/50px;
@@ -92,6 +78,24 @@ const Period = styled.div`
   width: 40%;
   height: 40%;
   margin: auto;
+  transition: background 0.3s ease-in-out, border 0.3s ease-in-out;
+`;
+const Item = styled.li`
+  display: grid;
+  grid-template-areas: "timeline-marker timeline-event";
+  grid-template-columns: 25px auto;
+  margin-bottom: 10px;
+  grid-column-gap: 20px;
+  &:hover ${Period} {
+    background: #FF6B6B;
+  }
+`;
+const Marker = styled.div`
+  display: grid;
+  grid-template-areas:
+    "timeline-period"
+    "timeline-line";
+  grid-template-rows: 25px auto;
 `;
 const Line = styled.div`
   grid-area: timeline-line;
