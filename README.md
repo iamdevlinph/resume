@@ -1,7 +1,17 @@
 # Resume v2
 This is a rewrite of the resume template using new stuff I learned along the way.
 
+![node version](https://img.shields.io/node/v/@codes-and-coffees/react-pkg.svg)
+![npm version](https://img.shields.io/npm/v/@codes-and-coffees/react-pkg.svg)
+![open issues](https://img.shields.io/github/issues/iamdevlinph/resume.svg)
+![open prs](https://img.shields.io/github/issues-pr/iamdevlinph/resume.svg)
+![code size](https://img.shields.io/github/languages/code-size/iamdevlinph/resume.svg)
+![contributors](https://img.shields.io/github/contributors/iamdevlinph/resume.svg)
+
 This uses the [React Kit](https://github.com/codesandcoffees/react-kit) as the base template which is based on [Create React App](https://github.com/facebook/create-react-app)
+
+# Getting Started
+
 
 # Includes
 - React v16
