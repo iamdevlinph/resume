@@ -30,6 +30,10 @@ class AboutContainer extends React.Component {
     });
     this.setState({ socialLinks });
   }
+  // Class Properties (Stage 3 Proposal)
+  openFile = () => {
+    window.open('/Devlin Pajaron - Resume.pdf');
+  }
   render() {
     return (
       <AboutGrid>
@@ -52,8 +56,7 @@ class AboutContainer extends React.Component {
             {this.state.socialLinks}
           </SocialLinks>
 
-          <Button><i className="icon-download" /> PDF</Button>
-          <Button><i className="icon-download" /> DOC</Button>
+          <Button onClick={this.openFile}><i className="icon-download" /> PDF</Button>
           <FooterTag>Updated at {moment(this.props.about.updated_at, 'YYYY-MM-DD').format('DD MMM, YYYY')}</FooterTag>
           <FooterTag>© 2018 iamdevlinph</FooterTag>
         </AboutFooter>

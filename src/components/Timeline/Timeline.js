@@ -32,7 +32,7 @@ class TimelineComponent extends React.Component {
               {value.dateDuration ? <Duration> ({value.dateDuration})</Duration> : null}
             </Date>
             <Title>{value.title}</Title>
-            <TagLine>{value.tagLine}</TagLine>
+            <TagLine>{!value.tagLineLink ? value.tagLine : <a href={value.tagLineLink} target="blank">{value.tagLine}</a>}</TagLine>
             {
               value.mainContent ?
                 <Content>
@@ -120,7 +120,15 @@ const Title = styled.div`
 `;
 const TagLine = styled.div`
   font-size: 14px;
-  text-transform: uppercase;
+  font-weight: bold;
+  color: #B52E31;
+  a {
+    color: #B52E31;
+    text-decoration: none;
+    &:hover {
+      border-bottom: 1px #B52E31 dashed;
+    }
+  }
 `;
 const Content = styled.div`
   font-size: 14px;

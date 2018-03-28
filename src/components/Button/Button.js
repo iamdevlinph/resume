@@ -5,13 +5,14 @@ import styled from 'styled-components';
 class ButtonComponent extends React.Component {
   render() {
     return (
-      <Button>{this.props.children}</Button>
+      <Button onClick={this.props.onClick}>{this.props.children}</Button>
     );
   }
 }
 
 ButtonComponent.propTypes = {
-  children: PropTypes.object.isRequired,
+  children: PropTypes.array.isRequired,
+  onClick: PropTypes.func.isRequired,
 };
 
 export default ButtonComponent;

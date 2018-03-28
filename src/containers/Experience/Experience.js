@@ -37,6 +37,7 @@ class ExperienceContainer extends React.Component {
         dateDuration,
         title: value.title,
         tagLine: value.company,
+        tagLineLink: value.company_website,
         mainContent: value.description,
         subContent,
       };
