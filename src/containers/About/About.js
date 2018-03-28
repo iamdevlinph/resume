@@ -125,7 +125,7 @@ const Info = styled.div`
   background: #33373D;
   color: #85878B;
   padding: 7px 25px;
-  font-size: 13px;
+  font-size: 12px;
   border-bottom: 1px solid #26292e;
   font-weight: bold;
 `;

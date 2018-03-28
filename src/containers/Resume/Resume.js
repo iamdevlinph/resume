@@ -10,12 +10,12 @@ class ResumeContainer extends React.Component {
         <div>
           <AboutCard />
         </div>
-        <div>
+        <ScrollableContent>
           <Card title="Experience" icon="icon-suitcase"><ExperienceCard /></Card>
           <Card title="Technology" icon="icon-code"><TechnologyCard /></Card>
           <Card title="Education" icon="icon-graduation-cap"><EducationCard /></Card>
           <Card title="Portfolio" icon="icon-folder-open"><PortfolioCard /></Card>
-        </div>
+        </ScrollableContent>
       </ResumeGrid>
     );
   }
@@ -30,5 +30,11 @@ const ResumeGrid = styled.div`
   grid-column-gap: 10px;
   @media only screen and (max-width: 599px) {
     grid-template-columns: auto;
+  }
+`;
+const ScrollableContent = styled.div`
+  @media only screen and (min-width: 600px) {
+    height: 98vh;
+    overflow-y: scroll;
   }
 `;

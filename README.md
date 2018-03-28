@@ -10,9 +10,6 @@ This is a rewrite of the resume template using new stuff I learned along the way
 
 This uses the [React Kit](https://github.com/codesandcoffees/react-kit) as the base template which is based on [Create React App](https://github.com/facebook/create-react-app)
 
-# Getting Started
-
-
 # Includes
 - React v16
 - Redux
@@ -45,24 +42,25 @@ resume/
   package.json
   README.md
 ```
-## .vscode
-VSCode related settings
-## build
-Contains your build files that are generated when you build the app
-## config
-A file from `create-react-app` which holds `webpack` related configs.
-## public
-Public path of the app
-## scripts
-Scripts from `create-react-app`
 ## src
-Where most of the headache is
 ### components
 ### containers
 ### ducks
 ### routes
 ### sagas
 ### services
+
+# Getting Started
+
+# Development
+
+# Deployment
+
+# Make it yours
+
+# Fonts and Icons
+
+# Inspired by
 
 # Resume v2
 
