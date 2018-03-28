@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 import ResumeLayout from './ResumeLayout/ResumeLayout';
@@ -17,11 +17,11 @@ const AppRoute = ({ component: Component, layout: Layout, ...rest }) => (
 );
 
 export default () => (
-  <HashRouter >
+  <BrowserRouter >
     <Switch>
       <AppRoute exact path="/" layout={ResumeLayout} component={loadableCons.Resume} />
     </Switch>
-  </HashRouter >
+  </BrowserRouter >
 );
 
 AppRoute.propTypes = {
