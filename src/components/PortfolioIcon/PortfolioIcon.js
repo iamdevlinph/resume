@@ -6,7 +6,7 @@ class PortfolioIcon extends React.Component {
   render() {
     return (
       <PortfolioIconContainer>
-        <PortfolioTitle><span>{this.props.data.name}</span></PortfolioTitle>
+        <PortfolioTitle href={this.props.data.url} target="blank"><span>{this.props.data.name}</span></PortfolioTitle>
         <PortfolioIamage src={this.props.data.img_path} alt={this.props.data.name} />
       </PortfolioIconContainer>
     );
@@ -28,7 +28,7 @@ const PortfolioIamage = styled.img`
   vertical-align: middle;
   margin: auto 0;
 `;
-const PortfolioTitle = styled.div`
+const PortfolioTitle = styled.a`
   font-weight: bold;
   text-transform: uppercase;
   color: white;
