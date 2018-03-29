@@ -32,7 +32,7 @@ class AboutContainer extends React.Component {
   }
   // Class Properties (Stage 3 Proposal)
   openFile = () => {
-    window.open('/Devlin Pajaron - Resume.pdf');
+    window.open('https://rawgit.com/iamdevlinph/resume/dev/public/Devlin Pajaron - Resume.pdf');
   }
   render() {
     return (
