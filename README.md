@@ -19,6 +19,7 @@ This uses the [React Kit](https://github.com/codesandcoffees/react-kit) as the b
 - Webpack v3
 - Ducks Pattern ["Official Proposal"](https://github.com/erikras/ducks-modular-redux)
 - styled-components
+- CSS Grid
 
 # App Structure
 ```
@@ -42,13 +43,6 @@ resume/
   package.json
   README.md
 ```
-## src
-### components
-### containers
-### ducks
-### routes
-### sagas
-### services
 
 # Getting Started
 At the time of creating this project the following versions were used
@@ -70,8 +64,6 @@ npm run install
 ```
 
 # Development
-
-## Ducks Pattern
 
 # Deployment
 

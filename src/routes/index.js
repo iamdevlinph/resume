@@ -3,7 +3,7 @@ import { HashRouter, Route, Switch } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 import ResumeLayout from './ResumeLayout/ResumeLayout';
-import loadableCons from './loadableCons';
+import { Resume } from '../containers';
 
 const AppRoute = ({ component: Component, layout: Layout, ...rest }) => (
   <Route
@@ -19,7 +19,7 @@ const AppRoute = ({ component: Component, layout: Layout, ...rest }) => (
 export default () => (
   <HashRouter >
     <Switch>
-      <AppRoute exact path="/" layout={ResumeLayout} component={loadableCons.Resume} />
+      <AppRoute exact path="/" layout={ResumeLayout} component={Resume} />
     </Switch>
   </HashRouter >
 );

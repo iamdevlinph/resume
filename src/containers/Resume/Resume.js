@@ -1,20 +1,22 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { AboutCard, Card, EducationCard, ExperienceCard, PortfolioCard, TechnologyCard } from '../index';
+import { Card } from '../index';
+
+import { About, Experience, Technology, Education, Portfolio } from '../../loadableCons';
 
 class ResumeContainer extends React.Component {
   render() {
     return (
       <ResumeGrid>
-        <div>
-          <AboutCard />
-        </div>
+        <FixedContent>
+          <About />
+        </FixedContent>
         <ScrollableContent>
-          <Card title="Experience" icon="icon-suitcase"><ExperienceCard /></Card>
-          <Card title="Technology" icon="icon-code"><TechnologyCard /></Card>
-          <Card title="Education" icon="icon-graduation-cap"><EducationCard /></Card>
-          <Card title="Portfolio" icon="icon-folder-open"><PortfolioCard /></Card>
+          <Card title="Experience" icon="icon-suitcase"><Experience /></Card>
+          <Card title="Technology" icon="icon-code"><Technology /></Card>
+          <Card title="Education" icon="icon-graduation-cap"><Education /></Card>
+          <Card title="Portfolio" icon="icon-folder-open"><Portfolio /></Card>
         </ScrollableContent>
       </ResumeGrid>
     );
@@ -37,4 +39,7 @@ const ScrollableContent = styled.div`
     height: 98vh;
     overflow-y: scroll;
   }
+`;
+const FixedContent = styled.div`
+  margin: 10px;
 `;

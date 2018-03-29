@@ -90,7 +90,6 @@ export default connect(mapStateToProps, mapDispatchToProps)(AboutContainer);
 
 const AboutGrid = styled.div`
   box-shadow: 0 1px 1px 0 rgba(0,0,0,.12),0 1.5px 1px 0 rgba(0,0,0,.24) !important;
-  margin: 10px 10px;
   background: white;
   text-align: right;
 `;
