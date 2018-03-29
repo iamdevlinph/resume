@@ -58,9 +58,43 @@ resume/
 
 # Make it yours
 
-# Fonts and Icons
+# Font and Icons
+The font used in this project is just the [Open Sans](https://fonts.google.com/specimen/Open+Sans) from `Google Fonts`
+
+[Fontello](http://fontello.com/) is used to manage the icons. Fontello uses the icons from different icon makers like `Font Awesome` and others.
+
+Fontello allows us to only use the icons that we actually use, so it might look the icon selection in this project is very limited but we can expand it by adding the icons that are needed.
+
+### Downloading icons
+1. Go to [fontello](http://fontello.com/)
+2. Import `public/fonts/fontello.config.json`. This contains the already selected icons in the project
+![import config.json to fontello](https://res.cloudinary.com/dfrhytey3/image/upload/v1522301230/import_fontello_fkqezr.png)
+3. This will pre-select the icons that are already included in the `config.json` file
+4. Click on the icons that you want to add
+5. Click `Download webfont` once you're done. This will download the `font files` and the `config.json` file
+6. Replace the files found in the `public/fonts/` with the newly downloaded ones
+
+### Adding the icons
+Once you've downloaded the files they won't be automatically added to the css so we'd have to do this manually.
+1. Open `fontello.svg`
+2. Find the line of the icon you want to add. Let's take the icon `folder-open` as an example
+```
+<glyph glyph-name="folder-open" unicode="&#xe800;"
+```
+3. In the `unicode`. Copy the code after the `x` like `&#xe800` to `e800`
+4. Open `public/fonts/fontello.css`
+5. Add a new class like so  (I chose `icon-` as the prefix)
+```
+.icon-folder-open:before {content: '\e800'; }
+```
+
+A bit of a hassle, yes. But we'll end up with the icons that we actually use.
 
 # Inspired by
+- [Split Resume Template](http://demo.mutationmedia.net/SPLIT/)
+- [Material CV/Resume Template](http://demo.deviserweb.com/cv/)
+- [Responsive Timeline CSS](https://codepen.io/brady_wright/pen/NNOvrW)
+- [Github Fork Ribbon CSS](https://github.com/simonwhitaker/github-fork-ribbon-css)
 
 # Resume v2
 
