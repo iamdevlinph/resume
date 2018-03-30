@@ -143,12 +143,6 @@ A bit of a hassle, yes. But we'll end up with the icons that we actually use.
 - [Responsive Timeline CSS](https://codepen.io/brady_wright/pen/NNOvrW)
 - [Github Fork Ribbon CSS](https://github.com/simonwhitaker/github-fork-ribbon-css)
 
-# Target
-- [ ] Integrate selector library using [Reselect](https://github.com/reactjs/reselect)
-- [ ] Integrate testing like [jest](https://codesandcoffees.github.io/react-kit/#/), [enzyme](https://github.com/airbnb/enzyme)
-- [ ] Implement proper linting
-- [ ] Create a full pledge app using this kit
-
 # Something to pitch in?
 
 Feel free to open up a [pull request](https://github.com/iamdevlinph/resume/pulls) or an [issue](https://github.com/iamdevlinph/resume/issues/new)
