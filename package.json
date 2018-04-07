@@ -4,7 +4,7 @@
   "private": false,
   "author": "iamdevlinph <iamdevlinph@gmail.com>",
   "dependencies": {
-    "@codes-and-coffees/react-pkg": "1.0.16",
+    "@codes-and-coffees/react-pkg": "1.1.0",
     "lodash": "4.17.5",
     "moment": "2.21.0"
   },
