@@ -7,6 +7,7 @@ import * as _ from 'lodash';
 
 import { actions as technologyActions } from '../../ducks/technology';
 import { TechIcon } from '../../components';
+import { Card } from '../index';
 
 class TechnologyContainer extends React.Component {
   constructor() {
@@ -37,7 +38,7 @@ class TechnologyContainer extends React.Component {
   }
   render() {
     return (
-      <div>
+      <Card title="Technology" icon="icon-code">
         <TechIconsHolder>
           {this.state.techList}
         </TechIconsHolder>
@@ -47,7 +48,7 @@ class TechnologyContainer extends React.Component {
             {this.state.referenceTechList}
           </TechIconsHolder>
         </ReferenceTechIconsHolder>
-      </div>
+      </Card>
     );
   }
 }

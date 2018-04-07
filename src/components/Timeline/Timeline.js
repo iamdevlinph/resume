@@ -84,7 +84,7 @@ const Item = styled.li`
   display: grid;
   grid-template-areas: "timeline-marker timeline-event";
   grid-template-columns: 25px auto;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   grid-column-gap: 20px;
   &:hover ${Period} {
     background: #FF6B6B;

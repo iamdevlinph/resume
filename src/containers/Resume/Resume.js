@@ -1,8 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { Card } from '../index';
-
 import { About, Experience, Technology, Education, Portfolio } from '../../loadableCons';
 
 class ResumeContainer extends React.Component {
@@ -13,10 +11,10 @@ class ResumeContainer extends React.Component {
           <About />
         </FixedContent>
         <ScrollableContent>
-          <Card title="Experience" icon="icon-suitcase"><Experience /></Card>
-          <Card title="Technology" icon="icon-code"><Technology /></Card>
-          <Card title="Education" icon="icon-graduation-cap"><Education /></Card>
-          <Card title="Portfolio" icon="icon-folder-open"><Portfolio /></Card>
+          <Experience />
+          <Technology />
+          <Education />
+          <Portfolio />
         </ScrollableContent>
       </ResumeGrid>
     );
@@ -35,6 +33,7 @@ const ResumeGrid = styled.div`
   }
 `;
 const ScrollableContent = styled.div`
+  margin-top: 10px;
   @media only screen and (min-width: 600px) {
     height: 98vh;
     overflow-y: scroll;

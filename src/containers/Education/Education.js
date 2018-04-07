@@ -5,6 +5,7 @@ import { bindActionCreators } from 'redux';
 
 import { actions as educatioActions } from '../../ducks/education';
 import { Timeline } from '../../components';
+import { Card } from '../index';
 
 class EducationContainer extends React.Component {
   constructor() {
@@ -30,9 +31,9 @@ class EducationContainer extends React.Component {
   }
   render() {
     return (
-      <div>
+      <Card title="Education" icon="icon-graduation-cap">
         <Timeline data={this.state.educationToTimeline} />
-      </div>
+      </Card>
     );
   }
 }

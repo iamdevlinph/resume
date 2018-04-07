@@ -6,6 +6,7 @@ import styled from 'styled-components';
 
 import { actions as portfolioActions } from '../../ducks/portfolio';
 import { PortfolioIcon } from '../../components';
+import { Card } from '../index';
 
 class PortfolioContainer extends React.Component {
   constructor() {
@@ -29,9 +30,11 @@ class PortfolioContainer extends React.Component {
   }
   render() {
     return (
-      <PortfolioGridList>
-        {this.state.portfolioList}
-      </PortfolioGridList>
+      <Card title="Portfolio" icon="icon-folder-open">
+        <PortfolioGridList>
+          {this.state.portfolioList}
+        </PortfolioGridList>
+      </Card>
     );
   }
 }

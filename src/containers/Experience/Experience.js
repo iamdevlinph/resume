@@ -8,6 +8,7 @@ import * as dateUtils from '../../services/dateUtils';
 
 import { actions as experienceActions } from '../../ducks/experience';
 import { Timeline } from '../../components';
+import { Card } from '../index';
 
 class ExperienceContainer extends React.Component {
   constructor() {
@@ -47,9 +48,9 @@ class ExperienceContainer extends React.Component {
   }
   render() {
     return (
-      <div>
+      <Card title="Experience" icon="icon-suitcase">
         <Timeline data={this.state.experienceToTimeline} />
-      </div>
+      </Card>
     );
   }
 }

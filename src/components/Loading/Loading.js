@@ -27,11 +27,12 @@ export default LoadingComponent;
 
 const Loader = styled.div`
   display: inline-block;
-  height: 50%;
+  height: 40%;
   width: 100%;
   /* https://codepen.io/P1N2O/pen/pyBNzX */
   min-height: 200px;
   color: #fff;
+  margin-bottom: 30px;
   background: linear-gradient(-45deg, #FFF, #F5F5F5, #d2d1d1, #d2d1d1, #F5F5F5, #FFF);
   background-size: 400% 400%;
   -webkit-animation: Gradient 10s ease infinite;

@@ -19,7 +19,7 @@ class CardContainer extends React.Component {
 }
 
 CardContainer.propTypes = {
-  children: PropTypes.object.isRequired,
+  children: PropTypes.any.isRequired,
   title: PropTypes.string.isRequired,
   icon: PropTypes.string.isRequired,
 };
@@ -28,7 +28,7 @@ export default CardContainer;
 
 const CardGrid = styled.div`
   background: #fff;
-  margin: 10px 10px 20px;
+  margin: 0px 10px 20px;
   box-shadow: 0 1px 6px rgba(0,0,0,.12), 0 1px 4px rgba(0,0,0,.24);
   min-height: 200px;
   overflow: hidden;
