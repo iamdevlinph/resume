@@ -15,7 +15,10 @@ class CardContainer extends React.Component {
             {this.props.children}
           </CardContent>
         </Content>
-        <Action show={this.props.showMore} onClick={this.props.onClick}>Show {this.props.isMoreShown ? 'Less' : 'More'}</Action>
+        <Action show={this.props.showMore} onClick={this.props.onClick}>
+          Show {this.props.isMoreShown ? 'Less' : 'More'}
+          <i className={`icon-${this.props.isMoreShown ? 'up' : 'down'}-dir`} />
+        </Action>
       </CardGrid>
     );
   }
