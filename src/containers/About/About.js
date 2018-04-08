@@ -31,15 +31,8 @@ class AboutContainer extends React.Component {
     this.setState({ socialLinks });
   }
   // Class Properties (Stage 3 Proposal)
-  openFile = (type) => {
-    switch (type) {
-      case 'doc':
-        window.open('https://goo.gl/eZtKXZ');
-        break;
-      default:
-        window.open('https://goo.gl/8MdYH1');
-        break;
-    }
+  openFile = (url) => {
+    window.open(url);
   }
   render() {
     return (
@@ -63,8 +56,7 @@ class AboutContainer extends React.Component {
             {this.state.socialLinks}
           </SocialLinks>
 
-          <Button onClick={() => this.openFile('pdf')}><i className="icon-download" /> PDF</Button>
-          <Button onClick={() => this.openFile('doc')}><i className="icon-download" /> DOC</Button>
+          <Button onClick={() => this.openFile(this.props.about.pdf_url)}><i className="icon-download" /> SIMPLE</Button>
           <FooterTag>Updated at {moment(this.props.about.updated_at, 'YYYY-MM-DD').format('DD MMM, YYYY')}</FooterTag>
           <FooterTag>© 2018 iamdevlinph</FooterTag>
         </AboutFooter>
