@@ -13,42 +13,59 @@ import { Card } from '../index';
 class ExperienceContainer extends React.Component {
   constructor() {
     super();
-    this.state = { experienceToTimeline: [] };
+    this.state = {
+      experienceToTimeline: [],
+      toggleAll: false,
+    };
   }
   componentWillMount() {
     this.props.requestExperience();
   }
   componentWillReceiveProps(props) {
+    this.generate(props, this.state.toggleAll);
+  }
+  generate = (props, toggleAll) => {
     // manipulate experience data to match timeline expected data
-    const newData = props.experience.map((value) => {
-      const dateFrom = moment(value.workFrom, 'MMMM-YYYY').format('MMM YYYY');
-      const dateTo = (value.workTo !== 'Present') ?
-        moment(value.workTo, 'MMMM-YYYY').format('MMM YYYY') : (<Present />);
-      const dateDuration = dateUtils.getDuration(value.workFrom, value.workTo, 'MMMM-YYYY');
+    const newData = props.experience.reduce((newArr, obj, idx) => {
+      const dateFrom = moment(obj.workFrom, 'MMMM-YYYY').format('MMM YYYY');
+      const dateTo = (obj.workTo !== 'Present') ?
+        moment(obj.workTo, 'MMMM-YYYY').format('MMM YYYY') : (<Present />);
+      const dateDuration = dateUtils.getDuration(obj.workFrom, obj.workTo, 'MMMM-YYYY');
       const subContent = (
         <div>
           <SubContentMain>Technologies Used:</SubContentMain>
-          <SubContentTag>{value.technologies}</SubContentTag>
+          <SubContentTag>{obj.technologies}</SubContentTag>
         </div>
       );
       const newDataStruct = {
-        id: value.id,
+        id: obj.id,
         dateFrom,
         dateTo,
         dateDuration,
-        title: value.title,
-        tagLine: value.company,
-        tagLineLink: value.company_website,
-        mainContent: value.description,
+        title: obj.title,
+        tagLine: obj.company,
+        tagLineLink: obj.company_website,
+        mainContent: obj.description,
         subContent,
       };
-      return newDataStruct;
-    });
+
+      if (toggleAll || idx < 1) {
+        newArr.push(newDataStruct);
+      }
+
+      return newArr;
+    }, []);
     this.setState({ experienceToTimeline: newData });
+  }
+  toggleAll = () => {
+    this.setState(
+      { toggleAll: !this.state.toggleAll },
+      () => this.generate(this.props, this.state.toggleAll),
+    );
   }
   render() {
     return (
-      <Card title="Experience" icon="icon-suitcase">
+      <Card title="Experience" icon="icon-suitcase" showMore onClick={() => this.toggleAll()} isMoreShown={this.state.toggleAll}>
         <Timeline data={this.state.experienceToTimeline} />
       </Card>
     );
@@ -57,11 +74,9 @@ class ExperienceContainer extends React.Component {
 
 ExperienceContainer.propTypes = {
   requestExperience: PropTypes.func.isRequired,
-  experience: PropTypes.any,
 };
 
 ExperienceContainer.defaultProps = {
-  experience: [],
 };
 
 const mapStateToProps = state => (

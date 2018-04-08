@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import styled from 'styled-components';
-import * as _ from 'lodash';
+import _ from 'lodash';
 
 import { actions as technologyActions } from '../../ducks/technology';
 import { TechIcon } from '../../components';
@@ -15,6 +15,7 @@ class TechnologyContainer extends React.Component {
     this.state = {
       referenceTechList: [],
       techList: [],
+      toggleReference: false,
     };
   }
   componentWillMount() {
@@ -36,18 +37,25 @@ class TechnologyContainer extends React.Component {
       techList,
     });
   }
+  toggleReference = () => {
+    this.setState({
+      toggleReference: !this.state.toggleReference,
+    });
+  }
   render() {
     return (
-      <Card title="Technology" icon="icon-code">
+      <Card title="Technology" icon="icon-code" showMore onClick={() => this.toggleReference()} isMoreShown={this.state.toggleReference}>
         <TechIconsHolder>
           {this.state.techList}
         </TechIconsHolder>
-        <ReferenceTechIconsHolder>
-          <ReferenceSpan>Reference Only</ReferenceSpan>
-          <TechIconsHolder>
-            {this.state.referenceTechList}
-          </TechIconsHolder>
-        </ReferenceTechIconsHolder>
+        {this.state.toggleReference ? (
+          <ReferenceTechIconsHolder>
+            <ReferenceSpan>Reference Only</ReferenceSpan>
+            <TechIconsHolder>
+              {this.state.referenceTechList}
+            </TechIconsHolder>
+          </ReferenceTechIconsHolder>
+        ) : null}
       </Card>
     );
   }
