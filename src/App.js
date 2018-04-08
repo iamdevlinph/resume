@@ -1,23 +1,22 @@
-import React, { Component } from 'react';
-// import logo from './logo.svg';
-// import './App.scss';
+import React from 'react';
+import { Provider } from 'react-redux';
+import { injectGlobal } from 'styled-components';
 
-import Navbar from './Components/Navbar/Navbar';
-import Content from './Components/Content/Content';
-import Footer from './Components/Footer/Footer';
+import Routes from './routes';
+import store from './store';
 
-class App extends Component {
-    render() {
-        return (
-            <div className="app">
-                <div className="wrapper">
-                    <Navbar />
-                    <Content />
-                    <Footer />
-                </div>
-            </div>
-        );
-    }
-}
+export default () => (
+  <Provider store={store} >
+    <Routes />
+  </Provider>
+);
 
-export default App;
+// Global style
+// eslint-disable-next-line
+injectGlobal`
+  body {
+    margin: 0;
+    background: #F5F5F5;
+    font-family:"Open Sans", Arial, sans-serif;
+  }
+`;
