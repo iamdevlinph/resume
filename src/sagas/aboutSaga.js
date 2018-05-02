@@ -1,13 +1,12 @@
 import { put, takeLatest, call } from 'redux-saga/effects';
+import rsf from './rsf';
 
 import { types as aboutTypes } from '../ducks/about';
 
-import resumeApi from '../services/api';
-
 function* aboutWillFetch() {
   try {
-    const about = yield call(resumeApi.fetchData, 'about');
-    yield put({ type: aboutTypes.ABOUT_SUCCESS, about: yield about.json() });
+    const about = yield call(rsf.database.read, 'about');
+    yield put({ type: aboutTypes.ABOUT_SUCCESS, about: yield about });
   } catch (e) {
     // console.log(e);
   }

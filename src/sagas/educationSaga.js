@@ -1,13 +1,12 @@
 import { put, takeLatest, call } from 'redux-saga/effects';
+import rsf from './rsf';
 
 import { types as educationTypes } from '../ducks/education';
 
-import resumeApi from '../services/api';
-
 function* educationWillFetch() {
   try {
-    const education = yield call(resumeApi.fetchData, 'education');
-    yield put({ type: educationTypes.EDUCATION_SUCCESS, education: yield education.json() });
+    const education = yield call(rsf.database.read, 'education');
+    yield put({ type: educationTypes.EDUCATION_SUCCESS, education: yield education });
   } catch (e) {
     // console.log(e);
   }

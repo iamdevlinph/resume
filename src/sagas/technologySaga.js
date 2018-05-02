@@ -1,13 +1,12 @@
 import { put, takeLatest, call } from 'redux-saga/effects';
+import rsf from './rsf';
 
 import { types as technologyTypes } from '../ducks/technology';
 
-import resumeApi from '../services/api';
-
 function* technologyWillFetch() {
   try {
-    const technology = yield call(resumeApi.fetchData, 'skills');
-    yield put({ type: technologyTypes.TECHNOLOGY_SUCCESS, technology: yield technology.json() });
+    const technology = yield call(rsf.database.read, 'skills');
+    yield put({ type: technologyTypes.TECHNOLOGY_SUCCESS, technology: yield technology });
   } catch (e) {
     // console.log(e);
   }

@@ -1,13 +1,12 @@
 import { put, takeLatest, call } from 'redux-saga/effects';
+import rsf from './rsf';
 
 import { types as experienceTypes } from '../ducks/experience';
 
-import resumeApi from '../services/api';
-
 function* experienceWillFetch() {
   try {
-    const experience = yield call(resumeApi.fetchData, 'experience');
-    yield put({ type: experienceTypes.EXPERIENCE_SUCCESS, experience: yield experience.json() });
+    const experience = yield call(rsf.database.read, 'experience');
+    yield put({ type: experienceTypes.EXPERIENCE_SUCCESS, experience: yield experience });
   } catch (e) {
     // console.log(e);
   }
