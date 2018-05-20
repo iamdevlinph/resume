@@ -83,7 +83,7 @@ Change the `source` to `gh-pages branch`.
 
 If you have your own domain. Input your `custom domain` if you have and don't forget to add a `CNAME` file in the `public` folder. This will handle the redirecting from `github pages` to your custom domain.
 
-![gh-pages settings](docs/images/pages_rwrv32.png)
+![gh-pages settings](docs/images/gh-pages_rwrv32.png)
 
 2. In the `package.json` change the `homepage` property with the url where the app will be accessed
 ```
