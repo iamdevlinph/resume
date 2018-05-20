@@ -1,10 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
+// import styled from 'styled-components';
 
 const LoadingComponent = (props) => {
+  const loadingStyle = {
+    position: 'absolute',
+    paddingTop: '45vh',
+    left: '50%',
+  };
   if (props.isLoading) {
-    return <Loader />;
+    return <div style={loadingStyle}>Loading...</div>;
   } else if (props.error) {
     return <div>Something went wrong...</div>;
   } else if (props.timedOut) {
@@ -25,53 +30,53 @@ LoadingComponent.defaultProps = {
 
 export default LoadingComponent;
 
-const Loader = styled.div`
-  display: inline-block;
-  height: 40%;
-  width: 100%;
-  /* https://codepen.io/P1N2O/pen/pyBNzX */
-  min-height: 200px;
-  color: #fff;
-  margin-bottom: 30px;
-  background: linear-gradient(-45deg, #FFF, #F5F5F5, #d2d1d1, #d2d1d1, #F5F5F5, #FFF);
-  background-size: 400% 400%;
-  -webkit-animation: Gradient 10s ease infinite;
-  -moz-animation: Gradient 10s ease infinite;
-  animation: Gradient 10s ease infinite;
-  @-webkit-keyframes Gradient {
-    0% {
-      background-position: 0% 50%
-    }
-    50% {
-      background-position: 100% 50%
-    }
-    100% {
-      background-position: 0% 50%
-    }
-  }
+// const Loader = styled.div`
+//   display: inline-block;
+//   height: 40%;
+//   width: 100%;
+//   /* https://codepen.io/P1N2O/pen/pyBNzX */
+//   min-height: 200px;
+//   color: #fff;
+//   margin-bottom: 30px;
+//   background: linear-gradient(-45deg, #FFF, #F5F5F5, #d2d1d1, #d2d1d1, #F5F5F5, #FFF);
+//   background-size: 400% 400%;
+//   -webkit-animation: Gradient 10s ease infinite;
+//   -moz-animation: Gradient 10s ease infinite;
+//   animation: Gradient 10s ease infinite;
+//   @-webkit-keyframes Gradient {
+//     0% {
+//       background-position: 0% 50%
+//     }
+//     50% {
+//       background-position: 100% 50%
+//     }
+//     100% {
+//       background-position: 0% 50%
+//     }
+//   }
 
-  @-moz-keyframes Gradient {
-    0% {
-      background-position: 0% 50%
-    }
-    50% {
-      background-position: 100% 50%
-    }
-    100% {
-      background-position: 0% 50%
-    }
-  }
+//   @-moz-keyframes Gradient {
+//     0% {
+//       background-position: 0% 50%
+//     }
+//     50% {
+//       background-position: 100% 50%
+//     }
+//     100% {
+//       background-position: 0% 50%
+//     }
+//   }
 
-  @keyframes Gradient {
-    0% {
-      background-position: 0% 50%
-    }
-    50% {
-      background-position: 100% 50%
-    }
-    100% {
-      background-position: 0% 50%
-    }
-  }
+//   @keyframes Gradient {
+//     0% {
+//       background-position: 0% 50%
+//     }
+//     50% {
+//       background-position: 100% 50%
+//     }
+//     100% {
+//       background-position: 0% 50%
+//     }
+//   }
 
-`;
+// `;

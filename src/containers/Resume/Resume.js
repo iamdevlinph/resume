@@ -1,20 +1,20 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { About, Experience, Technology, Education, Portfolio } from '../../loadableCons';
+import { AboutCard, ExperienceCard, TechnologyCard, EducationCard, PortfolioCard } from '../index';
 
 class ResumeContainer extends React.Component {
   render() {
     return (
       <ResumeGrid>
         <FixedContent>
-          <About />
+          <AboutCard />
         </FixedContent>
         <ScrollableContent>
-          <Experience />
-          <Technology />
-          <Education />
-          <Portfolio />
+          <ExperienceCard />
+          <TechnologyCard />
+          <EducationCard />
+          <PortfolioCard />
         </ScrollableContent>
       </ResumeGrid>
     );

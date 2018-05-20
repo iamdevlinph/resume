@@ -27,4 +27,9 @@ const Portfolio = Loadable({
   loading: Loading,
 });
 
-export { About, Experience, Technology, Education, Portfolio };
+const Resume = Loadable({
+  loader: () => fakeDelay(500).then(() => import('./containers/Resume/Resume')),
+  loading: Loading,
+});
+
+export { About, Experience, Technology, Education, Portfolio, Resume };

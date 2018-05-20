@@ -44,13 +44,13 @@ class TechnologyContainer extends React.Component {
   }
   render() {
     return (
-      <Card title="Technology" icon="icon-code" showMore onClick={() => this.toggleReference()} isMoreShown={this.state.toggleReference}>
+      <Card title="Technology" icon="icon-code" showMore={false} onClick={() => this.toggleReference()} isMoreShown={this.state.toggleReference}>
         <TechIconsHolder>
           {this.state.techList}
         </TechIconsHolder>
         {this.state.toggleReference ? (
           <ReferenceTechIconsHolder>
-            <ReferenceSpan>Reference Only</ReferenceSpan>
+            <ReferenceSpan>For Reference</ReferenceSpan>
             <TechIconsHolder>
               {this.state.referenceTechList}
             </TechIconsHolder>

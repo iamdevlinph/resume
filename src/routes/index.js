@@ -3,7 +3,7 @@ import { HashRouter, Route, Switch } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 import ResumeLayout from './ResumeLayout/ResumeLayout';
-import { Resume } from '../containers';
+import { Resume } from '../loadableCons';
 
 const AppRoute = ({ component: Component, layout: Layout, ...rest }) => (
   <Route
