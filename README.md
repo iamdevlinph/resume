@@ -83,7 +83,7 @@ Change the `source` to `gh-pages branch`.
 
 If you have your own domain. Input your `custom domain` if you have and don't forget to add a `CNAME` file in the `public` folder. This will handle the redirecting from `github pages` to your custom domain.
 
-![gh-pages settings](https://res.cloudinary.com/dfrhytey3/image/upload/v1522392328/gh-pages_rwrv32.png)
+![gh-pages settings](docs/images/pages_rwrv32.png)
 
 2. In the `package.json` change the `homepage` property with the url where the app will be accessed
 ```
@@ -111,7 +111,7 @@ Fontello allows us to only use the icons that we actually use, so it might look 
 ### Downloading icons
 1. Go to [fontello](http://fontello.com/)
 2. Import `public/fonts/fontello.config.json`. This contains the already selected icons in the project
-![import config.json to fontello](https://res.cloudinary.com/dfrhytey3/image/upload/v1522301230/import_fontello_fkqezr.png)
+![import config.json to fontello](docs/images/import_fontello_fkqezr.png)
 3. This will pre-select the icons that are already included in the `config.json` file
 4. Click on the icons that you want to add
 5. Click `Download webfont` once you're done. This will download the `font files` and the `config.json` file
