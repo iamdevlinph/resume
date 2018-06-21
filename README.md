@@ -1,12 +1,18 @@
 # Resume v2
 This is a rewrite of the resume template using new stuff I learned along the way.
 
-![node version](https://img.shields.io/node/v/@codes-and-coffees/react-pkg.svg)
-![npm version](https://img.shields.io/npm/v/@codes-and-coffees/react-pkg.svg)
-![open issues](https://img.shields.io/github/issues/iamdevlinph/resume.svg)
-![open prs](https://img.shields.io/github/issues-pr/iamdevlinph/resume.svg)
+#### React Pkg
+
+[![npm version][npm-img]][npm-url]
+[![node version][node-img]][node-url]
+[![deps][deps-img]][deps-url]
+
+#### Resume Repository Details
+
+[![open issues][issues-img]][issues-url]
+[![open prs][pr-img]][pr-url]
 ![code size](https://img.shields.io/github/languages/code-size/iamdevlinph/resume.svg)
-![contributors](https://img.shields.io/github/contributors/iamdevlinph/resume.svg)
+[![contributors][contributor-img]][contributor-url]
 
 This uses the [React Kit](https://github.com/codesandcoffees/react-kit) as the base template which is based on [Create React App](https://github.com/facebook/create-react-app)
 
@@ -152,3 +158,19 @@ Feel free to open up a [pull request](https://github.com/iamdevlinph/resume/pull
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Read the original [README.md](/README-orig.md)
+
+<!-- React PKG -->
+[npm-img]: https://img.shields.io/npm/v/@codes-and-coffees/react-pkg.svg
+[npm-url]: https://www.npmjs.com/package/@codes-and-coffees/react-pkg
+[node-img]: https://img.shields.io/node/v/@codes-and-coffees/react-pkg.svg
+[node-url]: https://nodejs.org/en/
+[deps-img]: https://img.shields.io/david/codesandcoffees/react-pkg.svg
+[deps-url]: https://david-dm.org/codesandcoffees/react-pkg
+
+<!-- React Kit -->
+[issues-url]: https://github.com/iamdevlinph/resume/issues
+[issues-img]: https://img.shields.io/github/issues/iamdevlinph/resume.svg
+[pr-img]: https://img.shields.io/github/issues-pr/iamdevlinph/resume.svg
+[pr-url]: https://github.com/iamdevlinph/resume/pulls
+[contributor-img]: https://img.shields.io/github/contributors/iamdevlinph/resume.svg
+[contributor-url]: https://github.com/iamdevlinph/resume/graphs/contributors
