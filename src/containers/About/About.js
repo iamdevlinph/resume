@@ -51,7 +51,7 @@ class AboutContainer extends React.Component {
         <Info>{this.props.about.skype}<InfoIcon className="icon-skype" /></Info>
         <Info>{this.props.about.mobile}<InfoIcon className="icon-phone" /></Info>
         <Info>{this.props.about.address}<InfoIcon className="icon-home" /></Info>
-        <Info><Url href="{this.props.about.website}">{this.props.about.website}<InfoIcon className="icon-rocket" /></Url></Info>
+        <Info><Url href={this.props.about.website}>{this.props.about.website}<InfoIcon className="icon-rocket" /></Url></Info>
         <AboutFooter>
           <SocialLinks>
             {this.state.socialLinks}
