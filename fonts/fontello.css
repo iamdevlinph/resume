@@ -129,3 +129,7 @@
 .icon-down-dir:before {
   content: '\e808';
 }
+
+.icon-rocket:before {
+  content: '\f135';
+}
