@@ -1,7 +1,7 @@
 import { put, takeLatest, call } from 'redux-saga/effects';
-import rsf from './rsf';
+import rsf from '../rsf';
 
-import { types as aboutTypes } from '../ducks/about';
+import { types as aboutTypes } from './about';
 
 function* aboutWillFetch() {
   try {

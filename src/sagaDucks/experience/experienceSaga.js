@@ -1,7 +1,7 @@
 import { put, takeLatest, call } from 'redux-saga/effects';
-import rsf from './rsf';
+import rsf from '../rsf';
 
-import { types as experienceTypes } from '../ducks/experience';
+import { types as experienceTypes } from './experience';
 
 function* experienceWillFetch() {
   try {

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
-import { actions as educatioActions } from '../../ducks/education';
+import { actions as educatioActions } from '../../sagaDucks/education/education';
 import { Timeline } from '../../components';
 import { Card } from '../index';
 

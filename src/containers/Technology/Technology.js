@@ -5,7 +5,7 @@ import { bindActionCreators } from 'redux';
 import styled from 'styled-components';
 import _ from 'lodash';
 
-import { actions as technologyActions } from '../../ducks/technology';
+import { actions as technologyActions } from '../../sagaDucks/technology/technology';
 import { TechIcon } from '../../components';
 import { Card } from '../index';
 

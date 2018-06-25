@@ -6,7 +6,7 @@ import styled from 'styled-components';
 import moment from 'moment';
 import _ from 'lodash';
 
-import { actions as aboutActions } from '../../ducks/about';
+import { actions as aboutActions } from '../../sagaDucks/about/about';
 
 import { Button, IconLink } from '../../components';
 

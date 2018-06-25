@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import styled from 'styled-components';
 
-import { actions as portfolioActions } from '../../ducks/portfolio';
+import { actions as portfolioActions } from '../../sagaDucks/portfolio/portfolio';
 import { PortfolioIcon } from '../../components';
 import { Card } from '../index';
 

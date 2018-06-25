@@ -1,7 +1,7 @@
 import { put, takeLatest, call } from 'redux-saga/effects';
-import rsf from './rsf';
+import rsf from '../rsf';
 
-import { types as portfolioTypes } from '../ducks/portfolio';
+import { types as portfolioTypes } from './portfolio';
 
 function* portfolioWillFetch() {
   try {

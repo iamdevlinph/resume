@@ -23,3 +23,5 @@ yarn-error.log*
 # resume files related (docx and pdf)
 /public/*.tmp
 /public/~$vlin Pajaron - Resume.docx
+
+lint.log

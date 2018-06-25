@@ -1,7 +1,7 @@
 import { put, takeLatest, call } from 'redux-saga/effects';
-import rsf from './rsf';
+import rsf from '../rsf';
 
-import { types as educationTypes } from '../ducks/education';
+import { types as educationTypes } from './education';
 
 function* educationWillFetch() {
   try {

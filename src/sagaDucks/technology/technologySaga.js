@@ -1,7 +1,7 @@
 import { put, takeLatest, call } from 'redux-saga/effects';
-import rsf from './rsf';
+import rsf from '../rsf';
 
-import { types as technologyTypes } from '../ducks/technology';
+import { types as technologyTypes } from './technology';
 
 function* technologyWillFetch() {
   try {

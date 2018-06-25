@@ -6,7 +6,7 @@ import styled from 'styled-components';
 import moment from 'moment';
 import * as dateUtils from '../../services/dateUtils';
 
-import { actions as experienceActions } from '../../ducks/experience';
+import { actions as experienceActions } from '../../sagaDucks/experience/experience';
 import { Timeline } from '../../components';
 import { Card } from '../index';
 
