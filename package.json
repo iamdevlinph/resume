@@ -8,7 +8,6 @@
     "firebase": "^4.13.1",
     "lodash": "4.17.5",
     "moment": "2.21.0",
-    "react-redux-firebase": "2.1.5",
     "redux-saga-firebase": "0.12.0"
   },
   "scripts": {
