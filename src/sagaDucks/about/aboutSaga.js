@@ -6,7 +6,7 @@ import { types as aboutTypes } from './about';
 function* aboutWillFetch() {
   try {
     const about = yield call(rsf.database.read, 'about');
-    yield put({ type: aboutTypes.ABOUT_SUCCESS, about: yield about });
+    yield put({ type: aboutTypes.ABOUT_SUCCESS, about });
   } catch (e) {
     // console.log(e);
   }
