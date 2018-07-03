@@ -6,7 +6,7 @@ import { types as technologyTypes } from './technology';
 function* technologyWillFetch() {
   try {
     const technology = yield call(rsf.database.read, 'skills');
-    yield put({ type: technologyTypes.TECHNOLOGY_SUCCESS, technology: yield technology });
+    yield put({ type: technologyTypes.TECHNOLOGY_SUCCESS, technology });
   } catch (e) {
     // console.log(e);
   }
