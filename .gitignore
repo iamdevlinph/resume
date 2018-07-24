@@ -25,3 +25,5 @@ yarn-error.log*
 /public/~$vlin Pajaron - Resume.docx
 
 lint.log
+
+package-lock.json

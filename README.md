@@ -153,6 +153,9 @@ A bit of a hassle, yes. But we'll end up with the icons that we actually use.
 
 Feel free to open up a [pull request](https://github.com/iamdevlinph/resume/pulls) or an [issue](https://github.com/iamdevlinph/resume/issues/new)
 
+# PWA
+- [ ] Follow this [guide](https://scotch.io/tutorials/how-to-make-your-existing-react-app-progressive-in-10-minutes)
+
 ---
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
