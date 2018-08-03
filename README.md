@@ -11,7 +11,7 @@ This is a rewrite of the resume template using new stuff I learned along the way
 
 [![open issues][issues-img]][issues-url]
 [![open prs][pr-img]][pr-url]
-![code size](https://img.shields.io/github/languages/code-size/iamdevlinph/resume.svg)
+![code size](https://img.shields.io/github/languages/code-size/iamdevlinph/resume.svg?style=flat-square&maxAge=3600)
 [![contributors][contributor-img]][contributor-url]
 
 This uses the [React Kit](https://github.com/codesandcoffees/react-kit) as the base template which is based on [Create React App](https://github.com/facebook/create-react-app)
@@ -160,17 +160,17 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 Read the original [README.md](/README-orig.md)
 
 <!-- React PKG -->
-[npm-img]: https://img.shields.io/npm/v/@codes-and-coffees/react-pkg.svg
+[npm-img]: https://img.shields.io/npm/v/@codes-and-coffees/react-pkg.svg?style=flat-square&maxAge=3600
 [npm-url]: https://www.npmjs.com/package/@codes-and-coffees/react-pkg
-[node-img]: https://img.shields.io/node/v/@codes-and-coffees/react-pkg.svg
+[node-img]: https://img.shields.io/node/v/@codes-and-coffees/react-pkg.svg?style=flat-square&maxAge=3600
 [node-url]: https://nodejs.org/en/
-[deps-img]: https://img.shields.io/david/codesandcoffees/react-pkg.svg
+[deps-img]: https://img.shields.io/david/codesandcoffees/react-pkg.svg?style=flat-square&maxAge=3600
 [deps-url]: https://david-dm.org/codesandcoffees/react-pkg
 
 <!-- React Kit -->
 [issues-url]: https://github.com/iamdevlinph/resume/issues
-[issues-img]: https://img.shields.io/github/issues/iamdevlinph/resume.svg
-[pr-img]: https://img.shields.io/github/issues-pr/iamdevlinph/resume.svg
+[issues-img]: https://img.shields.io/github/issues/iamdevlinph/resume.svg?style=flat-square&maxAge=3600
+[pr-img]: https://img.shields.io/github/issues-pr/iamdevlinph/resume.svg?style=flat-square&maxAge=3600
 [pr-url]: https://github.com/iamdevlinph/resume/pulls
-[contributor-img]: https://img.shields.io/github/contributors/iamdevlinph/resume.svg
+[contributor-img]: https://img.shields.io/github/contributors/iamdevlinph/resume.svg?style=flat-square&maxAge=3600
 [contributor-url]: https://github.com/iamdevlinph/resume/graphs/contributors
