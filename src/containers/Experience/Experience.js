@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import styled from 'styled-components';
 import moment from 'moment';
+import _ from 'lodash';
 import * as dateUtils from '../../services/dateUtils';
 
 import { actions as experienceActions } from '../../sagaDucks/experience/experience';
@@ -26,7 +27,7 @@ class ExperienceContainer extends React.Component {
   }
   generate = (props, toggleAll) => {
     // manipulate experience data to match timeline expected data
-    const newData = props.experience.reduce((newArr, obj, idx) => {
+    const newData = _.orderBy(props.experience, [exp => exp.id], ['desc']).reduce((newArr, obj, idx) => {
       const dateFrom = moment(obj.workFrom, 'MMMM-YYYY').format('MMM YYYY');
       const dateTo = (obj.workTo !== 'Present') ?
         moment(obj.workTo, 'MMMM-YYYY').format('MMM YYYY') : (<Present />);
