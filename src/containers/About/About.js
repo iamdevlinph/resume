@@ -47,11 +47,11 @@ class AboutContainer extends React.Component {
           </Name>
           <Title>{this.props.about.role}</Title>
         </NameTitle>
-        <Info>{this.props.about.email}<InfoIcon className="icon-mail" /></Info>
-        <Info>{this.props.about.skype}<InfoIcon className="icon-skype" /></Info>
-        <Info>{this.props.about.mobile}<InfoIcon className="icon-phone" /></Info>
-        <Info>{this.props.about.address}<InfoIcon className="icon-home" /></Info>
-        <Info><Url href={this.props.about.website}>{this.props.about.website}<InfoIcon className="icon-rocket" /></Url></Info>
+        {this.props.about.email ? <Info>{this.props.about.email}<InfoIcon className="icon-mail" /></Info> : null}
+        {this.props.about.skype ? <Info>{this.props.about.skype}<InfoIcon className="icon-skype" /></Info> : null}
+        {this.props.about.mobile ? <Info>{this.props.about.mobile}<InfoIcon className="icon-phone" /></Info> : null}
+        {this.props.about.address ? <Info>{this.props.about.address}<InfoIcon className="icon-home" /></Info> : null}
+        {this.props.about.website ? <Info><Url href={this.props.about.website}>{this.props.about.website}<InfoIcon className="icon-rocket" /></Url></Info> : null}
         <AboutFooter>
           <SocialLinks>
             {this.state.socialLinks}
