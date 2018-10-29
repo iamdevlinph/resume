@@ -1,4 +1,7 @@
 # Resume v2
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/iamdevlinph/resume.svg)](https://greenkeeper.io/)
+
 This is a rewrite of the resume template using new stuff I learned along the way.
 
 #### React Pkg
