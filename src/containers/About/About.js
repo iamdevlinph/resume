@@ -39,7 +39,7 @@ class AboutContainer extends React.Component {
       <AboutGrid>
         <AvatarSection>
           {/* <Avatar src={this.props.about.profile_photo_url} alt="profile" /> */}
-          <Avatar src="https://res.cloudinary.com/dfrhytey3/image/upload/v1520350961/icon_jgxnta.jpg" alt="profile" />
+          <Avatar src="https://res.cloudinary.com/dfrhytey3/image/upload/v1551529389/icons/logo.png" alt="profile" />
         </AvatarSection>
         <NameTitle>
           <Name>{this.props.about.first_name}
@@ -99,9 +99,9 @@ const AvatarSection = styled.div`
 `;
 const Avatar = styled.img`
   vertical-align: middle;
-  height: auto;
+  /* height: auto; */
   /* remove when using the smiley avatar */
-  /* width: 100%; */
+  width: 100%;
 `;
 const NameTitle = styled.div`
   background: #B52E31;
