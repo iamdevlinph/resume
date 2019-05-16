@@ -57,7 +57,7 @@ class AboutContainer extends React.Component {
             {this.state.socialLinks}
           </SocialLinks>
 
-          <Button onClick={() => this.openFile(this.props.about.pdf_url)}><i className="icon-download" /> SIMPLE</Button>
+          <Button onClick={() => this.openFile(this.props.about.pdf_url)}><i className="icon-download" /> PDF</Button>
           <FooterTag>Updated at {moment(this.props.about.updated_at, 'YYYY-MM-DD').format('DD MMM, YYYY')}</FooterTag>
           <FooterTag>© 2018 iamdevlinph</FooterTag>
         </AboutFooter>
